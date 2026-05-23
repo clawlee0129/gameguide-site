@@ -1,0 +1,28 @@
+# Vercel Deployment Configuration
+
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "regions": ["iad1"],
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": {
+      "description": "Production site URL",
+      "value": "https://gameguidepro.com"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "value": ""
+    },
+    "NEXT_PUBLIC_GOOGLE_ADSENSE_ID": {
+      "description": "Google AdSense publisher ID",
+      "value": ""
+    },
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": {
+      "description": "Google Analytics tracking ID",
+      "value": ""
+    }
+  }
+}
