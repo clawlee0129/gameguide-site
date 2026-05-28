@@ -1,13 +1,13 @@
 import { SEOConfig } from '@/types';
 
 export const seoConfig: SEOConfig = {
-  siteName: 'GameGuide Pro',
-  siteUrl: 'https://gameguidepro.com',
-  titleTemplate: '%s | GameGuide Pro - Expert Game Walkthroughs & Guides',
+  siteName: 'GameGuide',
+  siteUrl: 'https://gameguide.guide',
+  titleTemplate: '%s | GameGuide - Your Ultimate Gaming Guide',
   defaultDescription:
     'Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch. Master every game with our in-depth guides.',
   defaultImage: '/images/og-default.jpg',
-  twitterHandle: '@gameguidepro',
+  twitterHandle: '@gameguideguide',
 };
 
 export const siteNav = [

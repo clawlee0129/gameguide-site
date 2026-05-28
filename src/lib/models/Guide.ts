@@ -62,7 +62,7 @@ const GuideSchema = new Schema<IGuide>(
     tags: { type: [String], default: [], index: true },
     metaDescription: { type: String, required: true, maxlength: 160 },
     metaKeywords: { type: [String], default: [] },
-    author: { type: String, default: 'GameGuide Pro Team' },
+    author: { type: String, default: 'GameGuide Team' },
     published: { type: Boolean, default: false, index: true },
     views: { type: Number, default: 0 },
     likes: { type: Number, default: 0 },

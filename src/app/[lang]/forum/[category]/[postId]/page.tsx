@@ -64,7 +64,7 @@ export async function generateMetadata({
   const post = allPosts[postId];
   const catName = (validCategories.includes(category) ? dict.forum?.[category] : null) || category;
   return {
-    title: post ? `${post.title} - GameGuide Pro Forum` : 'Post Not Found',
+    title: post ? `${post.title} - GameGuide Forum` : 'Post Not Found',
     description: post?.content?.slice(0, 160),
   };
 }

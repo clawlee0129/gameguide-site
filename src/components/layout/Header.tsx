@@ -68,7 +68,7 @@ export function Header({ lang, dict }: HeaderProps) {
             <span className="rounded-lg bg-purple-600 px-2 py-1 text-sm font-black text-white">
               GGP
             </span>
-            GameGuide Pro
+            GameGuide
           </Link>
 
           {/* Desktop Nav */}

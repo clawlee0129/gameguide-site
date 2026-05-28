@@ -1,4 +1,4 @@
-# GameGuide Pro
+# GameGuide
 
 Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch. Master every game with our in-depth guides.
 

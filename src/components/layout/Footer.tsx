@@ -22,7 +22,7 @@ export function Footer({ lang, dict }: FooterProps) {
               <span className="mr-2 rounded-lg bg-purple-600 px-2 py-1 text-sm font-black text-white">
                 GGP
               </span>
-              GameGuide Pro
+              GameGuide
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-gray-400">
               {dict.common.footerDescription}

@@ -11,7 +11,7 @@ export async function generateMetadata({
   const { lang } = await params;
   const dict = getDictionary(getLangFromParams({ lang }));
   return {
-    title: dict.metadata.forumTitle || 'Community Forum - GameGuide Pro',
+    title: dict.metadata.forumTitle || 'Community Forum - GameGuide',
     description: dict.metadata.forumDescription || 'Join the discussion! Get help, share builds, and connect with other gamers in our community forum.',
   };
 }

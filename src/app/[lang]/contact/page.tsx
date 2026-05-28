@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with the GameGuide Pro team. Request guides, report issues, or send feedback.',
+  description: 'Get in touch with the GameGuide team. Request guides, report issues, or send feedback.',
 };
 
 export default async function ContactPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -29,7 +29,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         <div className="space-y-6">
           <div className="rounded-xl border border-gray-800 bg-gray-900 p-5">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Email</h3>
-            <p className="mt-2 text-white">contact@gameguidepro.com</p>
+            <p className="mt-2 text-white">contact@gameguide.guide</p>
             <p className="mt-1 text-sm text-gray-500">We typically respond within 24-48 hours.</p>
           </div>
 

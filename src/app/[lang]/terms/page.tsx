@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'GameGuide Pro Terms of Service — rules and guidelines for using our site.',
+  description: 'GameGuide Terms of Service — rules and guidelines for using our site.',
 };
 
 export default async function TermsPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -26,7 +26,7 @@ export default async function TermsPage({ params }: { params: Promise<{ lang: st
         <section>
           <h2 className="text-xl font-semibold text-white">1. Acceptance of Terms</h2>
           <p className="mt-3">
-            By accessing or using GameGuide Pro ("the Site"), you agree to be bound by these Terms of Service.
+            By accessing or using GameGuide ("the Site"), you agree to be bound by these Terms of Service.
             If you do not agree with any part of these terms, you must discontinue use of the Site immediately.
           </p>
         </section>
@@ -34,8 +34,8 @@ export default async function TermsPage({ params }: { params: Promise<{ lang: st
         <section>
           <h2 className="text-xl font-semibold text-white">2. Content and Intellectual Property</h2>
           <p className="mt-3">
-            All original content published on GameGuide Pro — including guides, articles, images, and site design —
-            is the intellectual property of GameGuide Pro and is protected by copyright law. Game titles, logos,
+            All original content published on GameGuide — including guides, articles, images, and site design —
+            is the intellectual property of GameGuide and is protected by copyright law. Game titles, logos,
             screenshots, and related trademarks remain property of their respective owners. You may not reproduce,
             distribute, or create derivative works from our content without prior written permission.
           </p>
@@ -53,7 +53,7 @@ export default async function TermsPage({ params }: { params: Promise<{ lang: st
         <section>
           <h2 className="text-xl font-semibold text-white">4. User-Generated Content</h2>
           <p className="mt-3">
-            Users who submit comments, tips, or other content grant GameGuide Pro a non-exclusive, royalty-free,
+            Users who submit comments, tips, or other content grant GameGuide a non-exclusive, royalty-free,
             perpetual license to use, display, and distribute that content on the Site. You represent that any
             content you submit does not infringe third-party rights and is not unlawful, defamatory, or harmful.
           </p>
@@ -71,7 +71,7 @@ export default async function TermsPage({ params }: { params: Promise<{ lang: st
         <section>
           <h2 className="text-xl font-semibold text-white">6. Limitation of Liability</h2>
           <p className="mt-3">
-            GameGuide Pro shall not be liable for any indirect, incidental, special, or consequential damages
+            GameGuide shall not be liable for any indirect, incidental, special, or consequential damages
             arising from your use of the Site or reliance on its content. This includes, but is not limited to,
             lost game progress, hardware issues, or any other damages related to following our guides.
           </p>

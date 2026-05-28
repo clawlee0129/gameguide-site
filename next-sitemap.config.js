@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://gameguidepro.com',
+  siteUrl: 'https://gameguide.guide',
   generateIndexSitemap: false,
   generateRobotsTxt: true,
   sitemapSize: 5000,

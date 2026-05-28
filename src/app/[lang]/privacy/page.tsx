@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'GameGuide Pro Privacy Policy — how we collect, use, and protect your data.',
+  description: 'GameGuide Privacy Policy — how we collect, use, and protect your data.',
 };
 
 export default async function PrivacyPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -26,7 +26,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
         <section>
           <h2 className="text-xl font-semibold text-white">1. Information We Collect</h2>
           <p className="mt-3">
-            GameGuide Pro collects minimal information necessary to provide and improve our service.
+            GameGuide collects minimal information necessary to provide and improve our service.
             When you visit our site, we automatically collect standard server log data including your
             IP address, browser type, referring pages, and time of visit. If you create an account,
             we collect your email address and a display name of your choice.
@@ -73,7 +73,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
           <h2 className="text-xl font-semibold text-white">6. Your Rights</h2>
           <p className="mt-3">
             Depending on your jurisdiction, you may have rights to access, correct, delete, or port your
-            personal data. To exercise these rights, contact us at privacy@gameguidepro.com. We will respond
+            personal data. To exercise these rights, contact us at privacy@gameguide.guide. We will respond
             to verified requests within the time frame required by applicable law.
           </p>
         </section>
@@ -92,7 +92,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
           <p className="mt-3">
             For questions about this Privacy Policy, contact us at{' '}
             <Link href="/contact" className="text-purple-400 hover:text-purple-300">our contact page</Link>{' '}
-            or email privacy@gameguidepro.com.
+            or email privacy@gameguide.guide.
           </p>
         </section>
       </div>

@@ -19,7 +19,7 @@ export async function generateMetadata({
   return {
     title: {
       default: dict.metadata.siteTitle,
-      template: `%s | GameGuide Pro`,
+      template: `%s | GameGuide`,
     },
     description: dict.metadata.siteDescription,
     keywords: [
@@ -34,7 +34,7 @@ export async function generateMetadata({
     ],
     openGraph: {
       type: "website",
-      siteName: "GameGuide Pro",
+      siteName: "GameGuide",
       locale: lang === "zh" ? "zh_CN" : "en_US",
     },
     twitter: {

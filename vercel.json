@@ -10,7 +10,7 @@
   "env": {
     "NEXT_PUBLIC_SITE_URL": {
       "description": "Production site URL",
-      "value": "https://gameguidepro.com"
+      "value": "https://gameguide.guide"
     },
     "MONGODB_URI": {
       "description": "MongoDB connection string",

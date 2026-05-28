@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "GameGuide Pro - Expert Game Walkthroughs & Guides",
-    template: "%s | GameGuide Pro",
+    default: "GameGuide - Your Ultimate Gaming Guide",
+    template: "%s | GameGuide",
   },
   description:
     "Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch. Master every game with our in-depth guides.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    siteName: "GameGuide Pro",
+    siteName: "GameGuide",
     locale: "en_US",
   },
   twitter: {
@@ -48,17 +48,17 @@ export default function RootLayout({
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'GameGuide Pro',
-    url: 'https://gameguidepro.com',
+    name: 'GameGuide',
+    url: 'https://gameguide.guide',
     description: 'Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch.',
     publisher: {
       '@type': 'Organization',
-      name: 'GameGuide Pro',
-      logo: 'https://gameguidepro.com/logo.png',
+      name: 'GameGuide',
+      logo: 'https://gameguide.guide/logo.png',
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://gameguidepro.com/search?q={search_term_string}',
+      target: 'https://gameguide.guide/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

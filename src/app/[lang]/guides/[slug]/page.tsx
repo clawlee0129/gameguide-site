@@ -17,20 +17,20 @@ function generateArticleSchema(display: ReturnType<typeof getGuideDisplay>) {
     dateModified: display.updatedAt,
     author: {
       '@type': 'Organization',
-      name: 'GameGuide Pro',
-      url: 'https://gameguidepro.com',
+      name: 'GameGuide',
+      url: 'https://gameguide.guide',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'GameGuide Pro',
+      name: 'GameGuide',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://gameguidepro.com/logo.png',
+        url: 'https://gameguide.guide/logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://gameguidepro.com/guides/${display.slug}`,
+      '@id': `https://gameguide.guide/guides/${display.slug}`,
     },
     keywords: display.tags.join(', '),
     articleSection: 'Gaming Guides',

@@ -16,7 +16,7 @@ export async function generateMetadata({
   const isValid = validCategories.includes(category);
   const name = isValid ? (dict.forum?.[category] || category) : category;
   return {
-    title: isValid ? `${name} - GameGuide Pro Forum` : 'Forum Category - GameGuide Pro',
+    title: isValid ? `${name} - GameGuide Forum` : 'Forum Category - GameGuide',
     description: isValid ? (dict.forum?.[category + 'Desc'] || '') : '',
   };
 }
