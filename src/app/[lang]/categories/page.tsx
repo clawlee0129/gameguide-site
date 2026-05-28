@@ -1,18 +1,31 @@
+import { getDictionary } from "@/i18n";
+import { getLangFromParams } from "@/i18n";
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { categories } from '@/data/site';
 
-export const metadata: Metadata = {
-  title: 'Game Categories',
-  description: 'Browse game guides by category. Find walkthroughs for RPGs, FPS, strategy games, and more.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = getDictionary(getLangFromParams({ lang }));
+  
+  return {
+    title: dict.metadata.categoriesTitle,
+    description: dict.metadata.categoriesDescription,
+  };
+}
 
-export default function CategoriesPage() {
+export default async function CategoriesPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const dict = getDictionary(getLangFromParams({ lang }));
   return (
     <div className="mx-auto max-w-7xl px-6 py-12">
-      <h1 className="mb-2 text-3xl font-bold text-white">Browse by Category</h1>
+      <h1 className="mb-2 text-3xl font-bold text-white">{dict.categories.gameCategories}</h1>
       <p className="mb-8 text-gray-400">
-        Find the best game guides organized by genre and game type.
+        {dict.categories.findBestGuides}
       </p>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -27,10 +40,10 @@ export default function CategoriesPage() {
             </span>
             <div>
               <h3 className="font-semibold text-white transition-colors group-hover:text-purple-400">
-                {cat.name}
+                {dict.categories[cat.nameKey as keyof typeof dict.categories] || cat.name}
               </h3>
               <p className="mt-0.5 text-sm text-gray-500">
-                Master the best {cat.name.toLowerCase()} games
+                {dict.categories.masterCategory} {dict.categories[cat.nameKey as keyof typeof dict.categories]?.toLowerCase() || cat.name.toLowerCase()} {lang === 'zh' ? '游戏' : 'games'}
               </p>
             </div>
             <svg
@@ -47,3 +60,5 @@ export default function CategoriesPage() {
     </div>
   );
 }
+
+// Updated: 2026-05-28 - Phase 3 i18n fix

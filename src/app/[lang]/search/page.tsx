@@ -1,3 +1,5 @@
+import { getDictionary } from "@/i18n";
+import { getLangFromParams } from "@/i18n";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -5,10 +7,12 @@ export const metadata: Metadata = {
   description: 'Search our database of game walkthroughs, boss guides, and strategy tips.',
 };
 
-export default function SearchPage() {
+export default async function SearchPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const dict = getDictionary(getLangFromParams({ lang }));
   return (
     <div className="mx-auto max-w-3xl px-6 py-12">
-      <h1 className="mb-8 text-3xl font-bold text-white">Search Guides</h1>
+      <h1 className="mb-8 text-3xl font-bold text-white">{dict.search.searchButton}s</h1>
 
       <form className="mb-8">
         <div className="relative">
@@ -55,3 +59,4 @@ export default function SearchPage() {
     </div>
   );
 }
+// Updated: 2026-05-26 - Phase 3 i18n

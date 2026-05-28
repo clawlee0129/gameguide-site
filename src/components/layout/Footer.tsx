@@ -1,7 +1,14 @@
 import Link from 'next/link';
-import { categories, siteNav } from '@/data/site';
+import { categories } from '@/data/site';
+import { Language } from '@/i18n';
+import { DictionaryStructure } from '@/i18n/dictionaries';
 
-export function Footer() {
+interface FooterProps {
+  lang: Language;
+  dict: DictionaryStructure;
+}
+
+export function Footer({ lang, dict }: FooterProps) {
   return (
     <footer className="border-t border-gray-800 bg-gray-950">
       <div className="mx-auto max-w-7xl px-6 py-12">
@@ -18,40 +25,77 @@ export function Footer() {
               GameGuide Pro
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-gray-400">
-              Expert game walkthroughs and strategy guides. Master every game
-              with our in-depth, community-driven content.
+              {dict.common.footerDescription}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
-              Navigation
+              {dict.common.navigation}
             </h3>
             <ul className="space-y-2">
-              {siteNav.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-400 transition-colors hover:text-white"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href={`/${lang}/games`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.games}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/guides`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.guides}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/categories`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.categories}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/builds`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.builds}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/map`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.map}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/forum`}
+                  className="text-sm text-gray-400 transition-colors hover:text-white"
+                >
+                  {dict.nav.forum}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Categories */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
-              Top Categories
+              {dict.common.topCategories}
             </h3>
             <ul className="space-y-2">
               {categories.slice(0, 6).map((cat) => (
                 <li key={cat.slug}>
                   <Link
-                    href={`/categories/${cat.slug}`}
+                    href={`/${lang}/categories/${cat.slug}`}
                     className="text-sm text-gray-400 transition-colors hover:text-white"
                   >
                     {cat.icon} {cat.name}
@@ -64,31 +108,31 @@ export function Footer() {
           {/* Legal */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
-              Legal
+              {dict.common.legal}
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/privacy"
+                  href={`/${lang}/privacy`}
                   className="text-sm text-gray-400 transition-colors hover:text-white"
                 >
-                  Privacy Policy
+                  {dict.privacy.privacyPolicy}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href={`/${lang}/terms`}
                   className="text-sm text-gray-400 transition-colors hover:text-white"
                 >
-                  Terms of Service
+                  {dict.terms.termsOfService}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={`/${lang}/contact`}
                   className="text-sm text-gray-400 transition-colors hover:text-white"
                 >
-                  Contact
+                  {dict.contact.contactUs}
                 </Link>
               </li>
             </ul>
@@ -97,8 +141,7 @@ export function Footer() {
 
         <div className="mt-10 border-t border-gray-800 pt-6 text-center">
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} GameGuide Pro. All game titles,
-            images, and content are property of their respective owners.
+            &copy; {new Date().getFullYear()} {dict.common.copyright}
           </p>
         </div>
       </div>

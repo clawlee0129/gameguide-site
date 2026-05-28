@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
+import { AuthProvider } from "@/contexts/AuthContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,6 +27,8 @@ export const metadata: Metadata = {
     "strategy guide",
     "game tips",
     "PC game guide",
+    "游戏攻略",
+    "游戏指南",
   ],
   openGraph: {
     type: "website",
@@ -44,16 +45,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'GameGuide Pro',
+    url: 'https://gameguidepro.com',
+    description: 'Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'GameGuide Pro',
+      logo: 'https://gameguidepro.com/logo.png',
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://gameguidepro.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-gray-950 text-gray-100">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
 }
+
+// Updated: 2026-05-26 - Phase 3 i18n

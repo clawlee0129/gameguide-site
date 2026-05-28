@@ -14,20 +14,23 @@ export const siteNav = [
   { label: 'Games', href: '/games' },
   { label: 'Guides', href: '/guides' },
   { label: 'Categories', href: '/categories' },
+  { label: 'Builds', href: '/builds' },
+  { label: 'Forum', href: '/forum' },
+  { label: 'Map', href: '/map' },
   { label: 'Search', href: '/search' },
 ];
 
 export const categories = [
-  { slug: 'action-adventure', name: 'Action Adventure', icon: '🗡️' },
-  { slug: 'rpg', name: 'RPG', icon: '⚔️' },
-  { slug: 'fps', name: 'FPS', icon: '🎯' },
-  { slug: 'strategy', name: 'Strategy', icon: '♟️' },
-  { slug: 'soulslike', name: 'Soulslike', icon: '💀' },
-  { slug: 'open-world', name: 'Open World', icon: '🌍' },
-  { slug: 'indie', name: 'Indie', icon: '🎮' },
-  { slug: 'multiplayer', name: 'Multiplayer', icon: '👥' },
-  { slug: 'horror', name: 'Horror', icon: '👻' },
-  { slug: 'simulation', name: 'Simulation', icon: '🏗️' },
+  { slug: 'action-adventure', name: 'Action Adventure', nameKey: 'actionAdventure', icon: '🗡️' },
+  { slug: 'rpg', name: 'RPG', nameKey: 'rpg', icon: '⚔️' },
+  { slug: 'fps', name: 'FPS', nameKey: 'fps', icon: '🎯' },
+  { slug: 'strategy', name: 'Strategy', nameKey: 'strategy', icon: '♟️' },
+  { slug: 'soulslike', name: 'Soulslike', nameKey: 'soulslike', icon: '💀' },
+  { slug: 'open-world', name: 'Open World', nameKey: 'openWorld', icon: '🌍' },
+  { slug: 'indie', name: 'Indie', nameKey: 'indie', icon: '🎮' },
+  { slug: 'multiplayer', name: 'Multiplayer', nameKey: 'multiplayer', icon: '👥' },
+  { slug: 'horror', name: 'Horror', nameKey: 'horror', icon: '👻' },
+  { slug: 'simulation', name: 'Simulation', nameKey: 'simulation', icon: '🏗️' },
 ];
 
 export const adUnits = [

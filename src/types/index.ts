@@ -2,40 +2,49 @@ export interface Game {
   id: string;
   slug: string;
   title: string;
+  titleZh: string;
   description: string;
+  descriptionZh: string;
   coverImage: string;
   screenshots: string[];
-  releaseDate: Date;
+  releaseDate: string | Date;
   platforms: string[];
   genres: string[];
   developer: string;
   publisher: string;
   metacriticScore?: number;
   rawgId?: number;
-  createdAt: Date;
-  updatedAt: Date;
+  guideCount?: number;
+  featured?: boolean;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface Guide {
   id: string;
   slug: string;
   title: string;
+  titleZh: string;
   excerpt: string;
+  excerptZh: string;
   content: string;
   coverImage: string;
   gameId: string;
   gameSlug: string;
   gameTitle: string;
+  gameTitleZh: string;
   difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert';
   timeToComplete: number; // in minutes
   sections: GuideSection[];
   tags: string[];
+  tagsZh: string[];
   metaDescription: string;
+  metaDescriptionZh: string;
   metaKeywords: string[];
   author: string;
   published: boolean;
-  publishedAt: Date;
-  updatedAt: Date;
+  publishedAt: string | Date;
+  updatedAt: string | Date;
   views: number;
   likes: number;
   readingTime: number;
@@ -44,7 +53,9 @@ export interface Guide {
 export interface GuideSection {
   id: string;
   title: string;
+  titleZh: string;
   content: string;
+  contentZh: string;
   order: number;
   images?: string[];
   videos?: string[];
