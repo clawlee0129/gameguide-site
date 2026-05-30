@@ -49,9 +49,38 @@ export async function generateMetadata({
     return { title: 'Guide Not Found' };
   }
   const display = getGuideDisplay(guide, lang as 'en' | 'zh');
+  const url = `https://gameguide.guide/${lang}/guides/${slug}`;
   return {
     title: display.title,
     description: display.metaDescription,
+    openGraph: {
+      title: display.title,
+      description: display.metaDescription,
+      url,
+      type: "article" as const,
+      siteName: "GameGuide",
+      locale: lang === "zh" ? "zh_CN" : "en_US",
+      publishedTime: display.publishedAt instanceof Date
+        ? display.publishedAt.toISOString()
+        : new Date(display.publishedAt).toISOString(),
+      modifiedTime: display.updatedAt instanceof Date
+        ? display.updatedAt.toISOString()
+        : new Date(display.updatedAt).toISOString(),
+      images: [
+        {
+          url: display.coverImage,
+          width: 1200,
+          height: 630,
+          alt: display.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: display.title,
+      description: display.metaDescription,
+      images: [display.coverImage],
+    },
   };
 }
 

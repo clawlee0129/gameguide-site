@@ -16,12 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gameguide.guide"),
   title: {
     default: "GameGuide - Your Ultimate Gaming Guide",
     template: "%s | GameGuide",
   },
   description:
-    "Expert game walkthroughs, boss guides, and strategy tips for PC, PlayStation, Xbox, and Nintendo Switch. Master every game with our in-depth guides.",
+    "Discover expert game walkthroughs, boss strategies, build guides, and hidden secrets for PC, PlayStation, Xbox, and Nintendo Switch. From Elden Ring to Baldur's Gate 3 — master every game with our in-depth, community-driven guides.",
   keywords: [
     "game guide",
     "walkthrough",
@@ -29,16 +30,40 @@ export const metadata: Metadata = {
     "strategy guide",
     "game tips",
     "PC game guide",
+    "console game guide",
+    "RPG guide",
+    "FPS guide",
+    "soulslike guide",
+    "build guide",
+    "achievement guide",
     "游戏攻略",
     "游戏指南",
+    "Boss攻略",
+    "配装指南",
   ],
   openGraph: {
     type: "website",
     siteName: "GameGuide",
     locale: "en_US",
+    title: "GameGuide - Your Ultimate Gaming Guide",
+    description:
+      "Discover expert game walkthroughs, boss strategies, build guides, and hidden secrets for PC, PlayStation, Xbox, and Nintendo Switch.",
+    url: "https://gameguide.guide",
+    images: [
+      {
+        url: "https://gameguide.guide/images/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "GameGuide - Your Ultimate Gaming Guide",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "GameGuide - Your Ultimate Gaming Guide",
+    description:
+      "Discover expert game walkthroughs, boss strategies, build guides, and hidden secrets for PC, PlayStation, Xbox, and Nintendo Switch.",
+    images: ["https://gameguide.guide/images/og-default.jpg"],
   },
 };
 

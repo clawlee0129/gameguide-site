@@ -29,16 +29,38 @@ export async function generateMetadata({
       "strategy guide",
       "game tips",
       "PC game guide",
+      "console game guide",
+      "RPG guide",
+      "FPS guide",
+      "soulslike guide",
+      "build guide",
+      "achievement guide",
       "游戏攻略",
       "游戏指南",
+      "Boss攻略",
+      "配装指南",
     ],
     openGraph: {
       type: "website",
       siteName: "GameGuide",
       locale: lang === "zh" ? "zh_CN" : "en_US",
+      title: dict.metadata.siteTitle,
+      description: dict.metadata.siteDescription,
+      url: `https://gameguide.guide/${lang}`,
+      images: [
+        {
+          url: "https://gameguide.guide/images/og-default.jpg",
+          width: 1200,
+          height: 630,
+          alt: dict.metadata.siteTitle,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
+      title: dict.metadata.siteTitle,
+      description: dict.metadata.siteDescription,
+      images: ["https://gameguide.guide/images/og-default.jpg"],
     },
   };
 }

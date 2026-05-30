@@ -17,9 +17,31 @@ export async function generateMetadata({
     return { title: 'Game Not Found' };
   }
   const display = getGameDisplay(game, lang as 'en' | 'zh');
+  const url = `https://gameguide.guide/${lang}/games/${slug}`;
   return {
     title: `${display.title} Guides & Walkthroughs`,
     description: display.description,
+    openGraph: {
+      title: `${display.title} Guides & Walkthroughs`,
+      description: display.description,
+      url,
+      siteName: "GameGuide",
+      locale: lang === "zh" ? "zh_CN" : "en_US",
+      images: [
+        {
+          url: display.coverImage,
+          width: 1200,
+          height: 630,
+          alt: display.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${display.title} Guides & Walkthroughs`,
+      description: display.description,
+      images: [display.coverImage],
+    },
   };
 }
 
