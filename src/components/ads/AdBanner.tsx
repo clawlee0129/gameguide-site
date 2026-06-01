@@ -9,7 +9,7 @@ interface AdBannerProps {
   lazy?: boolean;
 }
 
-export function AdBanner({ size, slot = 'demo', className = '', lazy = true }: AdBannerProps) {
+export function AdBanner({ size, slot = 'auto', className = '', lazy = true }: AdBannerProps) {
   const [isVisible, setIsVisible] = useState(!lazy);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -38,48 +38,41 @@ export function AdBanner({ size, slot = 'demo', className = '', lazy = true }: A
 
   const { width, height, label } = dimensions[size];
 
+  useEffect(() => {
+    if (!isVisible) return;
+    // Trigger AdSense ad load when visible
+    try {
+      (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+      (window as any).adsbygoogle.push({});
+    } catch (e) {
+      // AdSense not loaded yet, will retry on next visibility change
+    }
+  }, [isVisible]);
+
+  if (!isVisible) {
+    return (
+      <div
+        ref={containerRef}
+        style={{ minHeight: typeof height === 'number' ? `${height}px` : '90px' }}
+      />
+    );
+  }
+
   return (
     <div
-      ref={containerRef}
-      className={`relative overflow-hidden rounded-lg border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-800 ${className}`}
-      style={{
-        width: typeof width === 'number' ? `${width}px` : width,
-        height: typeof height === 'number' ? `${height}px` : height,
-        minHeight: typeof height === 'number' ? `${height}px` : 'auto',
-      }}
+      className={`overflow-hidden rounded-lg border border-gray-800/50 bg-gray-900/50 ${className}`}
     >
-      {/* Ad Label */}
-      <div className="absolute left-0 top-0 z-10 flex items-center justify-center rounded-br-lg bg-gray-900 px-2 py-1">
-        <span className="text-xs font-medium text-gray-500">Advertisement</span>
+      <div className="flex items-center justify-center px-1 py-0.5">
+        <span className="text-[10px] text-gray-600">Advertisement</span>
       </div>
-
-      {/* Ad Content */}
-      {isVisible ? (
-        <div className="flex h-full items-center justify-center">
-          <div className="text-center">
-            <div className="mb-2 text-4xl text-gray-700">📢</div>
-            <div className="text-sm text-gray-600">
-              <div className="font-medium">Google AdSense</div>
-              <div className="text-xs">{label} - {slot}</div>
-            </div>
-            <div className="mt-2 text-xs text-gray-700">
-              {width}x{height}
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="flex h-full items-center justify-center">
-          <div className="text-center">
-            <div className="text-sm text-gray-700">Loading ad...</div>
-          </div>
-        </div>
-      )}
-
-      {/* Simulated Ad Content */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
-        <div className="absolute left-1/2 top-1/2 h-0.5 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-gray-600" />
-      </div>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block', width: '100%', minHeight: typeof height === 'number' ? `${height}px` : '90px' }}
+        data-ad-client="ca-pub-4051053911004228"
+        data-ad-slot={slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }
