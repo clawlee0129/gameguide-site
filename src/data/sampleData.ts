@@ -2605,3 +2605,28 @@ export const sampleGuides = [
     publishedAt: '2026-05-31', updatedAt: '2026-05-31',
   }
 ] as Guide[];
+
+export function getGameDisplay(game: Game, lang: 'en' | 'zh') {
+  return {
+    ...game,
+    title: lang === 'zh' ? game.titleZh : game.title,
+    description: lang === 'zh' ? game.descriptionZh : game.description,
+  };
+}
+
+export function getGuideDisplay(guide: Guide, lang: 'en' | 'zh') {
+  return {
+    ...guide,
+    title: lang === 'zh' ? guide.titleZh : guide.title,
+    metaDescription: lang === 'zh' ? guide.metaDescriptionZh : guide.metaDescription,
+    tags: lang === 'zh' ? guide.tagsZh : guide.tags,
+    gameTitle: lang === 'zh' ? guide.gameTitleZh : guide.gameTitle,
+    sections: guide.sections.map(s => ({
+      ...s,
+      title: lang === 'zh' ? s.titleZh : s.title,
+      content: lang === 'zh' ? s.contentZh : s.content,
+      images: s.images || [],
+    })),
+    excerpt: lang === 'zh' ? guide.excerptZh : guide.excerpt,
+  };
+}
