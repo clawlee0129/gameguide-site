@@ -14,16 +14,16 @@ const gradientColors = [
 ];
 
 const genreToCategory: Record<string, string[]> = {
-  'action-adventure': ['Action-adventure', 'Metroidvania', 'Action', 'Platformer', 'Hunting'],
-  'rpg': ['Action RPG', 'CRPG', 'RPG', 'Fantasy', 'Cyberpunk'],
-  'fps': ['FPS'],
+  'action-adventure': ['Action-adventure', 'Action-Adventure', 'Metroidvania', 'Action', 'Platformer', 'Hunting', 'Hack and Slash', 'Roguelike', 'Western', 'Sandbox'],
+  'rpg': ['Action RPG', 'CRPG', 'RPG', 'Fantasy', 'Cyberpunk', 'JRPG', 'Gacha'],
+  'fps': ['FPS', 'Tactical FPS', 'Hero Shooter', 'Shooter', 'Military'],
   'strategy': ['Strategy', 'Turn-based'],
   'soulslike': ['Souls-like', 'Soulslike'],
-  'open-world': ['Open World', 'Sci-fi'],
+  'open-world': ['Open World', 'Sci-fi', 'Exploration'],
   'indie': ['Indie'],
-  'multiplayer': ['Multiplayer'],
+  'multiplayer': ['Multiplayer', 'Co-op', 'Competitive'],
   'horror': ['Horror', 'Survival Horror'],
-  'simulation': ['Simulation', 'Survival', 'Monster-catching'],
+  'simulation': ['Simulation', 'Survival', 'Monster-catching', 'Monster Taming', 'Racing'],
 };
 
 export async function generateMetadata({
