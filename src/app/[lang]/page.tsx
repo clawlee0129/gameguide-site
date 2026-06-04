@@ -8,6 +8,7 @@ import { categories } from '@/data/site';
 import { sampleGuides, sampleGames, getGameDisplay, getGuideDisplay } from '@/data/sampleData';
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
+  try {
   const { lang } = await params;
   const dict = getDictionary(getLangFromParams({ lang }));
 
@@ -213,6 +214,15 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </div>
     </div>
   );
+  } catch (e: any) {
+    return (
+      <div style={{ padding: 40, color: 'white', background: '#111', minHeight: '100vh' }}>
+        <h1>Debug v2</h1>
+        <pre style={{ color: '#f44', whiteSpace: 'pre-wrap' }}>{e?.message || String(e)}</pre>
+        <pre style={{ color: '#888', whiteSpace: 'pre-wrap', fontSize: 12 }}>{e?.stack || 'no stack'}</pre>
+      </div>
+    );
+  }
 }
 
 // Updated: 2026-05-26 - Phase 3

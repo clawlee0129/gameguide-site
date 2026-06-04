@@ -2874,6 +2874,519 @@ export const sampleGuides = [
     publishedAt: '2026-06-02', updatedAt: '2026-06-02',
   },
 
+
+,
+{
+    id: 'g71',
+    slug: 'forza-horizon-6-best-drift-cars',
+    title: 'Forza Horizon 6 Best Drift Cars & Tuning Setups',
+    titleZh: '极限竞速地平线6：最佳漂移车辆与调校方案',
+    excerpt: 'Discover the top drift cars in FH6 with complete tuning setups for every budget, from affordable starter builds to pro-level drift machines.',
+    excerptZh: '极限竞速地平线6最佳漂移车辆指南，含全价位完整调校方案，从入门到专业漂移机器。',
+    content: "## Best Drift Cars in FH6\n\nForza Horizon 6 refined drift physics make car choice critical. The Silvia S15 remains the budget king with a 2JZ-GTE swap, race differential at 95% accel lock, street tires at max width, and drift springs with -5.0° front camber. For mid-range, the Toyota Supra MK4 holds 90+ km/h drift angles effortlessly. Use Manual+Clutch and clutch-kick at corner entry. At pro level, the Formula Drift Dodge Viper hits 1,200+ HP — set tire pressure 28/30 PSI front/rear, anti-roll bars 1/65, differential 100% accel lock.\n\n**Drift Zone Strategy:** Aim for 45-60° angles. E-brake entries cost points but set up long corners. Stay in 3rd/4th gear for control. Transition with throttle feathering, not handbrake.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg',
+    gameId: 'forza-horizon-6',
+    gameSlug: 'forza-horizon-6',
+    gameTitle: 'Forza Horizon 6',
+    gameTitleZh: '极限竞速地平线6',
+    difficulty: 'advanced',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['drift', 'tuning', 'cars', 'advanced'],
+    tagsZh: ['漂移', '调校', '赛车', '进阶'],
+    metaDescription: 'Complete FH6 drift cars guide with tuning setups. Budget, mid-range, and pro builds for every skill level.',
+    metaDescriptionZh: '极限竞速地平线6完整漂移车辆与调校指南。',
+    metaKeywords: ['forza horizon 6 drift', 'fh6 drift cars', 'fh6 tuning'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 8,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g72',
+    slug: 'forza-horizon-6-xp-money-farming',
+    title: 'Forza Horizon 6 Fastest XP & Money Farming Methods',
+    titleZh: '极限竞速地平线6：最快经验与金钱刷法',
+    excerpt: 'Maximize credits and XP per hour in FH6. Best races, skill song farming, auction house strategies, and AFK methods fully benchmarked.',
+    excerptZh: '极限竞速地平线6每小时内最大化信用点与经验，含最佳赛事、技能歌刷法、拍卖行和挂机方法。',
+    content: "## Fastest Farming Methods in FH6\n\n**1. Goliath AFK (Best Overall):** 50-lap Goliath blueprint with Lamborghini Sesto Elemento FE and all assists on. Rubber-band throttle for fully AFK. Yield: ~500,000 CR + 50 wheelspins/hour.\n\n**2. Skill Point Farming:** At the Horizon Festival Drag Strip, use a Hoonigan RS200. Chain drift + wreckage + speed skills. Bank at 500k x 7.0 multiplier for 10 SP per cycle (~3 min). Convert SP to wheelspins via car masteries. Yield: ~200,000 CR + 30 wheelspins/hour.\n\n**3. Auction House Flipping:** Monitor seasonal exclusives. Buy Sunday night when prices dip, sell Thursday at peak. Typical margin: 2-5 million CR per flip on Festival Playlist reward cars.\n\n**4. Horizon Arcade:** Complete all 3 rounds for 30 FP + wheelspin. Priority: Weekly Forzathon > Seasonal Championships > PR Stunts > Playground Games.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg',
+    gameId: 'forza-horizon-6',
+    gameSlug: 'forza-horizon-6',
+    gameTitle: 'Forza Horizon 6',
+    gameTitleZh: '极限竞速地平线6',
+    difficulty: 'beginner',
+    timeToComplete: 10,
+    sections: [],
+    tags: ['farming', 'credits', 'xp', 'beginner'],
+    tagsZh: ['刷钱', '信用点', '经验', '入门'],
+    metaDescription: 'Fastest XP and credit farming in Forza Horizon 6. AFK Goliath, skill point farming, auction flipping guide.',
+    metaDescriptionZh: '极限竞速地平线6最快经验与金钱刷法指南。',
+    metaKeywords: ['forza horizon 6 money', 'fh6 xp farming', 'fh6 afk'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 7,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g73',
+    slug: 'hollow-knight-godmaster-pantheon-guide',
+    title: 'Hollow Knight: Complete Godmaster Pantheon Guide',
+    titleZh: '空洞骑士：寻神者万神殿完全指南',
+    excerpt: 'Conquer all 5 Pantheons including Pantheon of Hallownest. Boss-by-boss strategies, charm loadouts, and practice routines for Godmaster DLC.',
+    excerptZh: '征服全部5座万神殿含圣巢万神殿，逐个首领策略、护符配置和练习路线。',
+    content: "## All 5 Pantheons Breakdown\n\n**Pantheon of the Master:** 10 bosses, entry fee Simple Key. Easiest tier — use Quick Slash + Mark of Pride + Unbreakable Strength. Practice Nailmaster Oro & Mato separately.\n\n**Pantheon of the Artist:** 10 bosses, harder mix. Oblobbles are the run-killer here. Use Shaman Stone + Spell Twister. Spam Descending Dark for i-frames against Oblobbles. Paintmaster Sheo telegraphs all attacks — watch his brush color (blue=upward, red=forward).\n\n**Pantheon of the Sage:** 10 bosses. God Tamer is the wall — kill the beast not the rider. Pogo the beast's roll attack. Grey Prince Zote: stay grounded, punish his nail slam landing. Always have full soul for Zote.\n\n**Pantheon of the Knight:** 10 bosses including Pure Vessel. **Pure Vessel strategy:** stay close, jump over lunge, shadow dash through triple slash, Descending Dark the focus explosion. Charm: Quick Slash, Strength, Mark of Pride, Sharp Shadow.\n\n**Pantheon of Hallownest:** All 42 bosses in sequence. Bench rooms after every 5 fights. Swap charms at benches (Sharp Shadow for PV, Longnail for NKG). Absolute Radiance final boss: phase 1 stay on bottom platform, phase 2 climb with Abyss Shriek, final phase double-jump to dodge orbs.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg',
+    gameId: 'hollow-knight',
+    gameSlug: 'hollow-knight',
+    gameTitle: 'Hollow Knight',
+    gameTitleZh: '空洞骑士',
+    difficulty: 'expert',
+    timeToComplete: 30,
+    sections: [],
+    tags: ['pantheon', 'boss', 'godmaster', 'expert', 'dlc'],
+    tagsZh: ['万神殿', '首领', '寻神者', '专家', 'DLC'],
+    metaDescription: 'Complete Hollow Knight Godmaster Pantheon guide. All 5 pantheons with boss strategies, charm loadouts, and practice tips.',
+    metaDescriptionZh: '空洞骑士寻神者万神殿完全攻略，全部5座万神殿首领策略与护符配置。',
+    metaKeywords: ['hollow knight pantheon', 'godmaster guide', 'pantheon of hallownest'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 12,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g74',
+    slug: 'starfield-ship-building-guide',
+    title: 'Starfield Ultimate Ship Building Guide: Best Parts & Designs',
+    titleZh: '星空：终极飞船建造指南，最佳配件与设计',
+    excerpt: 'Build the best ships in Starfield. Complete breakdown of reactor classes, weapon systems, hab modules, and 5 optimized ship designs for combat, cargo, and exploration.',
+    excerptZh: '打造星空中最强飞船，完整解析反应堆等级、武器系统、舱室模块及5款优化飞船设计。',
+    content: "## Ship Building Fundamentals\n\n**Reactor Classes:** A-class (fastest, 150 top speed, max 33 power) for dogfighters. B-class (balanced, 140 speed, max 39 power). C-class (heaviest, 130 speed, max 42 power) for battleships.\n\n**Key Parts by Class:**\n- **C-Class Reactor:** Pinch 8Z (40 power) from Stroud-Eklund Staryard.\n- **Best Shield:** Assurance SG-1800 (1,600 HP). Available at level 60 from Deimos Staryard.\n- **Best Weapons:** Particle Beam — Vanguard Obliterator Autoprojector (alpha beam + particle in one, ignores shields). For missiles: Atlatl 280C (lock range 4,000m).\n\n**Must-Have Habs:** Workshop (weapon/spacesuit modding), Science Lab (research), Control Station (extra crew slots), Armory (weapon displays).\n\n## 5 Optimized Designs\n\n**1. Crimson Fleet Hunter (C-Class Combat):** Pinch 8Z reactor, 6x Vanguard Obliterator, SG-1800 shield. 4,200 cargo. Layout: cockpit → control station → armory → docker.\n\n**2. Long Hauler (C-Class Cargo):** Pinch 8Z, 4x PB weapons, 3x SAL-6830 engines, 10,000+ cargo with Galleon S204 pods. Slow but unkillable.\n\n**3. Star Eagle Mk II (B-Class All-Rounder):** 104DS Mag Inertial reactor, 4x Vanguard Obliterator, 2x EM weapons (for boarding). 2,800 cargo, 140 top speed.\n\n**4. Razorleaf Upgrade (A-Class Dogfighter):** Spheromak DC202, 4x PB-30 Electron Beam, White Dwarf 3015 engines for 180 base speed.\n\n**5. Stealth Runner (B-Class):** Minimal mass, 1x1 habs only, no cosmetic parts. 150+ mobility. Perfect for smuggling missions with shielded cargo holds.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg',
+    gameId: 'starfield',
+    gameSlug: 'starfield',
+    gameTitle: 'Starfield',
+    gameTitleZh: '星空',
+    difficulty: 'advanced',
+    timeToComplete: 20,
+    sections: [],
+    tags: ['ship building', 'design', 'combat', 'advanced'],
+    tagsZh: ['飞船建造', '设计', '战斗', '进阶'],
+    metaDescription: 'Ultimate Starfield ship building guide. Best reactors, weapons, shields, and 5 optimized ship designs for every playstyle.',
+    metaDescriptionZh: '星空终极飞船建造指南，最佳反应堆、武器、护盾及5款优化飞船设计。',
+    metaKeywords: ['starfield ship building', 'starfield best ship', 'starfield reactor guide'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 12,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g75',
+    slug: 'cyberpunk-2077-cyberware-guide',
+    title: 'Cyberpunk 2077: Best Cyberware Builds for 2.0',
+    titleZh: '赛博朋克2077 2.0版：最佳义体配装指南',
+    excerpt: 'Optimize your cyberware loadout in Cyberpunk 2077 2.0. Best iconic cyberware, attribute synergy, and complete builds for Netrunner, Sandevistan, and Berserk.',
+    excerptZh: '优化赛博朋克2077 2.0义体配置，最佳不朽义体、属性协同及网络黑客/斯安威斯坦/狂战士完整配装。',
+    content: "## Cyberware Capacity & Attribute System\n\nPatch 2.0 ties cyberware capacity to Technical Ability. Every point in Tech raises capacity by +3. Iconic cyberware costs 30-50% more than regular but provides unique effects.\n\n**Skeleton Priority:**\n1. Para Bellum (+20% HP, always take)\n2. Epimorphic Skeleton (+30% HP, +2 Body)\n3. Dense Marrow (+25% melee damage, -10% stamina cost)\n\n## Netrunner Build (Intelligence 20)\n\n**Cyberdeck:** Tetratronic Rippler Mk5 (best for ultimate quickhack spread). **Frontal Cortex:** Ex-Disk (+4 RAM), COX-2 Cybersomatic Optimizer (quickhack crit 100%), Memory Boost (RAM recovery on kill).\n\n**Key Quickhacks:** Synapse Burnout (main damage), System Collapse (stealth takedown, traceable), Contagion + Overheat combo for explosions.\n\n## Sandevistan Build (Reflex 20)\n\n**OS:** Militech \"Apogee\" Sandevistan (85% slow, 8s duration, 20% headshot damage). **Circulatory System:** Biomonitor (auto-heal at 50% HP), Blood Pump (instant heal). **Nervous System:** Kerenzikov (aim-dodge slow).\n\n**Weapons:** Katana (Byakko or Scalpel) or throwing knives. With Apogee active, you can clear a room of 10 enemies before the slow ends.\n\n## Berserk Build (Body 20)\n\n**OS:** Militech Berserk Mk5 (-20% damage taken, +25% melee damage, infinite stamina). **Integumentary:** Subdermal Armor (+200 armor), Pain Editor (-10% damage). **Skeleton:** Bionic Joints (+5% armor), Para Bellum.\n\n**Weapons:** Gorilla Arms (best body checks) or Sir John Phallustiff. With Berserk active, charge into groups fearlessly. BioDyne Berserk adds HP regen on kill.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg',
+    gameId: 'cyberpunk-2077',
+    gameSlug: 'cyberpunk-2077',
+    gameTitle: 'Cyberpunk 2077',
+    gameTitleZh: '赛博朋克2077',
+    difficulty: 'advanced',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['cyberware', 'build', '2.0', 'advanced'],
+    tagsZh: ['义体', '配装', '2.0', '进阶'],
+    metaDescription: 'Best cyberware builds in Cyberpunk 2077 2.0. Netrunner, Sandevistan, and Berserk guides with optimal implant loadouts.',
+    metaDescriptionZh: '赛博朋克2077 2.0最佳义体配装指南，网络黑客、斯安威斯坦和狂战士最优植入物配置。',
+    metaKeywords: ['cyberpunk 2077 cyberware', 'best cyberware 2.0', 'cyberpunk builds'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g76',
+    slug: 'witcher-3-next-gen-alchemy-build',
+    title: 'The Witcher 3 Next-Gen: Ultimate Alchemy Combat Build',
+    titleZh: '巫师3次世代版：终极炼金战斗构筑',
+    excerpt: 'The most overpowered Witcher 3 build for Death March. Euphoria alchemy build with full potion/decoction optimization, mutagen synergy, and skill tree priority.',
+    excerptZh: '巫师3死而无憾难度最强构筑，瘾头炼金流完整药水/煎药优化、突变物协同与技能树优先级。',
+    content: "## Why Euphoria Alchemy Still Dominates\n\nThe Euphoria mutation (Blood and Wine DLC) increases sword damage and sign intensity by 0.75% per Toxicity point. At max 327 Toxicity, that's +245% damage. This outclasses all pure combat builds.\n\n## Skill Tree (54 Points)\n\n**Alchemy (Red Mutagens):** Heightened Tolerance (5/5, +1% overdose threshold per level), Acquired Tolerance (3/3, +max toxicity per known recipe), Synergy (5/5, +50% mutagen bonus), Protective Coating (5/5), Fixative (3/3), Hunter Instinct (5/5, +100% crit damage against target type).\n\n**Combat:** Muscle Memory (5/5), Strength Training (5/5), Whirl (5/5), Sunder Armor (5/5).\n\n**General:** Cat School Techniques (1/1, +100% crit damage +20% fast attack with light armor), Metabolic Control (1/1, +30 max toxicity).\n\n## Decoctions & Potions\n\n**Must-Run Decoctions:** Water Hag (+50% damage at full HP), Ekimmara (heal on damage dealt), Succubus (+attack power stacking), Troll (HP regen in combat). Total toxicity: 280.\n\n**Active Potions:** Thunderbolt (+35% attack power during storm or with Superior), Tawny Owl (+stamina regen at night), Maribor Forest (+adrenaline).\n\n**Rotation:** Drink 4 decoctions → fight starts → Thunderbolt → Maribor. Toxicity stabilizes at ~310, giving 232% damage boost from Euphoria.\n\n## Gear\n\n**Armor:** Manticore set (NG+ Legendary) — boosts max toxicity and critical damage. Light armor synergy with Cat School Techniques.\n\n**Swords:** Aerondight (silver, charges increase damage permanently) + Toussaint Knight Steel Sword.\n\n**Result at Level 100:** 15,000+ DPS with fast attacks, Whirl hits for 8,000+ per tick.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg',
+    gameId: 'the-witcher-3',
+    gameSlug: 'the-witcher-3',
+    gameTitle: 'The Witcher 3: Wild Hunt',
+    gameTitleZh: '巫师3：狂猎',
+    difficulty: 'advanced',
+    timeToComplete: 12,
+    sections: [],
+    tags: ['alchemy', 'build', 'death march', 'advanced'],
+    tagsZh: ['炼金', '构筑', '死而无憾', '进阶'],
+    metaDescription: 'Ultimate Witcher 3 Euphoria alchemy build for Death March. Complete potion/decoction setup, skill tree, and gear optimization.',
+    metaDescriptionZh: '巫师3死而无憾终极瘾头炼金构筑，完整药水/煎药配置、技能树及装备优化。',
+    metaKeywords: ['witcher 3 alchemy build', 'euphoria build', 'witcher 3 death march'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g77',
+    slug: 'dark-souls-3-pyromancy-build',
+    title: 'Dark Souls 3: Best Pyromancy Build & Weapons Guide',
+    titleZh: '黑暗之魂3：最强咒术构筑与武器指南',
+    excerpt: 'Complete Dark Souls 3 pyromancy PvE/PvP build. Stat allocation, best pyro spells, weapon infusions, rings, and boss strategies for pure pyro and dark hybrid builds.',
+    excerptZh: '黑暗之魂3完整咒术PvE/PvP构筑，属性分配、最佳咒术、武器质变、戒指及BOSS策略。',
+    content: "## Pyromancy Build Stats (SL125)\n\n**Vigor:** 35 | **Attunement:** 30 (5 slots) | **Endurance:** 25 | **Vitality:** 8 | **Strength:** 12 | **Dexterity:** 10 | **Intelligence:** 40 | **Faith:** 40 | **Luck:** 7 (Pyromancer start).\n\nInt+Faith softcap at 40/40 gives maximum pyromancy damage. Diminishing returns after 40 in either stat.\n\n## Best Pyromancies\n\n**PvE S-Tier:** Chaos Bed Vestiges (highest damage, large AoE, 2 slots), Great Chaos Fire Orb (lava pool leaves DoT), Rapport (turn enemies against each other — trivializes Lothric Castle).\n\n**PvP:** Black Flame (shield break, 2 hits guard-break any greatshield), Fire Surge (chip damage, unpunishable), Chaos Storm (wake-up punish).\n\n## Weapons & Infusions\n\n**Dark Infusion** (scales Int+Faith A/A):\n- Lothric Knight Sword (best all-around, 496 AR at 40/40)\n- Astora Greatsword (ultra with spear charge WA, 520 AR dark)\n- Longsword (low requirements, 440 AR dark)\n\n**Chaos Infusion** (for crits): Chaos Dagger + Hornet Ring = 1,400+ riposte damage.\n\n**Unique:** Demon's Scar (curved sword + pyromancy catalyst in one, true combo: R1 → Black Flame).\n\n## Rings\n\nGreat Swamp Ring (+12% pyro) + Witch's Ring (+20% pyro) mandatory. Sage Ring +2 (max casting speed at 10 DEX). Fire Clutch Ring (+15% fire damage, -10% absorption) for PvE, swap to Ring of Favor +3 for PvP.\n\n## Boss Strategy\n\nAll bosses except Old Demon King and Demon Prince are weak to Dark. For fire-resistant bosses, switch to Black Fire Orb and Black Flame (deal dark damage). Nameless King: keep distance, spam CBV when he finishes combos. Soul of Cinder: phase 1 bait pyro form (fire absorbs), phase 2 use dark.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg',
+    gameId: 'dark-souls-3',
+    gameSlug: 'dark-souls-3',
+    gameTitle: 'Dark Souls III',
+    gameTitleZh: '黑暗之魂3',
+    difficulty: 'intermediate',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['pyromancy', 'build', 'pve', 'intermediate'],
+    tagsZh: ['咒术', '构筑', 'PvE', '中级'],
+    metaDescription: 'Best Dark Souls 3 pyromancy build for PvE and PvP. Stats, spells, weapon infusions, rings, and boss strategies.',
+    metaDescriptionZh: '黑暗之魂3最强咒术PvE/PvP构筑，属性、咒术、武器质变、戒指和Boss策略。',
+    metaKeywords: ['dark souls 3 pyromancy', 'ds3 pyro build', 'dark souls 3 build guide'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g78',
+    slug: 'sekiro-gauntlets-of-strength',
+    title: 'Sekiro: Gauntlets of Strength Complete Walkthrough',
+    titleZh: '只狼：连战·跨越死斗完全攻略',
+    excerpt: 'Beat all 4 Gauntlets of Strength including Mortal Journey. Inner boss strategies, combat art recommendations, prosthetic tool loadouts, and no-damage tactics.',
+    excerptZh: '击败全部4个跨越死斗含终极连战，心中首领策略、忍技推荐、忍义手配置与无伤战术。',
+    content: "## Gauntlet Overview\n\nAfter beating the game, 4 Gauntlets unlock at Sculptor's Idols: Divine Heir (3 bosses), Shura (4 bosses), Severance (4 bosses), Mortal Journey (all 17 bosses consecutively). Completing the first 3 unlocks Inner Genichiro, Inner Father, and Inner Isshin respectively.\n\n## Divine Heir Gauntlet\n\n**Bosses:** Gyoubu → Lady Butterfly → Inner Genichiro.\n\n**Gyoubu:** Firecracker + grapple attack loop. Deflect his spear twirl for massive posture damage.\n\n**Lady Butterfly:** Shuriken when she jumps, sidestep counter after her kick combo, snap seeds for illusions.\n\n**Inner Genichiro:** New moves — Sakura Dance (3-hit lightning combo, deflect all 3 then lightning reversal the 3rd), chasing slice after arrow rain (dodge forward-right). Stay aggressive, his posture melts under constant pressure. When he sheathes, run away (mortal draw incoming).\n\n## Shura Gauntlet\n\n**Bosses:** Emma + Isshin Ashina → Demon of Hatred → Inner Father.\n\n**Inner Father (Owl):** New Mist Raven combo — he teleports behind you twice. First Mist Raven: dodge forward. Second: dodge backward into thrust counter. His fire owl now covers the arena in fire — jump to the edge and use Mist Raven prosthetic to teleport behind him. Best opening: after his shuriken→chasing slice, deflect the slice and Ichimonji Double.\n\n## Severance Gauntlet\n\n**Bosses:** Guardian Ape Duo → Great Shinobi Owl → True Corrupted Monk → Genichiro Way of Tomoe → Inner Isshin.\n\n**Inner Isshin:** Phase 1 adds a new sweep-mortal draw combo. Jump counter the sweep then dodge through the draw. Phase 2 spear sweeps have black flame trails — stay close, deflect everything, Mikiri the thrust finisher. Phase 3 add the lightning spiral — jump and reversal immediately, no delay.\n\n## General Tips\n- Use Ako's Sugar + Divine Confetti before each boss.\n- Save Yashariku's Sugar for Inner Isshin phase 3 (50% HP boost, one-shot range).\n- Purple Umbrella blocks all terror attacks (Guardian Ape scream, Headless).\n- Mortal Draw combat art works on all bosses, costs 3 emblems.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg',
+    gameId: 'sekiro',
+    gameSlug: 'sekiro',
+    gameTitle: 'Sekiro: Shadows Die Twice',
+    gameTitleZh: '只狼：影逝二度',
+    difficulty: 'expert',
+    timeToComplete: 25,
+    sections: [],
+    tags: ['gauntlet', 'boss', 'inner boss', 'expert'],
+    tagsZh: ['连战', '首领', '心中首领', '专家'],
+    metaDescription: 'Complete Sekiro Gauntlets of Strength walkthrough. All 4 gauntlets with Inner boss strategies, prosthetics, and combat arts.',
+    metaDescriptionZh: '只狼连战·跨越死斗完全攻略，全部4个连战心中首领策略、忍义手与忍技。',
+    metaKeywords: ['sekiro gauntlet', 'inner genichiro', 'inner isshin', 'mortal journey'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 12,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g79',
+    slug: 'valorant-agent-tier-list-map-guide',
+    title: 'Valorant Agent Tier List & Best Map Picks 2026',
+    titleZh: '无畏契约2026特工梯度榜与地图最佳选择',
+    excerpt: 'Updated Valorant agent tier list for each map. Best agent compositions per role (Duelist, Initiator, Controller, Sentinel), and meta analysis for ranked climb.',
+    excerptZh: '无畏契约各地图最新特工梯度榜，按角色最佳阵容（决斗/先锋/控场/守卫）及排位上分环境分析。',
+    content: "## S-Tier Agents by Role\n\n**Duelists:** Jett (Operator crutch, dash escape, highest pick rate), Raze (Saturate close-range maps, grenade chip damage).\n\n**Controllers:** Omen (smokes recharge, blind, 2 teleports), Viper (line-of-sight control, molly + smoke).\n\n**Initiators:** Sova (recon dart lineups essential on Breeze, Ascent), Skye (heal + flash + info, best all-rounder).\n\n**Sentinels:** Killjoy (turret + alarmbot + lockdown, anchors site solo), Cypher (trip wires for lurk, camera info).\n\n## Best Comps Per Map\n\n**Ascent:** Jett, Sova, Omen, Killjoy, KAY/O (Sova dart B main meta).\n**Bind:** Raze, Skye, Viper, Cypher, Brimstone (teleporter control, Viper wall B long).\n**Haven:** Jett, Breach, Omen, Killjoy, Sova (3-site defense needs KJ turret mid).\n**Split:** Raze, Skye, Viper, Cypher, Astra (tight corridors favor Raze nades).\n**Breeze:** Jett, Sova, Viper, Cypher, Yoru (long angles, Viper wall mid OP).\n**Icebox:** Jett, Sova, Viper, Killjoy, Sage (verticality, Viper poison orb A).\n**Lotus:** Raze, Fade, Omen, Killjoy, Breach (3-site needs fast rotates).\n**Sunset:** Jett, Skye, Omen, Cypher, KAY/O (mid control determines rounds).\n\n## Ranked Climb Tips\n- Lock 2 agents per role, fill as needed.\n- Instalock Jett below Diamond is griefing — learn Controller instead.\n- Communication: call damage numbers (\"Jett tagged 120\").\n- Economy: force buy when 3+ teammates have ults. Save on 2nd round after pistol win for bonus.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/2475430/header.jpg',
+    gameId: 'valorant',
+    gameSlug: 'valorant',
+    gameTitle: 'Valorant',
+    gameTitleZh: '无畏契约',
+    difficulty: 'intermediate',
+    timeToComplete: 10,
+    sections: [],
+    tags: ['tier list', 'agents', 'ranked', 'intermediate'],
+    tagsZh: ['梯度榜', '特工', '排位', '中级'],
+    metaDescription: 'Updated Valorant agent tier list 2026. Best agent compositions per map, role breakdown, and ranked climb strategies.',
+    metaDescriptionZh: '无畏契约2026最新特工梯度榜，各地图最佳阵容、角色分析与排位上分策略。',
+    metaKeywords: ['valorant tier list 2026', 'valorant agent guide', 'valorant map comps'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 8,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g80',
+    slug: 'genshin-impact-spiral-abyss-guide',
+    title: 'Genshin Impact: Spiral Abyss Floor 12 Complete Guide',
+    titleZh: '原神：深境螺旋12层完全攻略',
+    excerpt: 'Conquer Spiral Abyss Floor 12 with optimal team comps, enemy mechanics breakdown, rotation guides, and F2P-friendly strategies for 36-star clears.',
+    excerptZh: '征服深境螺旋12层，最优队伍配置、敌人机制解析、循环指南与零氪36星策略。',
+    content: "## Floor 12 Chamber 1\n\n**First Half (Hydro Mimics + Whopperflowers):** Bring Pyro DPS. Xiangling burst trivializes the mimic grouping. Bennett's circle purges Hydro debuff. Recommended: National Team (Xiangling, Xingqiu, Bennett, Sucrose).\n\n**Second Half (Ruin Guards + Grader):** Single-target Electro/Hyperbloom. Alhaitham Quickbloom or Raiden Hyper carries. Grader weak spot on glowing eye — aim for it with charged shots during spin attack.\n\n## Chamber 2\n\n**First Half (Consecrated Beasts):** Two waves of 2 beasts each. Use Freeze (Ayaka, Shenhe, Kokomi, Kazuha) to lock them down. Kazuha's grouping is essential. Without Freeze, use Zhongli shield and brute-force.\n\n**Second Half (ASIMON + Primal Constructs):** Need Electro+Quicken to break ASIMON invisibility. Fischl or Yae off-field electro mandatory. Nahida skill marks invisible ASIMON. Quickbloom melts through its HP pool.\n\n## Chamber 3\n\n**First Half (Maguu Kenki):** Single boss, predictable patterns. Dash through his dash-slash, stay close. National or Raiden Hyper demolishes him. His ghost clone phase — dodge toward him, not away. \n\n**Second Half (Perpetual Mechanical Array):** High HP pool (~2M at 3-man). After 30s, splits into 4 ruin sentinels — kill the marked glowing one to stun PMA. Hyperbloom or Nilou Bloom for continuous damage. Don't let PMA spin out of your circle impact.\n\n## F2P Team Recommendations\n- **Floor 12-1:** National / Hyperbloom\n- **Floor 12-2:** Freeze or Overload (Chevreuse teams)\n- **Floor 12-3:** Rational (Raiden National) / Nilou Bloom\n\nVR check: 70/140 crit ratio minimum for main DPS. ER requirements: Xiangling 200%, Xingqiu 200%, Bennett 220%.",
+    coverImage: 'https://webstatic.hoyoverse.com/upload/contentweb/2022/11/28/b14d47e529d6e59e7b5d3a8721f61f74_2391602368306700619.jpg',
+    gameId: 'genshin-impact',
+    gameSlug: 'genshin-impact',
+    gameTitle: 'Genshin Impact',
+    gameTitleZh: '原神',
+    difficulty: 'advanced',
+    timeToComplete: 20,
+    sections: [],
+    tags: ['spiral abyss', 'team comp', 'endgame', 'advanced'],
+    tagsZh: ['深境螺旋', '队伍配置', '终局', '进阶'],
+    metaDescription: 'Complete Genshin Impact Spiral Abyss Floor 12 guide. Best team comps, enemy mechanics, F2P strategies for 36 stars.',
+    metaDescriptionZh: '原神深境螺旋12层完全攻略，最佳队伍、敌人机制与零氪36星策略。',
+    metaKeywords: ['genshin spiral abyss', 'floor 12 guide', 'genshin 36 star'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 12,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g81',
+    slug: 'cs2-smoke-lineups-map-guide',
+    title: 'CS2 Complete Smoke & Utility Lineups Guide',
+    titleZh: 'CS2完整烟雾弹与道具投掷指南',
+    excerpt: 'Every essential CS2 smoke, flash, and molotov lineup. Mirage, Inferno, Ancient, Anubis, Vertigo, Nuke, and Overpass utility setups for T and CT sides.',
+    excerptZh: 'CS2全部关键烟雾弹、闪光弹与燃烧弹投掷点位，含Mirage、Inferno、Ancient等7张地图T/CT方道具配置。',
+    content: "## Mirage Smokes\n\n**T-Side:**\n- Window Smoke: Stand at T spawn trash corner. Aim top of left antenna. Jump throw. Lands perfectly on window ledge, blocks connector + window.\n- Jungle + Connector One-Way: Stand at ramp corner. Crouch, aim at wall crack above palace entrance. Left-click throw. Blocks CT jungle vision but you can peek from palace.\n- CT Spawn: Ramp box, line up with corner of building edge. Jump throw.\n\n**CT-Side:**\n- A Ramp Smoke: Stand behind triple box. Aim above Tetris sign. Lands ramp, stops fast A push.\n- Mid Window One-Way: From window, aim at top of underpass tunnel. Right-click throw. Smoke sits on window ledge, you see feet.\n\n## Inferno\n\n**T Banana Smokes:**\n- CT Cross Smoke: Stand at banana corner near T ramp. Line up crosshair with flowerpot on wall. Jump throw. Lands perfectly on CT cross, blocking coffin and CT.\n- Coffin Smoke: Same spot, aim lower. Normal throw.\n\n**T Apps Smokes:**\n- Pit Smoke: From second mid, aim at roof antenna. Jump throw. Blocks pit, allows safe balcony plant.\n- Library Smoke: From top mid, aim at church tower cross. Run throw.\n\n## Ancient\n\n**Mid Control Smokes:**\n- Donut Smoke: T spawn, line up with palm tree. Jump throw. Blocks donut entrance.\n- CT Mid Smoke: Same area, aim at pillar edge.\n\n## Anubis\n\n- B Main Smoke: T spawn near fountain, aim at A site temple arch. Jump throw. Blocks B site vision, allows B execute through main.\n\n**General Flash Tips:** Right-click flashes pop faster (1.5s) for close quarters. Left-click (3s) for long distances. Pop-flashing (flash just before peeking) is the single most impactful skill to learn.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg',
+    gameId: 'cs2',
+    gameSlug: 'cs2',
+    gameTitle: 'Counter-Strike 2',
+    gameTitleZh: '反恐精英2',
+    difficulty: 'intermediate',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['smokes', 'utility', 'lineups', 'intermediate'],
+    tagsZh: ['烟雾弹', '道具', '投掷', '中级'],
+    metaDescription: 'All essential CS2 smoke, flash, and molotov lineups for every competitive map. T and CT side utility guides.',
+    metaDescriptionZh: 'CS2全部关键烟雾弹、闪光弹与燃烧弹投掷点位，含所有竞技地图T/CT方道具指南。',
+    metaKeywords: ['cs2 smoke lineups', 'cs2 utility guide', 'cs2 grenade spots'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g82',
+    slug: 'delta-force-weapon-loadout-guide',
+    title: 'Delta Force: Best Weapon Loadouts & Attachments Guide',
+    titleZh: '三角洲部队：最佳武器配装与配件指南',
+    excerpt: 'Optimize your Delta Force loadouts. Best assault rifles, SMGs, sniper rifles, and DMR builds with attachment breakdowns, recoil patterns, and TTK comparisons.',
+    excerptZh: '优化三角洲部队配装，最佳突击步枪、冲锋枪、狙击枪与精确射手步枪配置，含配件分析、后座力模式与TTK对比。',
+    content: "## Best Assault Rifles\n\n**M4A1 (All-Rounder):**\n- Muzzle: SOCOM Brake (best recoil control)\n- Barrel: 14.5\" Extended (range + velocity)\n- Underbarrel: RVG Foregrip (horizontal recoil)\n- Optic: Holo A (1.5x, clean reticle)\n- Ammo: 5.56 Armor-Piercing (body TTK: 240ms)\n\n**SG552 (Aggressive):**\n- Muzzle: Compensator (vertical only)\n- Underbarrel: AFG (ADS speed)\n- Laser: PEQ-15 (hip-fire + sprint-to-fire)\n- Optic: Red Dot (fast ADS)\n\n## Best SMGs\n\n**MP5 (Close Quarters King):**\n- Muzzle: Monolithic Suppressor (stays off radar)\n- Stock: Collapsed (ADS speed)\n- Underbarrel: Merc Foregrip (hip-fire accuracy)\n- Laser: 5mW Laser (hip-fire spread -40%)\n- TTK: 180ms up to 15m\n\n**Vector .45 (Highest DPS):**\n- Silencer + Drum Mag (50 rounds mandatory). Recoil pulls hard right — practice counter-strafing to manage spread.\n\n## Sniper & DMR\n\n**M110 SASS (Semi-Auto):**\n- Muzzle: Precision Brake (follow-up shot recovery)\n- Barrel: 20\" Marksman\n- Grip: Sniper Grip (ADS stability)\n- Scope: 6x-12x Variable (use 6x for most engagements)\n- Ammo: M80A1 (two-tap body, one-tap head)\n\n**AX-50 (Bolt-Action):**\n- Monolithic + 32\" Barrel (max velocity at 1,100 m/s)\n- Tac Laser + Stippled Grip (ADS time from 480ms → 350ms)\n\n## Attachment Priority by Weapon Type\n\n1. **Recoil Control** → Muzzle + Underbarrel\n2. **ADS Speed** → Laser + Stock + Short Barrel\n3. **Range/Velocity** → Long Barrel + Monolithic\n4. **Handling** → Stippled Grip + Collapsed Stock\n\nPro tip: Use the Firing Range to test recoil patterns. Each gun has unique horizontal bias — learn the spray pattern direction.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/2144520/header.jpg',
+    gameId: 'delta-force',
+    gameSlug: 'delta-force',
+    gameTitle: 'Delta Force',
+    gameTitleZh: '三角洲部队',
+    difficulty: 'intermediate',
+    timeToComplete: 10,
+    sections: [],
+    tags: ['weapons', 'loadout', 'attachments', 'intermediate'],
+    tagsZh: ['武器', '配装', '配件', '中级'],
+    metaDescription: 'Best Delta Force weapon loadouts and attachments. AR, SMG, sniper and DMR builds with TTK data and recoil analysis.',
+    metaDescriptionZh: '三角洲部队最佳武器配装与配件指南，含TTK数据与后座力分析。',
+    metaKeywords: ['delta force weapons', 'delta force loadout', 'best guns delta force'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 8,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g83',
+    slug: 'subnautica-2-deep-biomes-guide',
+    title: 'Subnautica 2: Complete Deep Biomes & Resource Guide',
+    titleZh: '深海迷航2：完整深海生态区与资源指南',
+    excerpt: 'Navigate every deep biome in Subnautica 2. Resource locations, Leviathan spawns, base building spots, and depth module progression from Shallow Reefs to Abyssal Trench.',
+    excerptZh: '导航深海迷航2全部深海生态区，资源位置、利维坦刷新点、基地建造点与深度模块升级路线。',
+    content: "## Biome Progression\n\n**1. Shallow Reefs (0-50m):** Starter resources: Titanium (scrap metal), Copper (limestone), Quartz, Creepvine (fiber + lubricant). First base location: near thermal vent for early power.\n\n**2. Kelp Forest (30-150m):** Silver (sandstone), Gold, Stalker teeth (for enameled glass). Easy Seamoth depth module MK1 at 200m. Watch for Crashfish in caves.\n\n**3. Deep Grand Reef (200-500m):** Diamond (shale), Lithium, Gel Sack, Deep Shrooms (hydrochloric acid). First Prawn Suit drill nodes here. Ghost Leviathan juvenile patrols the edge — stay low and use silent running.\n\n**4. Lost River (500-900m):** Nickel (large deposits), Crystalline Sulfur (brine pools), Uraninite. Prawn Suit MK1 + Cyclops depth MK2 required. Ghost Leviathan adult in the bone fields — Cyclops shield module counters.\n\n**5. Inactive Lava Zone (900-1300m):** Kyanite (mandatory for thermal plant upgrades), Ion Cubes. Sea Dragon Leviathan patrols central chamber. Prawn Suit grapple arm for mobility — grapple the ceiling to swing over lava. Thermal plant fragments scattered near lava falls.\n\n**6. Abyssal Trench (1300-2000m, New in S2):** Void Crystal, Dark Matter deposits. Requires Cyclops depth MK3 + reinforced hull. New Void Leviathan: EMP disables Cyclops for 5 seconds. Carry backup power cells. Abyssal base: build near thermal vents, reinforced walls mandatory (base integrity -50 at this depth).\n\n## Leviathan Spawn Map\n- 3 Ghost Leviathans: Lost River entrance, Blood Kelp Zone, Grand Reef edge.\n- 2 Sea Dragons: Inactive Lava Zone.\n- 1 Void Leviathan: Abyssal Trench outer edge (patrol route).\n- 6 Reaper Leviathans: Crash Zone, Dunes, Mountains.\n\nBest base location: Grand Reef (200m, central to all resources, no immediate leviathans).",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/848450/header.jpg',
+    gameId: 'subnautica-2',
+    gameSlug: 'subnautica-2',
+    gameTitle: 'Subnautica 2',
+    gameTitleZh: '深海迷航2',
+    difficulty: 'intermediate',
+    timeToComplete: 20,
+    sections: [],
+    tags: ['biomes', 'resources', 'leviathans', 'base building', 'intermediate'],
+    tagsZh: ['生态区', '资源', '利维坦', '基地建造', '中级'],
+    metaDescription: 'Complete Subnautica 2 deep biomes guide. Resource locations, Leviathan spawns, base building, and depth module progression.',
+    metaDescriptionZh: '深海迷航2完整深海生态区指南，资源位置、利维坦刷新点、基地建造与深度模块升级。',
+    metaKeywords: ['subnautica 2 guide', 'subnautica biomes', 'subnautica leviathans'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 12,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g84',
+    slug: 'marvel-rivals-season-1-battle-pass-rewards',
+    title: 'Marvel Rivals Season 1 Battle Pass: All Rewards & Fast Leveling',
+    titleZh: '漫威争锋第一赛季战令：全奖励与快速升级指南',
+    excerpt: 'Complete Marvel Rivals Season 1 battle pass rewards list, Chrono Token farming optimization, best value redemption order, and leveling strategies.',
+    excerptZh: '漫威争锋第一赛季战令完整奖励列表、时空令牌刷取优化、最佳兑换顺序与升级策略。',
+    content: "## Battle Pass Structure\n\nSeason 1 Battle Pass has 80 tiers split across 10 pages. Each page unlocks at specific tier milestones. Total Chrono Tokens needed for full completion: 4,900. Battle Pass costs 1,000 Lattice (Premium) or free track with reduced rewards.\n\n**Free Track Highlights:**\n- Tier 10: 100 Chrono Tokens\n- Tier 25: Nameplate (Season 1 Exclusive)\n- Tier 40: Spray + MVP animation\n- Tier 60: Recruit Ticket (unlocks one hero)\n- Tier 80: Skin: Winter Soldier (Urban Ops)\n\n**Premium Track Highlights:**\n- Tier 10: Skin: Spider-Man (Neon Suit)\n- Tier 30: Skin: Luna Snow (K-Pop Star)\n- Tier 50: MVP Animation: Iron Man\n- Tier 70: Skin: Black Panther (Wakandan Royal)\n- Tier 80: Skin: Magneto (House of M)\n- Bonus Page: Exclusive emote + nameplate\n\n## Fast Leveling Methods\n\n**Daily Missions:** 3 per day, ~200 tokens each (600 daily). Complete all dailies for bonus 300 tokens = 900/day. Takes 30-40 minutes.\n\n**Weekly Challenges:** 5 per week, ~500 tokens each (2,500 weekly). Most are hero-specific (\"Get 20 kills as Vanguard\"). Stack compatible challenges (play Peni Parker for Vanguard + Defense + Damage Blocked).\n\n**Seasonal Missions:** 10-15 per season, ~1,000 tokens each. Complete at your own pace.\n\n**Optimal Daily Routine:** 1. Check hero-specific daily → pick that hero. 2. Queue Quick Match (faster queues than Competitive). 3. Complete 3 dailies + bonus ≈ 25-30 min. 4. Leave weeklies for weekend grinding.\n\n## Best Value Redemption\n\nSpend Chrono Tokens on pages with skins (1, 3, 5, 7, 10) first. Skip sprays and nameplates unless they gate page unlocks. Premium pass holders get 20% Token boost — always buy pass before grinding.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg',
+    gameId: 'marvel-rivals',
+    gameSlug: 'marvel-rivals',
+    gameTitle: 'Marvel Rivals',
+    gameTitleZh: '漫威争锋',
+    difficulty: 'beginner',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['battle pass', 'rewards', 'leveling', 'beginner'],
+    tagsZh: ['战令', '奖励', '升级', '入门'],
+    metaDescription: 'Complete Marvel Rivals Season 1 Battle Pass guide. All rewards, fastest Chrono Token farming, and best redemption strategy.',
+    metaDescriptionZh: '漫威争锋第一赛季战令完整指南，全部奖励、最快时空令牌刷法与最佳兑换策略。',
+    metaKeywords: ['marvel rivals battle pass', 'marvel rivals season 1', 'marvel rivals rewards'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g85',
+    slug: 'palworld-legendary-schematic-farming',
+    title: 'Palworld: Legendary Schematic & Legendary Pal Farming Guide',
+    titleZh: '幻兽帕鲁：传说图纸与传说帕鲁刷取指南',
+    excerpt: 'Farm every legendary schematic and Pal in Palworld. Boss respawn timers, optimal routes, best weapons for each fight, and drop rate optimization strategies.',
+    excerptZh: '刷取幻兽帕鲁全部传说图纸与传说帕鲁，Boss重生计时、最优路线、各战斗最佳武器与掉率优化策略。',
+    content: "## Legendary Schematics Drop Table\n\nAll legendary schematics drop from Alpha Pal bosses at a base 3% drop rate. Pal capture (not kill) also triggers the drop check.\n\n| Boss | Location | Schematic | Item | Capture Level |\n|------|----------|-----------|------|---------------|\n| Kingpaca | Small Settlement (NW) | Old Bow | Legendary Old Bow | 23 |\n| Blazamut | Scorching Mineshaft (SW) | Assault Rifle | Legendary AR | 49 |\n| Jetragon | Mount Obsidian (W) | Rocket Launcher | Legendary RL | 50 |\n| Frostallion | Land of Absolute Zero | Pal Metal Helm | Legendary Helm | 50 |\n| Paladius | Deep Sand Dunes (NE) | Pal Metal Armor | Legendary Armor | 50 |\n| Necromus | Deep Sand Dunes (NE) | Heat/Cold Armor | Legendary Climate | 50 |\n\n## Farming Route (Per Hour)\n\n**Optimal Loop (60 min):**\n1. Spawn at Mount Obsidian → Jetragon (3 min fight, 5 min respawn)\n2. Fast travel to Land of Absolute Zero → Frostallion (3 min)\n3. Fast travel to Deep Sand Dunes → Paladius + Necromus together (hardest fight, 5 min)\n4. Repeat. In 1 hour: ~6 Jetragon + 6 Frostallion + 4 Paladius/Necromus cycles.\n\n## Boss Fight Loadouts\n\n**Jetragon:** Rocket Launcher (aim at head while mounted on Frostallion). Dragon attacks do 50% damage to Frostallion — swap to Ice Pals to tank.\n\n**Frostallion:** Assault Rifle DPS, dodge sideways for ice breath. Fire Pals (Jormuntide Ignis) deal 2x damage.\n\n**Paladius + Necromus (Duo):** Hardest fight. Bring 5 perfect Anubis. Focus Paladius first (his charge stuns). Use walls and pillars to break line-of-sight. Aggro management: hit one, run away, the other might de-aggro if you get far enough.\n\n**Drop Rate Optimization:** Set world settings to 3x Pal Appearance Rate (spawns more Alphas). Don't kill — capture for double drop chance (capture roll + loot roll). 3% base → ~6% effective with capture.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg',
+    gameId: 'palworld',
+    gameSlug: 'palworld',
+    gameTitle: 'Palworld',
+    gameTitleZh: '幻兽帕鲁',
+    difficulty: 'advanced',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['legendary', 'schematic', 'farming', 'advanced'],
+    tagsZh: ['传说', '图纸', '刷取', '进阶'],
+    metaDescription: 'Complete Palworld legendary schematic farming guide. All boss locations, drop tables, optimal farming routes, and fight strategies.',
+    metaDescriptionZh: '幻兽帕鲁传说图纸完全刷取指南，全部Boss位置、掉落表、最优路线与战斗策略。',
+    metaKeywords: ['palworld legendary schematic', 'palworld legendary farming', 'palworld bosses'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g86',
+    slug: 'helldivers-2-illuminate-faction-guide',
+    title: 'Helldivers 2: Complete Illuminate Faction Strategy Guide',
+    titleZh: '地狱潜者2：完整光能者阵营策略指南',
+    excerpt: 'Master the Illuminate faction in Helldivers 2. Enemy unit breakdowns, best weapon loadouts, stratagem priorities, and Helldive difficulty tactics for solo and squad play.',
+    excerptZh: '掌握地狱潜者2光能者阵营，敌人单位解析、最佳武器配置、战略配备优先级与绝地潜兵难度单/多人战术。',
+    content: "## Illuminate Enemy Roster\n\n**Tripod (Light):** Fast, fires laser in bursts. Headshot kills instantly. Any medium-penetration weapon works. Pack Hunter swarm (5-8 at once) is the real threat — stun grenade groups, then mop up.\n\n**Overseer (Medium):** Floating unit with energy shield. Must break shield first (2-3 seconds of sustained fire), then headshot. Arc Thrower chains through shield. Observed Observer variant deploys scanning drones — kill before it completes scan (10-second timer), or patrols converge on your position.\n\n**Hunter (Medium, L4+):** Invisible melee assassin. Jetpack sound cue before strike — dive when you hear the jump-pack. Pummeler SMG stagger-locks them. Tesla Tower stratagem hard-counters Hunter packs.\n\n**Strider (Heavy):** Energy cannon with charge-up audio cue. 3 weak points: legs (mobility kill), eye plate (stun), rear core (kill). Recoilless Rifle to legs → finish with primary. Walking Barrage clears Striders on approach.\n\n**Watcher (Special):** Telepathic unit that buffs nearby Illuminate with +30% fire rate and damage. Red psychic link visible between Watcher and buffed units. Priority #1 target — Orbital Railcannon or AMR headshot.\n\n**Elevated Overseer (Elite):** Flies high, casts gravity wells. Shoot the jetpack to ground it, then finish. Carries plasma staff that one-shots Helldivers at close range.\n\n## Best Loadouts\n\n**Solo:** Tenderizer (AR, good stagger) + Senator (revolver, one-taps Overseers) + Impact Grenades. Stratagems: Shield Generator Pack, Arc Thrower, Orbital Laser, Eagle Airstrike.\n\n**Squad (4-man):** 2x Anti-tank (Recoilless + EATs) for Striders, 1x Crowd Control (Arc Thrower + Tesla Tower), 1x Support (Shield Pack + Supply Pack). One player runs smoke stratagems to break Watcher LOS.\n\n## Helldive Difficulty Tactics\n\n1. Keep moving. Illuminate patrols converge on stationary squads.\n2. Objective priority: Destroy Monoliths (spawn infinite Tripods) > Watchers > Striders.\n3. At extraction, place Tesla Towers in a triangle around the beacon. Tripods walk into them.\n4. Against Watcher buff waves: retreat, break LOS, reposition. Fight buffed enemies only after killing Watcher.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/553850/header.jpg',
+    gameId: 'helldivers-2',
+    gameSlug: 'helldivers-2',
+    gameTitle: 'Helldivers 2',
+    gameTitleZh: '地狱潜者2',
+    difficulty: 'advanced',
+    timeToComplete: 15,
+    sections: [],
+    tags: ['illuminate', 'faction', 'advanced', 'loadout'],
+    tagsZh: ['光能者', '阵营', '进阶', '配装'],
+    metaDescription: 'Master the Illuminate faction in Helldivers 2. Complete enemy guide, best loadouts, stratagems, and Helldive tactics.',
+    metaDescriptionZh: '掌握地狱潜者2光能者阵营，完整敌人指南、最佳配装、战略配备与绝地潜兵战术。',
+    metaKeywords: ['helldivers 2 illuminate', 'helldivers 2 faction guide', 'helldivers 2 helldive'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  },
+{
+    id: 'g87',
+    slug: 'hades-2-surface-route-guide',
+    title: 'Hades 2: Complete Surface Route Guide & Boss Strategies',
+    titleZh: '哈迪斯2：完整地表路线指南与Boss策略',
+    excerpt: 'Conquer the Surface route in Hades 2. All regions, enemy types, boss mechanics, best boons for surface runs, and secret encounters from Ephyra to Olympus.',
+    excerptZh: '征服哈迪斯2地表路线，全部区域、敌人类型、Boss机制、地表最佳祝福与从埃费拉到奥林匹斯的隐藏遭遇。',
+    content: "## Surface Route Regions\n\n**Ephyra (City):** Starting region. Hordes of automatons — armored, weak to Ares/Zeus boons. Prioritize armor-breaking hammers (Breaching Cross, Armor Crusher). Shop here always sells a Daedalus Hammer.\n\n**Fields of Mourning:** Endless wheat fields. Wailers (banshee enemies) apply Weak curse (-40% damage dealt). Hermes boons with dodge chance counter. Talos Construct (miniboss): stay behind it, the front cannon one-shots.\n\n**Thessaly (Ship Graveyard):** Shipwreck arena. Sirens cast targeted AoEs — listen for audio cues. The Siren Boss (3 sisters): focus one at a time. Kill order: Parthenope (healer) → Leucosia (damage buff) → Ligeia (tank).\n\n**Mount Olympus Summit:** Final region before boss. Giants with massive HP pools. Hestia boons (Scorch stack) melt through their HP. Avoid Demeter on this floor (giants resist Freeze).\n\n**The Unseen (Secret Floor):** Rare portal (Chaos Gate) leads to Chaos trial. Survive 60 seconds, then choose a major blessing (+50% attack damage, -30 HP per room). Worth the HP trade for boss.\n\n## Boss: Chronos (Titan of Time)\n\n**Phase 1 (Scythe):** \n- Forward slash → dodge sideways.\n- Spin attack → dash toward him (scythe hitbox is at the edge).\n- Time stop (hourglass appears) → break hourglass to end early.\n\n**Phase 2 (Titan Form, 50% HP):**\n- Rewind: Chronos rewinds 10 seconds of damage. Re-applies DoTs after rewind ends — keep applying Scorch/Hangover.\n- Hourglass Slam: arena-wide shockwave. Double-dash to avoid.\n- Minion Summon: adds with 1 HP but high damage. AoE boons (Zeus chain lightning, Poseidon splash) clear instantly.\n\n## Best Surface Boon Builds\n\n**Zeus + Aphrodite (Status Curse duo):** Chain lightning applies Jolted, Heartbreak Strike applies Weak. Privileged Status (+40% damage) online in 2 gods.\n\n**Hestia + Demeter (Scorch Freeze):** Stack Scorch to 300+ for bonus explosion. Freeze enemies inside Scorch AoE for massive burst.\n\n**Ares + Apollo (Doom Crit):** Apollo legendary makes Doom effects crit. Dire Misfortune boon + Impending Doom delay = 800+ crit damage per Doom.",
+    coverImage: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1145350/header.jpg',
+    gameId: 'hades-2',
+    gameSlug: 'hades-2',
+    gameTitle: 'Hades 2',
+    gameTitleZh: '哈迪斯2',
+    difficulty: 'advanced',
+    timeToComplete: 20,
+    sections: [],
+    tags: ['surface', 'boss', 'advanced', 'build'],
+    tagsZh: ['地表', '首领', '进阶', '构筑'],
+    metaDescription: 'Complete Hades 2 Surface route guide. All regions, bosses, best boon builds, and secret encounters from Ephyra to Olympus.',
+    metaDescriptionZh: '哈迪斯2地表路线完全指南，全部区域、Boss、最佳祝福构筑与隐藏遭遇。',
+    metaKeywords: ['hades 2 surface', 'hades 2 boss guide', 'hades 2 boon builds'],
+    author: 'GameGuide Team', published: true, views: 0, likes: 0, readingTime: 10,
+    publishedAt: '2026-06-03', updatedAt: '2026-06-03',
+  }
+
+,
+{
+    id: 'g88',
+    title: 'Marvel Rivals Hero Tier List & Best Team Compositions (Season 1)',
+    slug: 'marvel-rivals-tier-list-team-comps',
+    gameId: 'marvel-rivals',
+    category: 'strategy',
+    excerpt: 'Comprehensive hero tier list for Season 1, covering Vanguard, Duelist, and Strategist roles with optimal team compositions for ranked play.',
+    author: 'GameGuide',
+    readTime: 9,
+    publishedAt: '2026-05-28',
+    coverImage: '/images/guides/marvel-rivals-tier-list.jpg',
+    difficulty: 'intermediate',
+    content: `## Hero Tier List (Season 1)
+
+### Vanguard (Tank) Tier List
+
+| Tier | Heroes |
+|------|--------|
+| S | Doctor Strange, Magneto, Groot |
+| A | Venom, Thor, Peni Parker |
+| B | Captain America, Hulk |
+
+**S-Tier Analysis:**
+
+**Doctor Strange** remains the undisputed king of Vanguards. His portal mechanics allow for game-changing flanks and objective steals. With 800 HP and a massive shield, he's nearly impossible to displace when holding point.
+
+**Magneto** excels at peeling for backline supports and disrupting enemy ultimates with his Metal Bulwark. His ult counters virtually every projectile-based ultimate in the game, including Punisher's and Star-Lord's.
+
+**Groot** provides unmatched area control with his walls. A well-placed Thornlash Wall can split the enemy team in half, while Ironwood Wall gives your supports a safe pocket to heal from.
+
+### Duelist (DPS) Tier List
+
+| Tier | Heroes |
+|------|--------|
+| S | Hela, Black Panther, Winter Soldier |
+| A | Punisher, Psylocke, Spider-Man |
+| B | Iron Man, Scarlet Witch, Storm |
+
+**S-Tier Analysis:**
+
+**Hela** has dominated since launch with her hitscan two-tap headshot potential. Her Astral Flock escape makes her incredibly hard to dive, and her team-up with Thor and Loki provides free revives.
+
+**Black Panther** is the best flanker in the game. With sprint wall-climbing, double jump, and Spirit Rend resets on marked targets, a skilled Panther can wipe entire backlines before the enemy team reacts.
+
+**Winter Soldier** brings consistent mid-range pressure with his arm cannon and one of the best team-fight ults. His hook can pull enemies out of position, and Bionic Hook + Trooper's Fist combo deletes 250 HP heroes.
+
+### Strategist (Support) Tier List
+
+| Tier | Heroes |
+|------|--------|
+| S | Luna Snow, Adam Warlock, Loki |
+| A | Mantis, Cloak & Dagger, Rocket Raccoon |
+| B | Jeff the Land Shark |
+
+**S-Tier Analysis:**
+
+**Luna Snow** provides the highest healing output in the game with her Share the Stage mechanic. Her ultimate is arguably the best in the game — 12 seconds of mass healing or damage boost that can single-handedly win team fights.
+
+**Adam Warlock** excels in coordinated teams. Soul Bond distributes damage across the team, negating burst, and his Karmic Revival can bring back the entire team. His charged volley deletes squishies at close range.
+
+**Loki** is the ultimate flex pick. His illusions triple healing output and confuse enemies. His backstab passive melts tanks, and copying the right ultimate can turn any fight.
+
+## Best Team Compositions
+
+### Comp 1: Deathball Brawl
+\`\`\`text
+Vanguard: Doctor Strange, Groot
+Duelist: Winter Soldier
+Strategist: Luna Snow, Loki, Adam Warlock
+\`\`\`text
+**How it works:** Stack together and push as a unit. Groot walls create safe corridors, Strange shields the advance, Luna + Loki provide massive sustained healing, Adam Warlock Soul Bonds prevent picks. Winter Soldier hooks isolated targets into the meat grinder.
+
+### Comp 2: Dive Comp
+\`\`\`text
+Vanguard: Venom
+Duelist: Black Panther, Psylocke
+Strategist: Luna Snow, Mantis
+\`\`\`text
+**How it works:** Venom dives the backline first to draw attention and cooldowns. Black Panther and Psylocke follow up from different angles to collapse on supports. Luna and Mantis provide ranged healing and damage boost. Speed is everything — if the first pick doesn't happen in 5 seconds, disengage and reset.
+
+### Comp 3: Poke Comp
+\`\`\`text
+Vanguard: Magneto
+Duelist: Hela, Punisher, Iron Man
+Strategist: Rocket Raccoon, Adam Warlock
+\`\`\`text
+**How it works:** Hold high ground and wear down the enemy from range before they can engage. Magneto shields the DPS line, Hela and Punisher apply constant pressure. Iron Man provides aerial harassment and forces enemy hitscan swaps. Rocket's B.R.B. revives enable aggressive peeks, and his team-up with Punisher gives infinite ammo.
+
+## Ranked Tips
+
+1. **Ban Doctor Strange and Hela every game.** If the enemy team doesn't ban them, first-pick them.
+2. **Don't stagger.** If you lose two teammates, back up and wait. A 4v6 is unwinnable at high ranks.
+3. **Track ultimates.** Luna Snow and Adam Warlock ults define the meta. Bait them out before committing your own.
+4. **Comm your Portal.** Strange portal is the most impactful ability. Call out portal plays 10 seconds in advance so your team can position.
+5. **Flex at least two roles.** One-tricks get banned out at Diamond+. Learn at least one Vanguard and one Strategist.`,
+    tags: ['tier-list', 'team-comps', 'meta', 'season-1', 'Vanguard', 'Duelist', 'Strategist'],
+    relatedGuideIds: ['marvel-rivals-beginner-quick-start', 'g84'],
+    isFeatured: true,
+    gameName: 'Marvel Rivals'
+  }
+
 ] as Guide[];
 
 export function getGameDisplay(game: Game, lang: 'en' | 'zh') {
@@ -2891,7 +3404,7 @@ export function getGuideDisplay(guide: Guide, lang: 'en' | 'zh') {
       metaDescription: lang === 'zh' ? guide.metaDescriptionZh : guide.metaDescription,
       tags: lang === 'zh' ? guide.tagsZh : guide.tags,
       gameTitle: lang === 'zh' ? guide.gameTitleZh : guide.gameTitle,
-      sections: guide.sections.map(s => ({
+      sections: (guide.sections || []).map(s => ({
         ...s,
         title: lang === 'zh' ? s.titleZh : s.title,
         content: lang === 'zh' ? s.contentZh : s.content,
