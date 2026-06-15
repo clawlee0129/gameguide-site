@@ -1,5 +1,7 @@
 "use client";
 
+import SafeImage from "@/components/SafeImage";
+
 interface AffiliateCardProps {
   title: string;
   image: string;
@@ -17,14 +19,11 @@ export default function AffiliateCard({ title, image, url, price, store }: Affil
       className="flex items-center gap-4 p-3 rounded-lg border border-gray-200 dark:border-[#2a2a2a] bg-gray-50 dark:bg-[#1a1a1a] hover:border-[#6C3FB7]/40 dark:hover:border-[#6C3FB7]/40 transition-all group"
     >
       <div className="w-16 h-16 shrink-0 rounded-md bg-[#252525] overflow-hidden flex items-center justify-center">
-        <img
+        <SafeImage
           src={image}
           alt={title}
           className="w-full h-full object-cover"
           loading="lazy"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = "none";
-          }}
         />
         {!image && (
           <span className="text-xs text-[#a0a0a0]">No image</span>

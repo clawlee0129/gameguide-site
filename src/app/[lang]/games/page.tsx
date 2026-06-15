@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { sampleGames } from "@/data/sampleData";
 import SearchBar from "@/components/SearchBar";
+import SafeImage from "@/components/SafeImage";
 
 const PLATFORMS = ["All", "PS5", "Xbox", "PC", "Switch", "PS4"];
 const CATEGORIES = ["All", "RPG", "Action", "Adventure", "Horror", "Platformer", "Strategy", "Simulation", "Puzzle", "Fighting", "Racing", "Sports"];
@@ -166,12 +167,11 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
             {sorted.map((game) => (
               <Link key={game.id} href={`/${lang}/games/${game.slug}`} className="card bg-white dark:bg-[#1a1a1a] border-gray-200 dark:border-[#2a2a2a] overflow-hidden group">
                 <div className="aspect-video bg-[#252525] flex items-center justify-center text-[#6C3FB7] text-lg font-bold">
-                  <img
+                  <SafeImage
                     src={`/images/games/${game.slug}.jpg`}
                     alt={game.title}
                     loading="lazy"
                     className="w-full h-full object-cover"
-                    onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
                   />
                 </div>
                 <div className="p-4">

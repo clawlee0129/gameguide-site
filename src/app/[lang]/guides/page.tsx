@@ -3,6 +3,7 @@ import Link from "next/link";
 import { sampleGuides } from "@/data/sampleData";
 import type { Metadata } from "next";
 import SearchBar from "@/components/SearchBar";
+import SafeImage from "@/components/SafeImage";
 
 const CATEGORIES = ["All","RPG","Action","Adventure","Horror","Platformer","Strategy","Simulation","Puzzle","Fighting","Racing","Sports"];
 
@@ -72,12 +73,8 @@ export default async function GuidesPage({ params, searchParams }: {
           {guides.map((guide) => (
             <Link key={guide.id} href={`/${lang}/guides/${guide.slug}`} className="card overflow-hidden group bg-white dark:bg-[#1a1a1a] border-gray-200 dark:border-[#2a2a2a]">
               <div className="aspect-[16/9] relative overflow-hidden">
-                <img src={guide.image} alt={guide.title} loading="lazy" className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = `/images/games/${guide.gameId}.jpg`;
-                    img.onerror = () => { img.style.display = "none"; };
-                  }}
+                <SafeImage src={guide.image} alt={guide.title} loading="lazy" className="w-full h-full object-cover"
+                  fallbackSrc={`/images/games/${guide.gameId}.jpg`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white/80 dark:from-[#08080c]/80 via-transparent to-transparent pointer-events-none" />
               </div>

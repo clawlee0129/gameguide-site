@@ -3,6 +3,7 @@ import Link from "next/link";
 import { sampleGames, sampleGuides } from "@/data/sampleData";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import SafeImage from "@/components/SafeImage";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params;
@@ -102,11 +103,10 @@ export default async function GameDetailPage({ params }: { params: Promise<{ lan
 
         <div className="card overflow-hidden mb-8 bg-white dark:bg-[#1a1a1a] border-gray-200 dark:border-[#2a2a2a]">
           <div className="aspect-[21/9] relative bg-gray-100 dark:bg-[#1a1a1a] overflow-hidden">
-            <img
+            <SafeImage
               src={`/images/games/${game.slug}.jpg`}
               alt={game.title}
               className="w-full h-full object-cover"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-[#0f0f0f] via-transparent to-transparent pointer-events-none" />
           </div>
