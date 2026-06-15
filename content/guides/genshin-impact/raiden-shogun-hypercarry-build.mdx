@@ -1,0 +1,266 @@
+---
+title: "Raiden Shogun Hypercarry Build Guide: Weapons, Artifacts & Full Rotation"
+game: "Genshin Impact"
+category: "builds"
+difficulty: "intermediate"
+readingTime: "20 min"
+updatedAt: "2026-06-13"
+---
+
+## Introduction
+
+Raiden Shogun, the Electro Archon and ruler of Inazuma, is one of Genshin Impact's most versatile characters. While her National variant (Raiden / Xiangling / Xingqiu / Bennett) is a top-tier balanced comp, her Hypercarry team elevates Raiden from driver to primary damage dealer, concentrating the entire team's buffs into her 7-second Musou Shinsetsu window. At C0 with The Catch R5, Raiden Hypercarry clears Floor 12 consistently. At C2 (ignoring 60% of enemy DEF during Musou Shinsetsu), she becomes a top-3 speedrun character.
+
+This guide covers the complete Hypercarry build: C0 vs C2 damage comparison, weapon rankings for both F2P and premium options, 4pc Emblem optimization (including the critical Energy Recharge breakpoints), the premium team composition (Raiden / Kujou Sara C6 / Kazuha / Bennett), and the precise rotation that maximizes her 7-second Musou Shinsetsu window.
+
+## Raiden Shogun Kit Mechanics
+
+- **Elemental Skill (Eye of Stormy Judgment)**: Deploys an eye that follows the active character. Deals coordinated Electro attacks every 0.9 seconds when the active character deals damage. Also buffs party members' Elemental Burst DMG by 0.3% per point of Energy Cost (e.g., 24% for an 80-cost burst at Talent 10). Duration: 25 seconds. Cooldown: 10 seconds.
+- **Elemental Burst (Secret Art: Musou Shinsetsu)**: 90 Energy Cost. Raiden enters Musou Shinsetsu state for 7 seconds. All attacks become Electro-infused with separate multipliers (not Normal Attack talent). During this state, her attacks regenerate Energy for the entire party (2.5 flat Energy, 5 times max). Damage scales with Resolve stacks (gained from party members using their Elemental Bursts).
+- **A4 Passive (Enlightened One)**: Raiden gains 0.4% Electro DMG Bonus for every 1% Energy Recharge above 100%. At 270% ER, this provides 68% Electro DMG Bonus — functionally a free Electro Goblet.
+
+---
+
+## C0 vs C2: The Constellation Gap
+
+### C2: Steelbreaker
+
+> While in Musou Shinsetsu state, Raiden's attacks ignore 60% of enemy DEF.
+
+This is the single largest Constellation power spike for any limited 5-star character. Here's why:
+
+**DEF Calculation**: Enemy DEF reduces incoming damage by the formula `DEF / (DEF + 5 × Character Level + 500)`. Against a Level 100 enemy, your Level 90 character's attacks are reduced by approximately 50%.
+
+Ignoring 60% of that DEF means:
+- Without C2: Enemy effective DEF = 100% → ~50% damage reduction
+- With C2: Enemy effective DEF = 40% → ~28% damage reduction
+- Net damage increase: (1 - 0.28) / (1 - 0.50) = 1.44 → **~44% damage increase**
+
+| Comparison | C0 Raiden | C2 Raiden |
+|-----------|-----------|-----------|
+| Musou Shinsetsu damage multiplier | 1.0× (baseline) | 1.44× |
+| Abyss clear time (typical) | 90-120s per half | 50-70s per half |
+| Viable team comps | National, Hyperbloom, Hypercarry | Hypercarry (optimal), any comp |
+| Pull priority vs weapon | Pull C2 before Engulfing Lightning | — |
+
+**Pull Strategy**: C0 → C2 → C3. Engulfing Lightning is third priority. C2 is worth more than R1 Engulfing Lightning by a significant margin (~44% vs ~15% damage increase).
+
+---
+
+## Weapon Ranking
+
+Raiden's damage in Hypercarry scales with Energy Recharge (converted to Electro DMG% via A4 and Burst DMG% via 4pc Emblem), ATK, Crit, and ER.
+
+| Rank | Weapon | Base ATK | Substat | Notes | % of EL R1 |
+|------|--------|----------|---------|-------|-----------|
+| 1 | Engulfing Lightning R1 | 608 | 55.1% ER | +30% ER after Burst for 12s. ATK = 28% of ER above 100% (max 80%). | 100% |
+| 2 | Staff of Homa R1 | 608 | 66.2% Crit DMG | +20% HP, bonus ATK based on HP. <50% HP condition hard to maintain. | 91% |
+| 3 | Primordial Jade Winged-Spear R1 | 674 | 22.1% Crit Rate | ATK% stacks. High base ATK works well with Bennett buff. | 88% |
+| 4 | The Catch R5 | 510 | 45.9% ER | +32% Burst DMG, +12% Burst Crit Rate. F2P BiS. | 82% |
+| 5 | Skyward Spine R1 | 674 | 36.8% ER | +8% Crit Rate, +12% ATK SPD. ATK SPD doesn't add extra hits in Musou window. | 78% |
+| 6 | Wavebreaker's Fin R5 | 620 | 13.8% ATK | +80% Burst DMG (at 330 total party Energy). High ceiling, hard to reach. | 80-85% |
+| 7 | Deathmatch R5 | 454 | 36.8% Crit Rate | ATK% conditional buff. | 72% |
+| 8 | Favonius Lance R5 | 565 | 30.6% ER | Team battery. Lower personal damage. | 65% |
+| 9 | Prototype Starglitter R5 | 510 | 45.9% ER | +16% Normal/Charged ATK after Skill (doesn't buff Musou Shinsetsu hits). | 58% |
+| 10 | Dragon's Bane R5 | 454 | 221 EM | EM is low-value in Hypercarry (no reactions in rotation). | 55% |
+
+### Engulfing Lightning vs The Catch R5
+
+The Catch R5 is the F2P benchmark. At R5, it provides:
+- 45.9% ER (substat)
+- 32% Burst DMG (passive)
+- 12% Burst Crit Rate (passive)
+
+Engulfing Lightning R1 provides:
+- 55.1% ER (substat, ~10% more)
+- 30% ER for 12s after Burst (active during her 7s Musou window + 5s buffer)
+- ATK = 28% of ER above 100% → at 270% ER: (170 × 0.28) = 47.6% ATK
+
+**Damage Difference**: ~18-22% in favor of Engulfing Lightning. The Catch at R5 is 82% as strong. This means The Catch R5 is perfectly viable for 36-star Abyss clears — C2 with The Catch R5 does more damage than C0 with Engulfing Lightning R1.
+
+---
+
+## Artifact Set: 4-Piece Emblem of Severed Fate
+
+There is no debate. 4pc Emblem is Raiden's BiS in every team composition (Hypercarry, National, Hyperbloom EM). The 2pc (+20% ER) and 4pc (+Burst DMG = 25% of ER) synergize perfectly with her ER stacking and A4 passive.
+
+The 4pc effect caps at 75% Burst DMG (at 300% ER). Since Raiden typically runs 250-300% ER, she reaches near-maximum value from Emblem.
+
+**Alternative Sets (NOT recommended)**:
+- 4pc Thundering Fury: Viable for Aggravate driver Raiden, but Hypercarry Raiden does not trigger reactions (Sara/Kazuha/Bennett provide no reaction triggers during her burst window).
+- 2pc Emblem + 2pc ATK%: Loses ~20% damage vs 4pc Emblem.
+- 4pc Gilded Dreams / 4pc Flower of Paradise Lost: Only for Hyperbloom trigger Raiden (full EM build, different role).
+
+### Main Stats
+
+| Piece | Main Stat | Notes |
+|-------|-----------|-------|
+| Sands | ER% | Non-negotiable. Raiden's damage, energy generation, and team utility all scale with ER. |
+| Goblet | ATK% or Electro DMG% | ATK% with Engulfing Lightning; Electro DMG% with The Catch (less ATK from weapon). At high investment, difference is ~5%. |
+| Circlet | Crit Rate or Crit DMG | Balance for 1:2 ratio. The Catch gives 12% Crit Rate on Burst — factor this into your ratio. |
+
+### Substats Priority
+
+Crit Rate/Crit DMG > ER% (until 270%) > ATK% > Flat ATK
+
+**ER Breakpoints**:
+| ER% | A4 Electro DMG% | Emblem 4pc Burst DMG% | Total DMG% | Recommended For |
+|-----|-----------------|----------------------|-----------|-----------------|
+| 200% | 40% | 50% | +90% | Minimum — functional |
+| 220% | 48% | 55% | +103% | Low investment |
+| 250% | 60% | 62.5% | +122.5% | Sweet spot |
+| 270% | 68% | 67.5% | +135.5% | Optimal target |
+| 300% | 80% | 75% (capped) | +155% | Engulfing Lightning builds |
+
+**Target**: 270% ER for The Catch users, 280-300% for Engulfing Lightning users. Going beyond 300% ER provides diminishing returns (Emblem cap hit, ATK% conversion small).
+
+### Stat Targets (Endgame)
+
+| Stat | The Catch R5 Target | Engulfing Lightning R1 Target |
+|------|--------------------|-----------------------------|
+| ATK (before buffs) | 1,500-1,700 | 1,700-2,000 |
+| ER% | 270% | 280-300% |
+| Crit Rate | 60%+ (72% with Catch passive) | 65%+ |
+| Crit DMG | 120%+ | 150%+ |
+| Electro DMG% | 46.6% (Goblet) | Typically run ATK% Goblet (A4 + EL provides enough DMG%) |
+
+---
+
+## Hypercarry Team Composition
+
+### Premium Team: Raiden / Kujou Sara (C6) / Kazuha / Bennett
+
+| Character | Role | Key Gear | Constellation Requirement |
+|-----------|------|----------|--------------------------|
+| Raiden Shogun | Hypercarry | 4pc Emblem, The Catch R5 / Engulfing Lightning | C0 minimum, C2 optimal |
+| Kujou Sara | ATK Buffer, Electro Crit DMG Buffer | 4pc Emblem (Sub-DPS) or 4pc Noblesse, Skyward Harp / Sacrificial Bow / Favonius Warbow | **C6 mandatory** — 60% Electro Crit DMG is the team's core buff |
+| Kazuha | Grouper, VV Shred, DMG% Buffer | 4pc Viridescent Venerer, Freedom-Sworn / Xiphos' Moonlight / Iron Sting | C0 sufficient |
+| Bennett | ATK Buffer, Healer | 4pc Noblesse Oblige (if Sara isn't using it), Aquila Favonia / Sapwood Blade | C1 minimum, C5 ideal |
+
+**Why C6 Sara Is Mandatory**: Sara's C6 provides 60% Electro Crit DMG for 6 seconds after her Tenguu Juurai: Stormcluster. This 60% Crit DMG applies to Raiden's entire Musou Shinsetsu window. Without C6, Sara is outclassed by alternatives (Fischl for off-field damage, Lisa for DEF shred at A4).
+
+### Sara C6 Alternatives
+
+| Character | What They Provide | Team DPS (vs C6 Sara) |
+|-----------|------------------|----------------------|
+| Lisa (A4, TTDS) | 15% DEF shred (4s), 48% ATK (TTDS) | ~82% |
+| Fischl (C6, Elegy) | Off-field Electro DPS, ATK buff (Elegy) | ~80% |
+| Yae Miko | Off-field Electro DPS, no buffs | ~75% |
+| Mona (TTDS, 4pc Tenacity) | 60% DMG Bonus (Omen, 5s), 48% ATK (TTDS) | ~78% |
+
+### Team ER Requirements
+
+| Character | ER Target | Notes |
+|-----------|-----------|-------|
+| Raiden | 270%+ | Generates 25 flat Energy for team during her burst |
+| Sara | 180-200% | Her own burst (80 cost) + Raiden's energy regen |
+| Kazuha | 150-160% | Xiphos' Moonlight reduces this significantly |
+| Bennett | 200-220% | Solo Pyro, needs consistent burst uptime |
+
+---
+
+## Complete Rotation (22-second cycle)
+
+The Hypercarry rotation is extremely tight — Kazuha's VV shred and Sara's ATK buff both have short durations, and Raiden's Musou Shinsetsu must fit within both buff windows.
+
+### Step-by-Step Rotation
+
+| Step | Action | Buff Applied | Duration Remaining |
+|------|--------|-------------|-------------------|
+| 1 | Raiden E | Eye of Stormy Judgment (+24% Burst DMG to team) | 25s |
+| 2 | Kazuha E (tap) → Q | VV Electro shred (10s), A4 Electro DMG% (8s) | ~8-10s |
+| 3 | Bennett E → Q | ATK buff (12s), Noblesse ATK% (12s) | ~10-12s |
+| 4 | Sara E → Q (or just Q if C2+ to save time) | ATK buff (6s), C6 Crit DMG buff (6s) | ~5-6s |
+| 5 | Raiden Q | All buffs active. Musou Shinsetsu: N3C × 3 + N1C | Full burst window |
+| 6 | Raiden N3C combo | N3C = 3 normal attacks + Charged Attack. Repeat 3 times. Higher MV than N4/N5 strings. | — |
+| 7 | Raiden final N1C | If time remains, squeeze one more CA | — |
+| 8 | Battery phase | Bennett E → funnel to Sara/Kazuha | — |
+| 9 | Repeat from step 1 | Raiden E cooldown should be ready | — |
+
+### The Raiden N3C Combo Explained
+
+Raiden's optimal Normal Attack string during Musou Shinsetsu is N3C (3 Normal Attacks + Charged Attack):
+
+- N1: 79.6% MV (motion value)
+- N2: 74.2% MV
+- N3: 92.4% MV
+- CA: 134.6% MV + 107.1% MV (two hits)
+- Total N3C: 488% MV
+
+Repeat ×3: 1,464% MV per burst window. This is the highest sustained damage combo.
+
+Avoid N4 (slower, lower MV% per frame) and N5 (even slower). N1C spam is technically higher DPS but requires C1 (Charged Attacks cost less stamina during burst) to sustain — and loses Resolve hit count.
+
+### Timing Is Everything
+
+| Buff | Source | Duration | Must Cover |
+|------|--------|----------|------------|
+| VV Electro Shred | Kazuha (Swirl) | 10s | Raiden's entire burst |
+| A4 DMG% Bonus | Kazuha | 8s | Raiden's entire burst |
+| ATK Buff | Bennett Q | 12s | Raiden's entire burst |
+| ATK Buff + Crit DMG | Sara E/Q + C6 | 6s | Raiden's entire 7s burst + initial slash |
+
+Because Sara's buff lasts only 6 seconds and Raiden's burst lasts 7 seconds (including initial slash animation), you have approximately **1 second of buffer**. Swapping from Sara to Raiden and pressing Q must be instant.
+
+---
+
+## Damage Potential
+
+### C0R1 (The Catch R5, Hypercarry team)
+
+| Hit | Expected Damage |
+|-----|----------------|
+| Musou Shinsetsu Initial Slash | 90,000-120,000 |
+| N3C × 3 (each CA) | 25,000-35,000 |
+| Total per Burst (7 seconds) | 400,000-500,000 |
+| Total Team DPS (22s cycle) | 22,000-28,000 DPS |
+
+### C2R1 (Engulfing Lightning)
+
+| Hit | Expected Damage |
+|-----|----------------|
+| Musou Shinsetsu Initial Slash | 180,000-250,000 |
+| N3C × 3 (each CA) | 45,000-60,000 |
+| Total per Burst (7 seconds) | 700,000-950,000 |
+| Total Team DPS (22s cycle) | 40,000-50,000 DPS |
+
+At C2 with optimal gear, Raiden's burst alone deletes 70-90% of Floor 12-3 boss HP pools.
+
+---
+
+## Talent Priority
+
+| Priority | Talent | Target Level | Notes |
+|----------|--------|-------------|-------|
+| 1 | Elemental Burst (Q) | 10 (Crown) | Musou Shinsetsu. Crown it. |
+| 2 | Elemental Skill (E) | 9 | Increases Burst DMG buff (0.3% × Energy Cost per level). At Talent 9: 0.29% per Energy. |
+| 3 | Normal Attack | 1 | Musou Shinsetsu uses separate multipliers — NA talent does NOT affect Burst attacks. Leave at 1. |
+
+Talent books: Light (Monday/Thursday, Violet Court Domain in Inazuma).
+
+---
+
+## Constellations Priority
+
+| Constellation | Effect | Priority |
+|--------------|--------|----------|
+| **C2** | Musou Shinsetsu ignores 60% of enemy DEF | **Highest** — ~44% damage increase |
+| **C3** | +3 to Elemental Burst talent | **High** — ~18% damage increase (from 10→13) |
+| C1 | Faster Resolve accumulation (Electro characters give 80% more Resolve) | QoL — minor DPS increase (~5%) |
+| C4 | After Musou Shinsetsu ends, party (except Raiden) gains 30% ATK for 10s | Minor — buffs Sara/Kazuha/Bennett by small amount |
+| C5 | +3 to Elemental Skill | Low |
+| C6 | During Musou Shinsetsu, attacks reduce party Burst CD by 1s (max 5s) | Niche — enables speedrun rotations, useless in standard play |
+
+**Pull Priority**: C0 → C2 → C3. Stop at C3. C4-C6 are functionally cosmetic for Hypercarry.
+
+---
+
+## Common Mistakes
+
+1. **Not funneling particles to Sara**: Sara's 80-cost burst is difficult to recharge. After Raiden's burst ends, use Bennett E twice and funnel both particles to Sara before restarting rotation. Raiden's Energy restoration happens during her burst — by the time you're funneling, Sara should have ~50% Energy already if you built 180%+ ER.
+
+2. **Using Kazuha Q too early**: Kazuha's burst animation is long. If you Q before Bennett Q, VV shred wastes 2 seconds during setup. Always Bennett Q → Kazuha Q last before Sara.
+
+3. **ATK% Goblet when using The Catch**: The Catch has low Base ATK (510), meaning ATK% provides less value. Electro DMG% Goblet is mathematically superior with The Catch. Only consider ATK% Goblet with Engulfing Lightning (608 Base ATK + ATK conversion passive).
+
+4. **Building EM on Hypercarry Raiden**: In Hypercarry, Raiden does not trigger reactions. The team (Sara/Kazuha/Bennett) provides no consistent Hydro, Cryo, or Dendro application during Raiden's burst window. All EM substats are dead stats. EM Raiden is a separate build for Hyperbloom teams.

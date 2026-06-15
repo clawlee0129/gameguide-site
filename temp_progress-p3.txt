@@ -1,0 +1,14 @@
+P0-1: AdSense slots - in progress
+P0-2: Contact page - pending
+P0-3: Header nav fix - pending
+P0-4: Cover image fallback - pending
+P1-1: FAQ Schema - pending
+P1-2: VideoGame Schema - pending
+P1-3: Organization+WebSite Schema - pending
+P2-1: Categories capsules - already correct
+P2-2: Games sorting - pending
+P2-3: Platform icons - pending
+P2-4: Social share - pending
+P2-5: Footer social links - pending
+P2-6: Newsletter feedback - pending
+P2-7: View All links - already correct

@@ -1,0 +1,271 @@
+---
+title: "Genshin Impact Elemental Reactions Explained: Complete System Guide with Damage Formulas"
+game: "Genshin Impact"
+category: "beginner"
+difficulty: "beginner"
+readingTime: "20 min"
+updatedAt: "2026-06-13"
+---
+
+## Introduction
+
+Elemental Reactions are the central combat mechanic of Genshin Impact, transforming simple elemental applications into multiplicative damage multipliers. Understanding the reaction system is the single most impactful knowledge gap between a casual player and one who clears Spiral Abyss Floor 12. This guide covers every reaction type, the underlying damage formulas, Internal Cooldown (ICD) mechanics, Elemental Gauge theory, and how Dendro fundamentally changed the reaction landscape in Version 3.0.
+
+By the end of this guide, you'll understand why Hyperbloom deals 30K per seed while Overloaded hits for 8K — and how to build your teams to exploit these formulas.
+
+## The Three Reaction Categories
+
+Genshin Impact classifies all elemental reactions into three distinct categories based on how damage is calculated:
+
+| Category | Reactions | Damage Scaling | Affected By |
+|----------|-----------|---------------|-------------|
+| **Transformative** | Overloaded, Electro-Charged, Superconduct, Swirl, Shatter, Bloom, Hyperbloom, Burgeon | Level + EM only | Character Level, Elemental Mastery, Enemy RES |
+| **Amplifying** | Vaporize, Melt | Base DMG × multiplier | ATK, Crit, DMG%, Talent multipliers, EM, Enemy RES |
+| **Additive** | Aggravate, Spread | Base DMG + flat bonus | ATK, Crit, DMG% (for base hit), EM + Level (for bonus) |
+
+### Category 1: Transformative Reactions
+
+Transformative reactions deal a separate instance of damage **not** based on the triggering character's ATK, Crit, or DMG% bonuses. They scale exclusively with:
+- **Character Level** (Level Multiplier in the formula)
+- **Elemental Mastery** (EM Multiplier)
+- **Enemy Elemental RES**
+
+This makes transformative reactions extremely easy to build for — stack EM to 900-1000 and level your trigger character to 90.
+
+#### Base Transformative Reaction Formula
+
+```
+Transformative DMG = Level Multiplier × Reaction Base × (1 + EM Bonus + Reaction Bonus) × Enemy RES Multiplier
+```
+
+Where:
+- **Level Multiplier**: Scales from 574 (Level 80) to 1446 (Level 90) for Hyperbloom/Burgeon/Bloom; different values for others
+- **EM Bonus**: 16 × EM / (EM + 2000) — the same formula for all reactions
+- **Reaction Bonus**: From artifacts like 4pc Thundering Fury (+40% Superconduct/Overloaded/Electro-Charged) or 4pc Flower of Paradise Lost (+40% Bloom/Hyperbloom/Burgeon)
+- **Enemy RES Multiplier**: 1 - (RES - RES Shred/2) when RES > 0; 1 - RES/2 when RES < 0 (capped at 0.9 minimum)
+
+#### Reaction-Specific Details
+
+| Reaction | Reaction Base Multiplier | Level 90 DMG (0 EM) | Level 90 DMG (1000 EM) | Notes |
+|----------|------------------------|---------------------|------------------------|-------|
+| **Overloaded** (Pyro + Electro) | 2.0× | 5,784 | 30,166 | AoE Pyro damage. Knocks back small enemies. |
+| **Electro-Charged** (Electro + Hydro) | 1.2× per tick × 2 ticks | 3,470 per tick | 18,100 per tick | Ticks twice over ~2 seconds. Both Electro and Hydro auras persist. |
+| **Superconduct** (Cryo + Electro) | 0.5× | 1,446 | 7,542 | AoE Cryo damage. Reduces enemy Physical RES by 40% for 12 seconds. |
+| **Swirl** (Anemo + Pyro/Hydro/Electro/Cryo) | 0.6× | 1,735 | 9,050 | Spreads the swirled element to nearby enemies. |
+| **Shatter** (Heavy Attack + Frozen enemy) | 1.5× | 4,338 | 22,624 | Physical damage. Breaks Freeze. |
+| **Bloom** (Dendro + Hydro) | 2.0× | 5,784 | 30,166 | Creates Dendro Core. Explodes after 6 seconds or when limit (5) exceeded. |
+| **Hyperbloom** (Electro + Dendro Core) | 3.0× | 8,676 | 45,249 | Single-target homing missile. 1.5s ICD per target. |
+| **Burgeon** (Pyro + Dendro Core) | 3.0× | 8,676 | 45,249 | AoE Dendro damage. Also damages player (~5% of total). |
+| **Burning** (Pyro + Dendro) | 0.25× per tick | 361 per tick | ~1,883 per tick | Rapid small ticks. Scale factor atypical. |
+
+**Critical Note**: Transformative reactions **cannot crit** unless a character-specific passive allows it (Nahida C2 allows Bloom reactions to crit at 20% fixed rate with 100% Crit DMG).
+
+#### Why Hyperbloom Is So Strong
+
+Hyperbloom deals 3.0× the base multiplier with a Level 90 Multiplier of 1446. At 1000 EM (EM Multiplier ≈ 5.35), each seed deals:
+
+```
+1446 × 3.0 × (1 + 5.35) × 1.15 (Deepwood) × RES Multiplier ≈ 31,695 damage
+```
+
+A Dendro Core is generated every time Dendro and Hydro react (no ICD on Bloom reaction). With Nahida + Xingqiu/Yelan, you can generate 2-3 cores every 1.5 seconds. Kuki Shinobu triggers all of them — 60K+ DPS from a single character with zero Crit investment.
+
+---
+
+### Category 2: Amplifying Reactions
+
+Amplifying reactions multiply the **damage of the triggering attack** by a fixed multiplier. They inherit all stats of the base hit: ATK, Crit, DMG%, and Talent multipliers all apply.
+
+#### Vaporize and Melt Multipliers
+
+| Reaction | Trigger Order | Multiplier | Effect |
+|----------|--------------|------------|--------|
+| **Vaporize** | Pyro triggers on Hydro | 1.5× (Forward) | 50% damage increase |
+| **Vaporize** | Hydro triggers on Pyro | 2.0× (Reverse) | 100% damage increase |
+| **Melt** | Pyro triggers on Cryo | 2.0× (Forward) | 100% damage increase |
+| **Melt** | Cryo triggers on Pyro | 1.5× (Reverse) | 50% damage increase |
+
+**"Forward" vs "Reverse"**: A forward reaction consumes the aura element faster (strong side of the reaction). A reverse reaction consumes less aura, making it easier to maintain the aura for subsequent reactions. This is why **Reverse Vaporize** (Hydro on Pyro, like Xingqiu's Rain Swords enabling Hu Tao's Pyro attacks) is the meta — Hu Tao can Vaporize every charged attack because Pyro is the aura and Hydro is the trigger.
+
+#### Amplifying Reaction Formula
+
+```
+Amplified DMG = Base DMG × Reaction Multiplier × (1 + EM Bonus + Reaction Bonus)
+```
+
+Where Base DMG includes ATK, Talent%, Crit, and DMG% calculations — everything that goes into a normal hit. The EM Bonus is the same formula: 16 × EM / (EM + 2000) for Vaporize/Melt.
+
+**Example — Hu Tao Vaporize Charged Attack**:
+- Base CA damage (ATK, Crit, DMG% applied): 25,000
+- EM: 200 → EM Bonus = 2.78 × 200 / (200 + 1400) = 0.347 (34.7%)
+- Reaction: Reverse Vaporize (1.5×)
+- 4pc Crimson Witch: +15% Vaporize DMG
+
+```
+25,000 × 1.5 × (1 + 0.347 + 0.15) = 25,000 × 1.5 × 1.497 = 56,137
+```
+
+Compare without any EM (0 EM, Crimson Witch only):
+```
+25,000 × 1.5 × (1 + 0 + 0.15) = 43,125
+```
+
+~200 EM adds 30% total damage to Vaporize hits — roughly equivalent to a Crit DMG circlet.
+
+#### EM Investment Diminishing Returns
+
+The EM Bonus formula (16 × EM / (EM + 2000)) has logarithmic scaling:
+
+| EM | Bonus | Marginal Gain (per 100 EM) |
+|----|-------|---------------------------|
+| 0 | 0% | — |
+| 100 | 76.2% | 76.2% |
+| 200 | 127.3% | 51.1% |
+| 300 | 163.6% | 36.3% |
+| 500 | 200.0% | 20.7% |
+| 800 | 228.6% | 12.5% |
+| 1000 | 240.0% | 8.0% |
+
+After ~300 EM, Crit and ATK% substats provide more value than further EM stacking for amplifying reactions.
+
+---
+
+### Category 3: Additive Reactions (Quicken — Aggravate & Spread)
+
+Introduced in Version 3.0, Dendro + Electro reactions work fundamentally differently from all previous reactions.
+
+#### Quicken (Dendro + Electro)
+
+The base reaction is **Quicken**. When Dendro and Electro react, the enemy enters a **Quicken** state (lasts ~8-9 seconds, decays over time). While in Quicken state:
+- Applying Electro triggers **Aggravate**: adds a flat damage bonus to the Electro hit
+- Applying Dendro triggers **Spread**: adds a flat damage bonus to the Dendro hit
+
+Neither reaction removes the Quicken aura — they can both trigger repeatedly.
+
+#### Additive Reaction Formula
+
+```
+Total DMG = Base Hit DMG + Flat DMG Bonus
+Flat DMG Bonus = Level Multiplier × Reaction Coefficient × (1 + EM Bonus + Reaction Bonus) × Enemy RES Multiplier
+```
+
+Where:
+- **Reaction Coefficient**: Aggravate = 1.15, Spread = 1.25
+- **Level Multiplier**: Same as Transformative (1446 at Level 90)
+
+**Example — Fischl Aggravate (Level 90, 400 EM)**:
+- Fischl Oz attack: 4,000 base damage (ATK + Crit + DMG% applied)
+- Flat DMG Bonus = 1446 × 1.15 × (1 + 0.28) × Enemy RES = ~2,136
+- Total DMG = 4,000 + 2,136 = 6,136
+
+Compare without Aggravate: 4,000. With Aggravate: 6,136 — **53% damage increase**.
+
+**Why Additive Reactions Love Crit**: Unlike transformative reactions, the base hit portion of Aggravate/Spread still uses ATK, Crit, and DMG%. The flat bonus is simply added on top. This means building traditional Crit + ATK stats on Aggravate carries (Keqing, Yae Miko, Cyno) is still optimal — EM is a secondary stat that boosts the flat bonus portion only.
+
+**Optimal Stat Distribution for Aggravate DPS**:
+- EM: 200-400 (from substats, Sucrose buffs, or EM sands)
+- ATK%: Still primary for Sands (unless you have 200+ EM from substats)
+- Crit: Standard 1:2 ratio, 70:140+ target
+- Electro DMG% Goblet
+
+---
+
+## Internal Cooldown (ICD) — The Hidden Gatekeeper
+
+Every character's attacks and abilities have an Internal Cooldown that limits how often they can apply an element. Understanding ICD is critical for building reaction teams — it determines whether your Pyro DPS can Vaporize every hit or only every third.
+
+### Standard ICD Rules
+
+| Attack Type | ICD | Elemental Application Rate |
+|------------|-----|---------------------------|
+| Normal Attacks | 2.5 seconds OR 3 hits (whichever comes first) | Every ~2.5s or 3rd hit |
+| Charged Attacks | No ICD (most characters) | Every hit |
+| Elemental Skill (most) | Variable — 0s to 2.5s | Character-dependent |
+| Elemental Burst (most) | Variable | Character-dependent |
+| Catalyst Normal Attacks | Same as melee normals (2.5s/3 hits) | Every 3rd hit |
+| Plunging Attacks | No ICD | Every hit |
+
+### Notable ICD Exceptions
+
+| Character | Attack | ICD | Significance |
+|-----------|--------|-----|-------------|
+| Xiangling | Pyronado | **No ICD** | Pyronado applies Pyro on every hit — enables consistent Vaporize |
+| Xingqiu | Rain Swords (C6) | 1s OR 2-3-5 waves | Extremely fast Hydro application |
+| Hu Tao | Charged Attack | No ICD | Every CA can Vaporize |
+| Yoimiya | Normal Attacks | Standard (2.5s/3 hits) | Only Vapes hits 1, 4, 7 of her combo |
+| Fischl | Oz (A4) | No ICD | Every reaction-based A4 proc applies Electro |
+| Nahida | Tri-Karma Purification (E) | 2.5s | 2.5s between Dendro applications per marked enemy |
+
+### The ICD Advantage: Why Xiangling Is Broken
+
+Because Xiangling's Pyronado has no ICD, every spin applies Pyro. Combined with Xingqiu's Rain Swords (which apply Hydro extremely fast), Xiangling can trigger Reverse Vaporize on every Pyronado hit — effectively multiplying her entire burst damage by 1.5×. This is why Xiangling consistently out-damages 5-star Pyro DPS characters in National team compositions.
+
+---
+
+## Elemental Gauge Theory (Simplified)
+
+Every elemental application has a "gauge value" — a hidden number representing how much of the element is applied. The gauge decays over time and is consumed by reactions.
+
+| Application | Gauge Units |
+|------------|-------------|
+| Most Normal Attacks | 1U |
+| Most Elemental Skills | 1U-2U |
+| Most Elemental Bursts | 2U |
+| Bennett E (tap) | 2U |
+| Zhongli Hold E | 4U (Geo — instantly consumes all aura) |
+| Beidou Q initial cast | 4U |
+
+**Strong vs Weak Aura**: A 2U application creates a "strong" aura that lasts longer (approximately 12 seconds of decay) and can sustain more reactions before being depleted. A 1U application creates a "weak" aura (~9.5 seconds).
+
+**Why Forward Vape/Melt Is Difficult**: Forward Vaporize (Pyro on Hydro) at 1.5× consumes 0.625U of Hydro aura per trigger. Reverse Vaporize (Hydro on Pyro) at 2.0× consumes only 0.5U of Pyro aura. This means Forward reactions deplete the aura faster, making sustained Forward Vape/Melt team comps impractical — you cannot apply the aura element fast enough.
+
+---
+
+## Reaction Synergy and Team Building
+
+### Quicken + Dendro Core Reactions (Quickbloom / Hyperbloom)
+
+Because Quicken leaves both Dendro and Electro auras on the enemy, adding Hydro creates both Bloom (Dendro + Hydro → Dendro Core) and maintains Quicken. This enables "Quickbloom" teams where some attacks Aggravate while others trigger Hyperbloom — giving you the best of both reaction categories.
+
+**Example — Alhaitham Quickbloom**:
+- Nahida E + Xingqiu Q + Kuki E → enemy has Quicken aura + Dendro Cores spawning
+- Alhaitham attacks: some hits Aggravate (additive bonus), some hits create new Dendro Cores → Hyperbloom via Kuki
+- Result: Alhaitham's personal Spread damage + team Hyperbloom damage simultaneously
+
+### Freeze + Shatter
+
+Frozen enemies cannot move and take bonus Crit Rate from Blizzard Strayer (40%) + Cryo Resonance (15%). Shatter (heavy attacks like Claymore or Geo on Frozen) breaks the Freeze but deals physical Shatter damage. Claymore characters in Freeze teams are antisynergistic — they break Freeze unintentionally.
+
+### Swirl — The Deceptively Complex Reaction
+
+Swirl spreads the absorbed element in an AoE AND deals Swirl damage. But Swirl damage is transformative (EM-scaling, no Crit). Anemo characters can "double-swirl" (absorb two elements in one skill cast) through specific setups:
+
+**Double-Swirl Technique (Kazuha)**:
+1. Apply Element A to enemy (e.g., Hydro via Xingqiu E)
+2. Self-apply Element B (e.g., Bennett Q on Kazuha — applies Pyro to Kazuha)
+3. Kazuha E → absorbs Pyro from self and swirls Hydro from enemy
+4. Result: Both Hydro and Pyro get VV RES shred + Kazuha A4 DMG% bonus for both elements
+
+This is why Kazuha is the premium support — he can buff two elements simultaneously.
+
+---
+
+## Practical Reaction Cheat Sheet
+
+| You Apply | Enemy Has | Reaction | Category | Best Use |
+|-----------|-----------|----------|----------|----------|
+| Pyro | Hydro | Vaporize (2.0×) | Amplifying | Hu Tao, Yoimiya, Diluc |
+| Hydro | Pyro | Vaporize (1.5×) | Amplifying | Childe, Xingqiu, Yelan |
+| Pyro | Cryo | Melt (2.0×) | Amplifying | Ganyu Melt, Wriothesley Melt |
+| Cryo | Pyro | Melt (1.5×) | Amplifying | Niche — hard to sustain Pyro aura |
+| Electro | Dendro (Quicken) | Aggravate | Additive | Keqing, Yae Miko, Cyno, Fischl |
+| Dendro | Quicken | Spread | Additive | Alhaitham, Tighnari, Nahida |
+| Electro | Dendro Core | Hyperbloom | Transformative | Kuki Shinobu, Raiden (EM) |
+| Pyro | Dendro Core | Burgeon | Transformative | Thoma, Dehya |
+| Dendro | Hydro | Bloom | Transformative | Nilou, general Dendro teams |
+| Electro | Hydro | Electro-Charged | Transformative | Taser teams |
+| Pyro | Electro | Overloaded | Transformative | Overload teams (Chevreuse) |
+| Cryo | Electro | Superconduct | Transformative | Physical DPS — enemy RES shred |
+| Cryo | Hydro | Freeze | Control | Ayaka, Ganyu Freeze |
+| Anemo | Any (except Geo/Dendro) | Swirl | Transformative | VV shred + elemental spread |
+| Geo | Any | Crystallize | Shield | Zhongli, Albedo, Navia |

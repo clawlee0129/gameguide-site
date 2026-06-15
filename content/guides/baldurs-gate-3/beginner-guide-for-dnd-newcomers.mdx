@@ -1,0 +1,347 @@
+---
+title: "Baldur's Gate 3 Beginner's Guide for D&D Newcomers: Core Rules, Combat Actions & Leveling Explained"
+game: "Baldur's Gate 3"
+category: "beginner"
+difficulty: "beginner"
+readingTime: "20 min"
+updatedAt: "2026-06-12"
+---
+
+## Introduction
+
+Baldur's Gate 3 is built on Dungeons & Dragons 5th Edition rules, and if you've never played a D&D campaign or a CRPG before, the flood of numbers, acronyms, and dice rolls can be overwhelming. This guide translates every core D&D mechanic into plain English, explains the action economy, and gives you the knowledge you need to build characters confidently without memorizing the Player's Handbook. By the end, you'll understand AC, saving throws, advantage, spell slots, concentration, and everything else the game assumes you already know.
+
+## The Core Mechanic: The d20 Roll
+
+Every action in BG3 — swinging a sword, persuading a guard, dodging a fireball — boils down to this formula:
+
+**d20 + relevant modifiers ≥ target number = success**
+
+The game rolls a 20-sided die (d20) behind the scenes, adds your character's bonuses, and compares the total to a target number. The d20 determines whether you succeed; your bonuses determine how often.
+
+### Common Target Numbers (DC — Difficulty Class)
+
+| DC | Difficulty | Example |
+|----|-----------|---------|
+| 5 | Very Easy | Kicking down a rotting door |
+| 10 | Easy | Convincing a scared goblin to talk |
+| 15 | Medium | Picking an average lock |
+| 20 | Hard | Persuading an enemy commander to surrender |
+| 25 | Very Hard | Talking a boss into killing themselves |
+| 30 | Nearly Impossible | Convincing an archdevil to betray his master |
+
+**Natural 20 (Critical Success)**: Rolling a 20 on the d20 (before modifiers) is an automatic success on attack rolls and saving throws. On ability checks (persuasion, lockpicking, etc.), a natural 20 is not an automatic success by core D&D rules, but BG3 often treats it as one — you cannot fail a DC 10 check on a natural 20.
+
+**Natural 1 (Critical Failure)**: Rolling a 1 on the d20 is an automatic failure on attack rolls (and often on ability checks in BG3). You cannot succeed even if your modifiers would otherwise guarantee it.
+
+## Combat Core Systems
+
+### Armor Class (AC)
+
+**AC = how hard you are to hit.** When an enemy attacks you, they roll d20 + their attack bonus. If the total ≥ your AC, the attack hits. If it's lower, the attack misses.
+
+| Armor Type | AC Formula | Examples |
+|------------|-----------|----------|
+| **No Armor** | 10 + Dexterity modifier | Wizard, Sorcerer (if no Mage Armor) |
+| **Mage Armor** | 13 + Dexterity modifier | Wizard/Sorcerer with the spell active |
+| **Light Armor** | Armor base + full Dexterity modifier | Leather Armor: 11 + Dex, Studded Leather: 12 + Dex |
+| **Medium Armor** | Armor base + Dexterity modifier (max +2) | Scale Mail: 14 + Dex (max 2) = 16 AC with 14+ Dex |
+| **Heavy Armor** | Flat AC from armor, no Dexterity bonus | Chain Mail: 16 AC. Plate Armor: 18 AC. |
+| **Shield** | +2 AC (equipped in off-hand) | Requires proficiency |
+
+**What's a good AC?**
+- **Level 1-4**: 16-18 AC is solid
+- **Level 5-8**: 18-20 AC is expected
+- **Level 9-12**: 20-24 AC is achievable with magic items
+
+### Attack Rolls
+
+When you attack, the game calculates:
+
+**Attack Roll = d20 + Proficiency Bonus (if proficient with weapon) + relevant Ability Modifier**
+
+- Melee weapons: **Strength** modifier (unless the weapon has the "Finesse" property, then you can use **Dexterity** instead)
+- Ranged weapons: **Dexterity** modifier
+- Spell attacks (Fire Bolt, Scorching Ray, Eldritch Blast): **Spellcasting Ability** modifier (Int for Wizards, Wis for Clerics, Cha for Bards/Sorcerers/Warlocks)
+
+**Damage Calculation**: If you hit, damage = weapon/spell base damage + relevant ability modifier. Physical weapons add Strength (or Dexterity for finesse/ranged). Most spells do NOT add your ability modifier to damage unless a class feature says otherwise (e.g., Draconic Sorcerer Level 6, Agonizing Blast invocation).
+
+### Proficiency Bonus
+
+Your Proficiency Bonus represents your character's general competence and training. It's based on your total character level, not class level:
+
+| Character Level | Proficiency Bonus |
+|-----------------|-------------------|
+| 1-4 | +2 |
+| 5-8 | +3 |
+| 9-12 | +4 |
+
+Proficiency applies to: weapons you're proficient with, skills you're proficient in, saving throws from your class, and your spell save DC.
+
+**What "proficiency" means in BG3**: When you equip a weapon your class isn't trained with, your attack roll doesn't get the Proficiency Bonus. A Sorcerer swinging a greatsword: d20 + Strength only. A Fighter swinging it: d20 + Strength + Proficiency. This is a +2 to +4 difference — significant.
+
+### Advantage & Disadvantage
+
+This is the single most important tactical concept in BG3.
+
+- **Advantage**: Roll the d20 **twice** and take the higher result. Roughly equivalent to +5 to your roll.
+- **Disadvantage**: Roll the d20 **twice** and take the lower result. Roughly equivalent to -5 to your roll.
+
+**Advantage and disadvantage cancel each other out** — no matter how many sources of each you have, if you have at least one of both, you roll normally.
+
+**Common Advantage Sources**:
+- Attacking a prone enemy from within 3m
+- Attacking an enemy you can't see but who can't see you (blind, invisible)
+- Attacking from hiding (stealth)
+- True Strike cantrip (2 turns of advantage — generally not worth the action)
+- Reckless Attack (Barbarian Level 2 — all attacks have advantage, but enemies have advantage against you)
+- Various spells: Faerie Fire, Guiding Bolt, Hold Person (guaranteed criticals against held targets)
+
+**Common Disadvantage Sources**:
+- Attacking an enemy at long range with a ranged weapon
+- Attacking while Blinded, Poisoned, Frightened, or Restrained
+- Attacking a prone enemy from more than 3m away with a ranged attack
+- Heavy Armor without the required Strength (Chain Mail requires 13 Str, Plate requires 15)
+
+### Saving Throws
+
+When something happens TO you (a spell, a poison, a trap, a shove), you don't use AC — you make a **saving throw**. The attacker has a **Spell Save DC**; you roll d20 + your saving throw modifier.
+
+**Spell Save DC = 8 + Proficiency Bonus + Spellcasting Ability Modifier + gear bonuses**
+
+**Your saving throw = d20 + relevant ability modifier + proficiency bonus (if proficient in that save)**
+
+Each class gives proficiency in two saving throws:
+
+| Class | Saving Throw Proficiencies |
+|-------|---------------------------|
+| Barbarian | Strength, Constitution |
+| Bard | Dexterity, Charisma |
+| Cleric | Wisdom, Charisma |
+| Druid | Intelligence, Wisdom |
+| Fighter | Strength, Constitution |
+| Monk | Strength, Dexterity |
+| Paladin | Wisdom, Charisma |
+| Ranger | Strength, Dexterity |
+| Rogue | Dexterity, Intelligence |
+| Sorcerer | Constitution, Charisma |
+| Warlock | Wisdom, Charisma |
+| Wizard | Intelligence, Wisdom |
+
+**In practice**: Constitution saves are the most common (concentration, poison, cold). Wisdom saves are the most dangerous to fail (Hold Person, Dominate, Fear). Dexterity saves are for dodging explosions (Fireball).
+
+## Action Economy: Your Turn Breakdown
+
+Every character's turn consists of up to four resources. Understanding this is the difference between struggling and dominating combat.
+
+| Resource | Per Turn | Examples |
+|----------|----------|----------|
+| **Action** | 1 | Attack, cast a spell, Dash, Disengage, Hide, Help, Throw, Shove, use an item |
+| **Bonus Action** | 1 | Off-hand attack (dual wielding), Jump, Drink a potion, Shove (some builds), cast certain quick spells (Healing Word, Misty Step) |
+| **Reaction** | 1 per round | Opportunity Attack (enemy leaves melee range), Counterspell, Shield spell, Opportunity Attack |
+| **Movement** | Up to your speed (9m standard) | Move, climb, swim |
+
+**Crucial Rules**:
+- Your Action and Bonus Action are not interchangeable. You can't "trade" your Action for a second Bonus Action.
+- Extra Attack (Level 5+ martial classes): one Action gives you two attacks (or three for Level 11 Fighter).
+- Spells: You can only cast ONE leveled spell (Level 1+) per turn using a spell slot. Cantrips don't count. If you cast Fireball (Level 3) as your Action, you CANNOT cast Healing Word (Level 1) as your Bonus Action. You COULD cast Fireball + a cantrip, or Fireball + Misty Step (Misty Step is a Bonus Action spell, and the rule is: if you cast ANY spell as a Bonus Action, your Action can only be a cantrip).
+- **Haste**: Gives you an additional Action, but this Haste Action can only be used for: one weapon attack, Dash, Disengage, Hide, or Use an Object. You CANNOT cast a second leveled spell with the Haste Action.
+
+### Common Action Uses You Might Miss
+
+| Action | Effect | When to Use |
+|--------|--------|-------------|
+| **Dash** | Double movement speed for the turn | Reaching a distant enemy or escaping |
+| **Disengage** | Movement doesn't trigger Opportunity Attacks | Escaping melee safely |
+| **Hide** | Stealth check; if successful, enemies can't target you | Rogue setup, pure survival |
+| **Help** | Revive a downed ally (0 HP → 1 HP) | Any ally down |
+| **Shove** | Push enemy up to 3m (Strength vs Athletics/Acrobatics) | Push enemies off ledges |
+| **Throw** | Throw an item, potion, or enemy | Throw healing potions at allies, throw enemies off cliffs |
+| **Dip** | Dip weapon in a surface (fire, poison, etc.) for bonus damage | Dipping in fire for +1d4 fire damage |
+
+## The Rest System
+
+### Short Rest
+- Restores **50% of max HP**
+- Restores Warlock spell slots, Fighter's Action Surge/Second Wind, Monk's Ki, Druid's Wild Shape charges
+- Does NOT restore spell slots for most classes
+- **2 per long rest** (3 if you have a Bard with Song of Rest)
+- Takes 0 in-game time
+
+### Long Rest
+- Fully restores HP and all resources
+- Advances story — camp events, companion dialogue, and quest progression often trigger only during long rests
+- Consumes **40 Camp Supplies** (80 on Tactician/Honour Mode)
+- Takes the game to nighttime
+
+**Important**: Long rest FREQUENTLY. Many new players avoid resting to preserve resources and miss dozens of companion scenes. If you don't rest often enough, you'll queue up multiple camp events and some can be permanently lost. After every 2-3 combat encounters or every major story beat, long rest.
+
+### Partial Rest
+- Long rest **without consuming supplies**
+- Restores **half your HP and half your spell slots** (rounded down)
+- Triggers camp events the same as a full long rest
+- Use this when you're low on supplies but need to advance story
+
+## Spellcasting Fundamentals
+
+### Spell Slots
+
+Spell slots are your "mana" — you expend a slot of the spell's level (or higher) to cast. When you run out of slots, you can only cast cantrips (at-will spells that cost no slots).
+
+| Class Level | Spell Slots (Caster) | Max Spell Level |
+|-------------|---------------------|-----------------|
+| 1 | 2 × Level 1 | 1 |
+| 3 | 4 × L1, 2 × L2 | 2 |
+| 5 | 4 × L1, 3 × L2, 2 × L3 | 3 |
+| 7 | 4 × L1, 3 × L2, 3 × L3, 1 × L4 | 4 |
+| 9 | 4 × L1, 3 × L2, 3 × L3, 3 × L4, 1 × L5 | 5 |
+| 11 | 4 × L1, 3 × L2, 3 × L3, 3 × L4, 2 × L5, 1 × L6 | 6 |
+
+**Upcasting**: You can cast a Level 1 spell using a Level 3 spell slot. The spell's effect scales up (e.g., Magic Missile fires more bolts at higher levels). This does not require learning the spell at a higher level — it's automatic.
+
+**Prepared Spells**: Clerics, Druids, Paladins, and Wizards prepare spells from their full known list each day. You can change your prepared spells anytime outside of combat. Sorcerers, Warlocks, and Bards have fixed Known Spells — you pick them on leveling up and can only swap one per level.
+
+### Concentration
+
+**Concentration is the most important spellcasting mechanic you need to understand.**
+
+Many powerful spells require "Concentration" — you can only concentrate on one spell at a time. If you cast a second concentration spell, the first one ends immediately.
+
+**When you take damage while concentrating**: You must make a **Constitution saving throw**. The DC is 10 or half the damage taken, whichever is higher (minimum DC 10). If you fail, the concentration spell ends.
+
+**Concentration spells** include: Bless, Haste, Hold Person, Spirit Guardians, Hunger of Hadar, Wall of Fire, Hypnotic Pattern, Fear, Dominate Person, Hold Monster, Banishment, Cloudkill, Globe of Invulnerability, and many more.
+
+**Protecting concentration**: 
+- **War Caster** feat: Advantage on concentration saves
+- **Resilient: Constitution** feat: Proficiency in Constitution saves
+- High Constitution score
+- Staying out of melee range
+- The AI prioritizes attacking concentrating casters — position accordingly
+
+**One concentration per caster**: If Shadowheart casts Bless and then tries to cast Spirit Guardians, Bless ends. Plan your party's concentration economy: one character on Bless, one on Haste, one on a control spell.
+
+## Ability Scores
+
+### The Six Abilities
+
+| Ability | What It Does |
+|---------|-------------|
+| **Strength (Str)** | Melee attack/damage (non-finesse), carrying capacity, shove resistance, Athletics checks, jump distance |
+| **Dexterity (Dex)** | Ranged/finesse attack/damage, AC (no/light/medium armor), Initiative, Acrobatics, Stealth, Sleight of Hand, most common saving throw |
+| **Constitution (Con)** | HP (critical — affects every level), concentration saves, endurance |
+| **Intelligence (Int)** | Wizard spellcasting, Arcana/History/Investigation/Religion checks |
+| **Wisdom (Wis)** | Cleric/Druid/Ranger spellcasting, Perception (most important skill), Insight, Survival, common save vs mind control |
+| **Charisma (Cha)** | Bard/Paladin/Sorcerer/Warlock spellcasting, Persuasion/Deception/Intimidation/Performance, vendor prices |
+
+### Ability Modifiers
+
+| Score | Modifier | Score | Modifier |
+|-------|----------|-------|----------|
+| 8-9 | -1 | 14-15 | +2 |
+| 10-11 | +0 | 16-17 | +3 |
+| 12-13 | +1 | 18-19 | +4 |
+| 20 | +5 | 22 | +6 |
+
+**Even numbers matter**: The modifier only increases at even scores. A stat of 15 gives the same +2 bonus as a stat of 14. Never leave your primary stat at an odd number if you can avoid it.
+
+### Soft Caps & Stat Priority
+
+For new players building their first character, the single most important rule is: **Vigor → 40. Primary stat → 20.**
+
+Wait — wrong game. In BG3: **Constitution to 14 minimum. Primary stat to 16 starting, then 20 by endgame.** 
+
+There is no "Vigor" in BG3. Constitution determines your HP. A wizard with 8 Constitution has about 40 HP at level 12; a barbarian with 16 Constitution has about 140.
+
+| Priority | Stat | Target | Notes |
+|----------|------|--------|-------|
+| 1 | Primary casting/fighting stat | Start 16-17, end 20 | Str for Fighter/Barb/Paladin, Dex for Rogue/Ranger/Monk, Int for Wizard, Wis for Cleric/Druid, Cha for Bard/Sorc/Warlock |
+| 2 | Constitution | Start 14-16 | More HP = more survival. Never below 12. |
+| 3 | Dexterity | 10-14 (unless Dex is primary) | Initiative and AC. Never below 10 — going last in combat is dangerous. |
+| 4 | Everything else | Whatever remains | |
+
+## Multiclassing Requirements
+
+In BG3, you can take levels in any class at any level-up. However, each class has ability score prerequisites:
+
+| Class | Prerequisite |
+|-------|-------------|
+| Barbarian | Strength 13 |
+| Bard | Charisma 13 |
+| Cleric | Wisdom 13 |
+| Druid | Wisdom 13 |
+| Fighter | Strength 13 OR Dexterity 13 |
+| Monk | Dexterity 13 AND Wisdom 13 |
+| Paladin | Strength 13 AND Charisma 13 |
+| Ranger | Dexterity 13 AND Wisdom 13 |
+| Rogue | Dexterity 13 |
+| Sorcerer | Charisma 13 |
+| Warlock | Charisma 13 |
+| Wizard | Intelligence 13 |
+
+**Key multiclass breakpoints**:
+- **Level 4**: ASI/feat
+- **Level 5**: Extra Attack (martials), 3rd-level spells (casters)
+- **Level 6**: Subclass features, second ASI for Fighter
+- **Level 8**: Second ASI for most classes
+- **Level 11**: Improved Extra Attack for Fighter (3 attacks)
+
+## Respec (Respecialization)
+
+Speak to **Withers** (found in the Dank Crypt near the starting beach, or he shows up at your camp automatically after you progress enough). He lets you fully respec any character for **100 gold**.
+
+- Resetting a character takes them back to Level 1 with all experience intact — you immediately re-level them up to their current total level.
+- You can change: class, subclass, ability scores, skills, spells, and level distribution across multiclass.
+- You cannot change: race, background, appearance (except via the Magic Mirror in camp).
+- Every companion can be respecced too — turn Shadowheart into a Paladin, Gale into a Barbarian, Astarion into a Bard.
+
+**Exploit for Honour Mode pickpocketing**: Respec a character, and Withers' inventory resets. You can repeatedly respec to refresh his gold for pickpocketing.
+
+## Inspiration
+
+Inspiration points allow you to **reroll any failed ability check** (persuasion, lockpicking, etc.). You gain Inspiration from performing actions that align with your character's Background:
+
+| Background | Gains Inspiration From |
+|------------|----------------------|
+| **Acolyte** | Religious acts, helping clerics, discovering divine lore |
+| **Charlatan** | Deceiving people, successful pickpocketing, smooth-talking |
+| **Criminal** | Stealing, lockpicking, breaking the law |
+| **Folk Hero** | Helping commoners, heroic rescues |
+| **Guild Artisan** | Crafting, trading, business deals |
+| **Noble** | Diplomatic victories, displays of wealth/status |
+| **Outlander** | Exploring new areas, surviving wilderness encounters |
+| **Sage** | Discovering lore, reading books, solving puzzles |
+| **Soldier** | Combat victories, following orders, strategic decisions |
+| **Urchin** | Helping the poor, stealing from the rich, navigating cities |
+| **Entertainer** | Musical performances, entertaining crowds, dramatic moments |
+
+Maximum Inspiration: **4 points**. Use them on critical dialogue checks (persuading bosses, crucial lockpicks, disabling traps). Don't waste points on minor checks you can retry.
+
+## Alignment in BG3
+
+Traditional D&D alignment (Lawful Good, Chaotic Evil, etc.) does not exist mechanically in BG3. Instead, your choices have reputation consequences:
+
+- **Companion Approval**: Each companion has an approval meter. High approval unlocks romance and personal quests. Low approval can cause companions to leave or even attack you.
+- **Faction reputation**: Helping or harming factions changes how NPCs react.
+- **No cosmic alignment**: A Paladin can break their Oath by committing evil acts (becoming an Oathbreaker), but there's no overarching alignment shift. Your actions speak for themselves.
+
+## Quick-Start Tips
+
+1. **Talk to everyone**. Many quests, companions, and items come from dialogue. The "Speak with Dead" and "Speak with Animals" spells reveal hidden information everywhere.
+
+2. **Press Left Alt** (or hold the highlight key) to highlight all interactive objects. You'd be surprised how much loot you walk past.
+
+3. **Examine enemies** (right-click, Examine). This shows their stats, resistances, vulnerabilities, and abilities. Use it before every fight.
+
+4. **High ground gives +2 to ranged attack rolls**. Low ground gives -2. Position your archers and casters accordingly.
+
+5. **Surfaces matter**. Oil + Fire = explosion. Water + Lightning = double damage. Ice = enemies slip. Use Create Water and throw grease bottles strategically.
+
+6. **Pick up every camp supply**. Food, drink, and camp supply packs are scattered everywhere. You need them for long rests.
+
+7. **Use the environment**. Chandeliers can be dropped on enemies. Explosive barrels (firewine, smokepowder, oil) are everywhere. Bridges can be destroyed.
+
+8. **Don't kill merchants**. Selling loot to merchants is your primary gold source. If you must kill a merchant, buy everything you want first, then pickpocket your gold back, then (optionally) kill them.
+
+9. **Gale needs to eat magic items**. If you recruited Gale, he needs to consume three magical items (green/blue/purple/legendary rarity) to progress his quest. Items with no other value (Ring of Colour Spray, Komira's Locket) are perfect. If you don't feed him, he leaves permanently.
+
+10. **Split your party**. Use the "Ungroup" function (G key) to position characters before combat. Have your rogue sneak ahead to scout and disarm traps. Position your ranged characters on high ground before initiating dialogue.

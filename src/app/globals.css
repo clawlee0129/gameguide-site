@@ -1,15 +1,104 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-:root { --primary: #6C3FB7; --primary-hover: #5A2FA0; --bg: #0f0f0f; --bg-card: #1a1a1a; --bg-card-hover: #252525; --text: #ffffff; --text-muted: #a0a0a0; --border: #2a2a2a; }
+/* ===== Base ===== */
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
 
-body { background: var(--bg); color: var(--text); font-family: var(--font-geist-sans), sans-serif; }
+.dark body {
+  background: radial-gradient(ellipse at top, #1a1a2e 0%, #08080c 70%);
+  color: #ffffff;
+}
 
+body {
+  background: radial-gradient(ellipse at top, #f3e8ff 0%, #f8fafc 70%);
+  color: #0f172a;
+}
+
+html.dark body {
+  background: radial-gradient(ellipse at top, #1a1a2e 0%, #08080c 70%);
+  color: #ffffff;
+}
+
+/* ===== Selection ===== */
+::selection {
+  background: #a855f7;
+  color: #ffffff;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #08080c;
+}
+::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(168, 85, 247, 0.3), 0 0 15px rgba(168, 85, 247, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 35px rgba(168, 85, 247, 0.2);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Utility Classes ===== */
 @layer utilities {
-  .text-gradient { background: linear-gradient(135deg, var(--primary), #9B59B6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; }
-  .card:hover { background: var(--bg-card-hover); border-color: var(--primary); }
-  .btn-primary { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-weight: 600; transition: background 0.2s; }
-  .btn-primary:hover { background: var(--primary-hover); }
-  .btn-outline { border: 1px solid var(--border); color: var(--text); padding: 10px 24px; border-radius: 8px; font-weight: 600; transition: all 0.2s; }
-  .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+  .animate-glowPulse {
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+  .animate-slideRight {
+    animation: slideRight 0.8s ease-out both;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #c084fc, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-hero {
+    background: linear-gradient(to right, #c084fc, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }

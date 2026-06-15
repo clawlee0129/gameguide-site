@@ -1,0 +1,225 @@
+---
+title: "Hu Tao DPS Build Guide: Weapons, Artifacts, Teams & Rotation"
+game: "Genshin Impact"
+category: "builds"
+difficulty: "intermediate"
+readingTime: "20 min"
+updatedAt: "2026-06-13"
+---
+
+## Introduction
+
+Hu Tao, the 77th Director of the Wangsheng Funeral Parlor, has been one of Genshin Impact's premier Pyro DPS characters since her release in Version 1.3. Her unique kit revolves around sacrificing HP to enter the Paramita Papilio state, massively converting her HP into ATK while infusing all her attacks with Pyro. At C0, Hu Tao demands mechanical mastery of jump/dash cancels to maximize her charged attack output. At C1, she becomes significantly more fluid. With the release of Furina in Version 4.2 and Xianyun in Version 4.4, Hu Tao gained powerful new team compositions that rival her traditional Double Hydro setup.
+
+This guide covers every aspect of optimizing Hu Tao: weapon rankings with math, the Crimson Witch vs Shimenawa debate, artifact stat targets, talent priorities, Double Hydro team rotations, and the newer Plunge Tao variant.
+
+## Hu Tao Kit Mechanics (Quick Summary)
+
+- **Elemental Skill (Guide to Afterlife)**: Consumes 30% current HP. Enters Paramita Papilio state for 9 seconds. Converts HP to ATK based on her max HP (max bonus capped at 400% of Base ATK). All attacks become Pyro-infused. Her Charged Attacks apply Blood Blossom (DoT, 4 ticks over 8 seconds).
+- **Elemental Burst (Spirit Soother)**: AoE Pyro nuke. Heals Hu Tao based on enemies hit (scales with HP). At <50% HP, damage and healing increase.
+- **Passive (Sanguine Rouge)**: At ≤50% HP, Hu Tao gains 33% Pyro DMG Bonus. This defines her playstyle — she wants to stay below 50% HP.
+- **Passive (Flutter By)**: After Paramita Papilio ends, teammates gain 12% Crit Rate for 8 seconds.
+
+**Level Priority**: Normal Attack > Elemental Skill > Elemental Burst. NA talent is her primary damage source — charged attacks scale with Normal Attack talent multipliers.
+
+---
+
+## Weapon Ranking
+
+Hu Tao's damage scales primarily from HP (converted to ATK), Crit, and Elemental Mastery for Vaporize teams. ATK% weapons are less effective because her base ATK is the lowest in the game (106 at Level 90 — compared to 349 for Eula).
+
+| Rank | Weapon | Base ATK | Substat | Effect | % of Homa (Vape) |
+|------|--------|----------|---------|--------|------------------|
+| 1 | Staff of Homa R1 | 608 | 66.2% Crit DMG | +20% HP, ATK bonus based on 0.8% (1.8% <50%) max HP | 100% |
+| 2 | Staff of Homa R5 | 608 | 66.2% Crit DMG | +40% HP, ATK bonus 1.6% (3.6% <50%) max HP | 118% |
+| 3 | Primordial Jade Winged-Spear | 674 | 22.1% Crit Rate | +3.2% ATK per stack, max 7 stacks (+22.4% ATK). +12-24% DMG at max stacks. | 92% |
+| 4 | Dragon's Bane R5 | 454 | 221 EM | +36% DMG vs Hydro/Pyro-affected enemies | 89% |
+| 5 | Deathmatch R5 | 454 | 36.8% Crit Rate | +32% ATK (vs 2+ enemies) or +48% ATK (vs 1 enemy) | 85% |
+| 6 | Dragon's Bane R1 | 454 | 221 EM | +20% DMG vs Hydro/Pyro-affected enemies | 80% |
+| 7 | Ballad of the Fjords R5 (Battle Pass) | 510 | 27.6% Crit Rate | +120-240 EM if 3 different elements in team | 84% |
+| 8 | White Tassel R5 (3-star) | 401 | 23.4% Crit Rate | +48% Normal Attack DMG | 75% |
+| 9 | Blackcliff Pole R1 | 510 | 55.1% Crit DMG | +12% ATK per kill, max 3 stacks | 72% |
+| 10 | Missive Windspear R5 (event) | 510 | 41.3% ATK | +24% ATK + 96 EM for 10s after reaction | 68% |
+
+### Weapon Notes
+
+**Staff of Homa**: Hu Tao's signature and BiS. The HP-to-ATK conversion synergizes perfectly with her kit. The <50% HP condition for the doubled ATK bonus aligns with her passive Sanguine Rouge. Even at R1, Homa provides ~18-22% more damage than the next best 4-star option.
+
+**Dragon's Bane R5 vs Deathmatch R5**: Dragon's Bane at R5 is competitive because Hu Tao needs EM for Vaporize (~200-300 EM target). Dragon's Bane provides 221 EM — enough to cover your entire EM requirement, allowing you to run HP% Sands. Deathmatch provides Crit Rate (letting you run Crit DMG Circlet) but requires EM from substats or an EM Sands. In practice, Dragon's Bane R5 outperforms Deathmatch R5 by ~5% in properly built Vaporize teams due to the EM saturation advantage.
+
+**White Tassel R5**: The surprising 3-star contender. 23.4% Crit Rate + 48% Normal Attack DMG (which applies to Charged Attacks) makes it better than any 4-star weapon below R3. If you have no 5-star spears and no high-refinement Dragon's Bane, lock a White Tassel R5 immediately.
+
+---
+
+## Artifact Sets: Crimson Witch vs Shimenawa
+
+### 4-Piece Crimson Witch of Flames
+
+| Effect | Value |
+|--------|-------|
+| 2pc | +15% Pyro DMG Bonus |
+| 4pc | +40% Overloaded/Burning DMG. +15% Vaporize/Melt DMG. Using Elemental Skill increases 2pc effect by 50% for 10s (max 3 stacks) |
+
+**Total at 3 stacks**: +37.5% Pyro DMG Bonus + 15% Vaporize DMG Bonus.
+
+**Pros**: Strongest set for Burst Vaporize damage. Higher Elemental Burst damage than Shimenawa. No Energy drain — more comfortable for non-C1 Hu Tao where you need Burst healing.
+
+**Cons**: Very resin-inefficient to farm (paired with Lavawalker). Strongbox is the method to obtain this set.
+
+### 4-Piece Shimenawa's Reminiscence
+
+| Effect | Value |
+|--------|-------|
+| 2pc | +18% ATK |
+| 4pc | After using Elemental Skill, if ≥15 Energy, lose 15 Energy and gain +50% Normal/Charged/Plunging Attack DMG for 10s |
+
+**Pros**: ~5-8% higher Charged Attack damage than Crimson Witch. Farmed alongside Emblem of Severed Fate — the most resin-efficient domain.
+
+**Cons**: Energy drain delays Burst availability. Hu Tao loses her emergency heal — riskier for non-shield teams. Lower Burst damage in AoE situations. Less Vaporize bonus on Blood Blossom DoT.
+
+### Verdict
+
+| Scenario | Best Set |
+|----------|----------|
+| Double Hydro with Zhongli (C1+) | Shimenawa (higher CA damage, comfortable with shield) |
+| Double Hydro without Zhongli (C0) | Crimson Witch (Burst heal matters more) |
+| Plunge Tao (with Xianyun) | Shimenawa (Plunges benefit from 4pc effect) |
+| Furina teams | Marechaussee Hunter (discussed below) |
+| AoE content / multi-wave | Crimson Witch (Burst damage matters) |
+
+**The Furina Exception — 4pc Marechaussee Hunter**: With Furina draining team HP, Hu Tao can maintain the Marechaussee 4pc effect (+36% Crit Rate) consistently. This set provides so much free Crit Rate that you can build a Crit DMG Circlet and Crit DMG weapon and still reach 80%+ Crit Rate. Against single-target with Furina + Yelan, Marechaussee Hunter outperforms both CW and Shimenawa by ~8-12%. The Domain also drops Golden Troupe — excellent for Fischl and Furina.
+
+---
+
+## Artifact Main Stats and Targets
+
+| Piece | Main Stat | Substats Priority |
+|-------|-----------|-------------------|
+| Sands | HP% (or EM if using Homa with <100 EM from subs) | Crit > EM > HP% > ATK% |
+| Goblet | Pyro DMG% | Crit > EM > HP% > ATK% |
+| Circlet | Crit Rate or Crit DMG (balance for 1:2 ratio) | Crit > EM > HP% > ATK% |
+
+**Why HP% Sands**: Hu Tao's base ATK is 106. At Level 90, HP% Sands provides ~46.6% × 15,552 base HP ≈ 7,247 HP. Converted to ATK via her E (6.26% of max HP at Talent 10): +453 ATK. ATK% Sands provides 46.6% × 106 = +49 ATK. HP% Sands clearly dominates.
+
+**EM vs HP% Sands**: If your total EM is below 100, EM Sands is better. If EM is 100-200, they're roughly equal (EM Sands ~3-5% better). If EM > 200 (via Dragon's Bane, Sucrose, or substats), HP% Sands pulls ahead. The target is 200-300 EM total.
+
+### Stat Targets (Endgame)
+
+| Stat | C0 Target | C1 Target | Notes |
+|------|-----------|-----------|-------|
+| HP | 30,000-35,000 | 30,000-35,000 | Below 50% in combat for Sanguine Rouge |
+| ATK (after E) | 3,000-3,800 | 3,000-3,800 | Depends on weapon |
+| EM | 200-300 | 200-300 | 100 minimum, diminishing returns after 300 |
+| Crit Rate | 70%+ | 70%+ | Before Cryo Resonance / other buffs |
+| Crit DMG | 160%+ | 180%+ | With Crit weapon; subtract 60% without |
+| ER | 100-120% | 100-120% | Only needed for Burst every other rotation |
+| Pyro DMG% | 61.6% (Goblet + CW) - 102.1% | Same | 46.6% Goblet + 15% CW 2pc + 22.5% CW 4pc max |
+
+---
+
+## Team Compositions
+
+### 1. Classic Double Hydro (Hu Tao / Xingqiu / Yelan / Zhongli)
+
+The definitive Hu Tao team since Yelan's release in Version 2.7. Consistently top-tier.
+
+| Character | Role | Key Gear | Notes |
+|-----------|------|----------|-------|
+| Hu Tao | Main DPS | See weapon/artifact sections above | |
+| Xingqiu | Hydro Applier, Damage Reduction | 4pc Emblem, Sacrificial Sword R3+ | His Rain Swords + Yelan's Dice = constant Hydro for Vape |
+| Yelan | Sub-DPS, Hydro Applier, DMG% Buff | 4pc Emblem, Favonius Warbow / Aqua Simulacra | A4 passive provides up to 50% DMG bonus |
+| Zhongli | Shielder, RES Shred | 4pc Tenacity of the Millelith, Black Tassel | 20% universal RES shred from shield + Tenacity ATK buff |
+
+**Rotation (21-second cycle)**:
+1. Zhongli hold E — deploy shield
+2. Yelan E → Q — activate Depth-Clarion Dice
+3. Xingqiu E → Q (E again if Sacrificial procs) — activate Rain Swords
+4. Hu Tao E → Charged Attack spam (N1CJ at C0, N1CD at C1) for 9 seconds
+   - **C0**: N1CJ = Normal 1 → Charged Attack → Jump Cancel. Repeat ×8-9 per E duration.
+   - **C1**: N1CD = Normal 1 → Charged Attack → Dash Cancel. Faster, more fluid, more CAs per cycle (10-11).
+5. Hu Tao Q — Burst at the end of E or when low HP for healing
+6. Battery phase: funnel particles to Yelan and Xingqiu. Repeat.
+
+**Double Hydro Benefits**: Hydro Resonance (+25% HP) benefits Yelan and Zhongli. Xingqiu's damage reduction + Zhongli's shield = near-immortal Hu Tao. Xingqiu + Yelan produce enough Hydro to Vape every single Hu Tao CA (no ICD on either her CA or Xingqiu/Yelan's combined application).
+
+### 2. Furina Double Hydro (Hu Tao / Furina / Yelan / Xianyun or Jean)
+
+With Furina's release, Hu Tao gained access to Marechaussee Hunter and her team DPS ceiling rose significantly.
+
+**Rotation**:
+1. Furina E → Q (Salon Members active, start Fanfare stacking)
+2. Yelan E → Q
+3. Xianyun E → Q (team-wide heal for Fanfare stacks) or Jean Q
+4. Hu Tao E → Plunge Attack spam (with Xianyun) or C1 N1CD (with Jean)
+
+**Note**: Furina's HP drain keeps Hu Tao below 50% HP easily. Xianyun's Plunge buff enables "Plunge Tao" — Hu Tao's Plunge Attacks scale with her Normal Attack talent and have no ICD, so every Plunge can Vaporize.
+
+### 3. Budget Team (Hu Tao / Xingqiu / Sucrose / Thoma or Diona)
+
+For players without Zhongli or Yelan.
+
+| Character | Role | Alternative |
+|-----------|------|-------------|
+| Sucrose | EM Buffer, VV Shred, TTDS holder | Kazuha (strict upgrade) |
+| Thoma | Shielder, Pyro Resonance | C4 gives minor energy refund. Low shield uptime at C0-C3. |
+| Diona | Shielder, Healer, Cryo for occasional Melt | C6 provides 200 EM. Healing may push Hu Tao above 50% HP — manage carefully. |
+
+---
+
+## Talent Priority and Leveling Investment
+
+| Priority | Talent | Target Level | Notes |
+|----------|--------|-------------|-------|
+| 1 | Normal Attack | 10 (Crown) | All Charged Attack damage scales here. Crown it. |
+| 2 | Elemental Skill | 9-10 | Increases HP-to-ATK conversion ratio. At Lv.10: 6.26% of max HP. |
+| 3 | Elemental Burst | 8-9 | Nuke + heal. Lower priority but worth investing for AoE and emergency healing. |
+
+Skill leveling priority (books to farm: Diligence, Monday/Thursday in Liyue — Taishan Mansion Domain).
+
+---
+
+## C0 vs C1: The Dash Cancel Divide
+
+Hu Tao C1 is arguably the most impactful non-Archon Constellation in the game. At C0, every Charged Attack must be jump-cancelled to prevent dashing away from the enemy. Jump cancels take ~0.4 seconds longer and consume more stamina (25 per CA + 18 for jump = 43 stamina per cycle). At C1, Charged Attacks no longer consume stamina during Paramita Papilio state. Dash cancels replace jump cancels — faster, more fluid, and crucially, you get 1-2 more Charged Attacks per E duration.
+
+| Metric | C0 (N1CJ) | C1 (N1CD) |
+|--------|-----------|-----------|
+| CAs per E duration | 8-9 | 10-11 |
+| Total CA damage | 100% (baseline) | ~118-125% |
+| Stamina management | Tight — need 240+ max stamina | Trivial — dashes are free |
+| Comfort | High skill ceiling | Very comfortable |
+
+If you main Hu Tao, save for C1 before pulling for Homa. The QoL improvement and damage increase from C1 exceeds Homa's damage advantage over Dragon's Bane R5.
+
+---
+
+## Key Constellation Summary
+
+| Constellation | Effect | Priority |
+|--------------|--------|----------|
+| **C1** | Charged Attacks do not consume Stamina during Paramita Papilio | **Highest** — transforms playstyle and adds ~20% damage |
+| C2 | Blood Blossom damage increases by 10% of Hu Tao's max HP. Burst applies Blood Blossom. | Minor — ~5% total damage increase |
+| C3 | +3 to Normal Attack talent | Significant — ~15% damage increase (10→13 NA talent) |
+| C4 | When enemy affected by Blood Blossom is defeated, teammates gain 12% Crit Rate for 15s | Situational — useless against bosses |
+| C5 | +3 to Elemental Skill talent | Minor |
+| C6 | Survive lethal damage with 1 HP. +200% All RES, +100% Crit Rate for 10s. 60s cooldown. | Meme/flex constellation — activates once per Abyss floor |
+
+**Optimal stopping points**: C0 (budget), C1 (sweet spot), C1R1 (endgame), C3R1 (whale). C6 is more for showcase than practical use.
+
+---
+
+## Damage Showcase: Expected Numbers
+
+With C0, Dragon's Bane R5, 4pc CW, 30K HP, 200 EM, 70:160 Crit:
+- Charged Attack Vaporize: 45,000-55,000 per hit
+- Blood Blossom Vaporize: 8,000-12,000 per tick
+- Burst Vaporize: 120,000-150,000
+
+With C1R1 (Homa), 4pc Shimenawa, 33K HP, 200 EM, 75:230 Crit (Double Hydro):
+- Charged Attack Vaporize: 80,000-100,000 per hit
+- Blood Blossom Vaporize: 12,000-18,000 per tick
+- Burst Vaporize: 200,000-280,000
+
+With C1R1 + Furina + Yelan + Xianyun (Marechaussee Hunter):
+- Plunge Attack Vaporize: 110,000-140,000 per plunge
+- 8-9 plunges per E duration = ~1,000,000 total damage per rotation (including Yelan/Furina damage)
