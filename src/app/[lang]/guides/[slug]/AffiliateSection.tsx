@@ -77,7 +77,7 @@ export default function AffiliateSection({ game, lang }: AffiliateSectionProps) 
     const accessoryLabel = isPS5Game ? "Gaming Controller" : "Gaming Gear";
     products.push({
       title: `Recommended ${accessoryLabel} for ${gameTitle}`,
-      image: "",
+      image: `/images/games/${game.slug}.jpg`,
       url: `https://www.amazon.com/dp/${mapping.relatedAsin}?tag=gameguide-20`,
       store: "Amazon",
     });
@@ -87,7 +87,7 @@ export default function AffiliateSection({ game, lang }: AffiliateSectionProps) 
   if (mapping.guideAsin) {
     products.push({
       title: `${gameTitle} Strategy Guide & Art Book`,
-      image: "",
+      image: `/images/games/${game.slug}.jpg`,
       url: `https://www.amazon.com/dp/${mapping.guideAsin}?tag=gameguide-20`,
       store: "Amazon",
     });

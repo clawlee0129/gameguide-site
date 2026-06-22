@@ -1,30 +1,55 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* ===== Dark Fantasy Epic — Design Tokens ===== */
+:root {
+  --gold: #c9a050;
+  --gold-light: #e2c870;
+  --gold-dark: #8b5a20;
+  --gold-glow: rgba(201, 160, 80, 0.3);
+  --void: #0a0a14;
+  --void-light: #120e1a;
+  --void-card: #141020;
+  --parchment: #e2d0b0;
+  --parchment-muted: #9a8a70;
+  --wine: #5c3040;
+  --royal: #3a2060;
+  --steel: #1a2838;
+}
+
 /* ===== Base ===== */
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: radial-gradient(ellipse at top, #1a1025 0%, var(--void) 70%);
+  color: var(--parchment);
 }
 
-.dark body {
-  background: radial-gradient(ellipse at top, #1a1a2e 0%, #08080c 70%);
-  color: #ffffff;
+/* Subtle texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
 }
 
-body {
-  background: radial-gradient(ellipse at top, #f3e8ff 0%, #f8fafc 70%);
-  color: #0f172a;
+/* ===== Headings — Cinzel ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinzel), Georgia, serif;
+  font-weight: 500;
+  color: var(--parchment);
 }
 
-html.dark body {
-  background: radial-gradient(ellipse at top, #1a1a2e 0%, #08080c 70%);
-  color: #ffffff;
-}
+h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.75rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.25rem; }
 
 /* ===== Selection ===== */
 ::selection {
-  background: #a855f7;
-  color: #ffffff;
+  background: var(--gold);
+  color: var(--void);
 }
 
 /* ===== Scrollbar ===== */
@@ -33,17 +58,14 @@ html.dark body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #e5e7eb;
-}
-html.dark ::-webkit-scrollbar-track {
-  background: #08080c;
+  background: var(--void);
 }
 ::-webkit-scrollbar-thumb {
-  background: #a855f7;
+  background: var(--gold-dark);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c084fc;
+  background: var(--gold);
 }
 
 /* ===== Keyframes ===== */
@@ -60,10 +82,10 @@ html.dark ::-webkit-scrollbar-track {
 
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(168, 85, 247, 0.3), 0 0 15px rgba(168, 85, 247, 0.1);
+    box-shadow: 0 0 8px var(--gold-glow), 0 0 24px rgba(201, 160, 80, 0.08);
   }
   50% {
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 35px rgba(168, 85, 247, 0.2);
+    box-shadow: 0 0 18px rgba(201, 160, 80, 0.45), 0 0 48px rgba(201, 160, 80, 0.15);
   }
 }
 
@@ -78,6 +100,11 @@ html.dark ::-webkit-scrollbar-track {
   }
 }
 
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
 /* ===== Utility Classes ===== */
 @layer utilities {
   .animate-fadeInUp {
@@ -90,15 +117,86 @@ html.dark ::-webkit-scrollbar-track {
     animation: slideRight 0.8s ease-out both;
   }
   .text-gradient {
-    background: linear-gradient(135deg, #c084fc, #22d3ee);
+    background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .text-gradient-hero {
-    background: linear-gradient(to right, #c084fc, #22d3ee);
+    background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  /* Shimmer text effect */
+  .text-shimmer {
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), var(--gold-dark));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+  /* Card base */
+  .card-dark {
+    background: var(--void-card);
+    border: 1px solid rgba(201, 160, 80, 0.12);
+    border-radius: 0.75rem;
+  }
+  .card-dark:hover {
+    border-color: rgba(201, 160, 80, 0.3);
+    box-shadow: 0 0 20px var(--gold-glow), 0 4px 24px rgba(0, 0, 0, 0.4);
+  }
+  /* Gold border accent */
+  .border-gold {
+    border-color: rgba(201, 160, 80, 0.25);
+  }
+  /* Gold divider */
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--gold);
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--gold-light);
+}
+
+/* ===== Prose Heading Hierarchy ===== */
+.prose h2 { font-size: 1.5rem; }
+.prose h3 { font-size: 1.125rem; }
+.prose h4 { font-size: 1rem; }
+
+/* Prose overrides for dark fantasy */
+.prose {
+  color: var(--parchment);
+  --tw-prose-body: var(--parchment);
+  --tw-prose-headings: var(--parchment);
+  --tw-prose-links: var(--gold);
+  --tw-prose-bold: var(--parchment);
+  --tw-prose-code: var(--gold-light);
+  --tw-prose-quotes: var(--parchment-muted);
+  --tw-prose-quote-borders: var(--gold-dark);
+  --tw-prose-hr: var(--gold-dark);
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: var(--font-cinzel), Georgia, serif;
+  font-weight: 500;
+}
+
+.prose strong {
+  color: var(--gold-light);
+}
+
+.prose blockquote {
+  border-left-color: var(--gold-dark);
+  background: rgba(201, 160, 80, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
 }

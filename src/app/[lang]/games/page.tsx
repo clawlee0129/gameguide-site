@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { sampleGames } from "@/data/sampleData";
 import SearchBar from "@/components/SearchBar";
 import SafeImage from "@/components/SafeImage";
+import AdBanner from "@/components/AdBanner";
 
 const PLATFORMS = ["All", "PS5", "Xbox", "PC", "Switch", "PS4"];
 const CATEGORIES = ["All", "RPG", "Action", "Adventure", "Horror", "Platformer", "Strategy", "Simulation", "Puzzle", "Fighting", "Racing", "Sports"];
@@ -17,11 +18,11 @@ const SORT_OPTIONS = [
 ];
 
 const platformActiveColors: Record<string, string> = {
-  PS5: "bg-[#a855f7] text-white border-[#a855f7]",
+  PS5: "bg-[#c9a050] text-black border-[#c9a050]",
   Xbox: "bg-[#22c55e] text-white border-[#22c55e]",
   PC: "bg-[#3b82f6] text-white border-[#3b82f6]",
   Switch: "bg-[#ef4444] text-white border-[#ef4444]",
-  PS4: "bg-[#a855f7] text-white border-[#a855f7]",
+  PS4: "bg-[#c9a050] text-black border-[#c9a050]",
 };
 
 const platformBadgeColors: Record<string, string> = {
@@ -81,39 +82,39 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#0f0f0f]">
-      <header className="sticky top-0 z-50 bg-white/95 dark:bg-[#0f0f0f]/95 backdrop-blur border-b border-gray-200 dark:border-[#2a2a2a]">
+    <div className="min-h-screen bg-[#0a0a14]">
+      <header className="sticky top-0 z-50 bg-[#0a0a14]/95 backdrop-blur border-b border-[rgba(201,160,80,0.15)]">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href={`/${lang}`} className="text-xl font-bold text-gradient">GameGuide</Link>
           <nav className="flex items-center gap-4 sm:gap-6 text-sm">
-            <Link href={`/${lang}`} className="hover:text-[#6C3FB7] text-gray-900 dark:text-white">Home</Link>
-            <Link href={`/${lang}/games`} className="text-[#6C3FB7]">{dict.nav.games}</Link>
-            <Link href={`/${lang}/guides`} className="hover:text-[#6C3FB7] text-gray-900 dark:text-white">{dict.nav.guides}</Link>
-            <Link href={`/${lang}/categories`} className="hover:text-[#6C3FB7] text-gray-900 dark:text-white">{dict.nav.categories}</Link>
+            <Link href={`/${lang}`} className="hover:text-[#e2c870] text-[#e2d0b0]">Home</Link>
+            <Link href={`/${lang}/games`} className="text-[#c9a050]">{dict.nav.games}</Link>
+            <Link href={`/${lang}/guides`} className="hover:text-[#e2c870] text-[#e2d0b0]">{dict.nav.guides}</Link>
+            <Link href={`/${lang}/categories`} className="hover:text-[#e2c870] text-[#e2d0b0]">{dict.nav.categories}</Link>
             <SearchBar lang={lang} dict={dict} />
           </nav>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">{dict.nav.games}</h1>
+        <h1 className="text-3xl font-bold mb-6 text-[#e2d0b0]">{dict.nav.games}</h1>
 
         {/* Platform Filter */}
         <div className="mb-4">
-          <p className="text-xs font-semibold text-gray-500 dark:text-[#a0a0a0] uppercase tracking-wider mb-2">Platform</p>
+          <p className="text-xs font-semibold text-[#9a8a70] uppercase tracking-wider mb-2">Platform</p>
           <div className="flex gap-2 overflow-x-auto pb-2 flex-nowrap" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             {PLATFORMS.map((p) => {
               const isActive = activePlatform === p;
               const isAll = p === "All";
               const activeStyle = isAll
-                ? "bg-[#6C3FB7] text-white border-[#6C3FB7]"
-                : platformActiveColors[p] || "bg-[#6C3FB7] text-white border-[#6C3FB7]";
+                ? "bg-[#c9a050] text-black border-[#c9a050]"
+                : platformActiveColors[p] || "bg-[#c9a050] text-black border-[#c9a050]";
               return (
                 <button
                   key={p}
                   onClick={() => updateFilter("platform", p)}
                   className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-medium border transition-all ${
-                    isActive ? activeStyle : "border-gray-300 dark:border-[#2a2a2a] text-gray-600 dark:text-[#a0a0a0] hover:border-[#6C3FB7] hover:text-[#6C3FB7]"
+                    isActive ? activeStyle : "border-[rgba(201,160,80,0.15)] text-[#9a8a70] hover:border-[#c9a050] hover:text-[#e2c870]"
                   }`}
                 >
                   {p}
@@ -125,7 +126,7 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
 
         {/* Category Filter */}
         <div className="mb-4">
-          <p className="text-xs font-semibold text-gray-500 dark:text-[#a0a0a0] uppercase tracking-wider mb-2">Category</p>
+          <p className="text-xs font-semibold text-[#9a8a70] uppercase tracking-wider mb-2">Category</p>
           <div className="flex gap-2 overflow-x-auto pb-2 flex-nowrap" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             {CATEGORIES.map((c) => {
               const isActive = activeCategory === c;
@@ -135,8 +136,8 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
                   onClick={() => updateFilter("cat", c)}
                   className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-medium border transition-all ${
                     isActive
-                      ? "bg-[#6C3FB7] text-white border-[#6C3FB7]"
-                      : "border-gray-300 dark:border-[#2a2a2a] text-gray-600 dark:text-[#a0a0a0] hover:border-[#6C3FB7] hover:text-[#6C3FB7]"
+                      ? "bg-[#c9a050] text-black border-[#c9a050]"
+                      : "border-[rgba(201,160,80,0.15)] text-[#9a8a70] hover:border-[#c9a050] hover:text-[#e2c870]"
                   }`}
                 >
                   {c}
@@ -148,25 +149,37 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
 
         {/* Sort */}
         <div className="mb-8 flex items-center justify-between">
-          <span className="text-xs text-gray-500 dark:text-[#a0a0a0]">{sorted.length} {sorted.length === 1 ? "game" : "games"}</span>
-          <select
-            value={activeSort}
-            onChange={(e) => updateFilter("sort", e.target.value)}
-            className="text-sm px-3 py-1.5 rounded-lg border border-gray-200 dark:border-[#2a2a2a] bg-white dark:bg-[#1a1a1a] text-gray-900 dark:text-white focus:ring-2 focus:ring-[#6C3FB7] focus:border-transparent outline-none cursor-pointer"
-          >
-            {SORT_OPTIONS.map((opt) => (
-              <option key={opt.value} value={opt.value}>{opt.label}</option>
-            ))}
-          </select>
+          <span className="text-xs text-[#9a8a70]">{sorted.length} {sorted.length === 1 ? "game" : "games"}</span>
+          <div className="flex gap-2 text-xs">
+            {SORT_OPTIONS.map((opt) => {
+              const isActive = activeSort === opt.value;
+              return (
+                <button
+                  key={opt.value}
+                  onClick={() => updateFilter("sort", opt.value)}
+                  className={`px-3 py-1.5 rounded-lg border transition-all ${
+                    isActive
+                      ? "border-[#c9a050] text-[#c9a050] bg-[rgba(201,160,80,0.1)]"
+                      : "border-[rgba(201,160,80,0.15)] text-[#9a8a70] hover:border-[#c9a050] hover:text-[#e2c870]"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
+        {/* AdSense 广告位 */}
+        <AdBanner slot="7428875943" format="auto" className="py-4" />
+
         {sorted.length === 0 ? (
-          <p className="text-gray-500 dark:text-[#a0a0a0] text-center py-12">No games match the selected filters.</p>
+          <p className="text-[#9a8a70] text-center py-12">No games match the selected filters.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {sorted.map((game) => (
-              <Link key={game.id} href={`/${lang}/games/${game.slug}`} className="card bg-white dark:bg-[#1a1a1a] border-gray-200 dark:border-[#2a2a2a] overflow-hidden group">
-                <div className="aspect-video bg-[#252525] flex items-center justify-center text-[#6C3FB7] text-lg font-bold">
+              <Link key={game.id} href={`/${lang}/games/${game.slug}`} className="card-dark overflow-hidden group">
+                <div className="aspect-video bg-[#252525] flex items-center justify-center text-[#c9a050] text-lg font-bold">
                   <SafeImage
                     src={`/images/games/${game.slug}.jpg`}
                     alt={game.title}
@@ -175,17 +188,17 @@ function GamesPageClient({ lang, dict }: GamesPageClientProps) {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold group-hover:text-[#6C3FB7] transition-colors text-gray-900 dark:text-white">{lang === "zh" ? game.titleZh : game.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-[#a0a0a0] mt-1 line-clamp-2">{lang === "zh" ? game.descriptionZh : game.description}</p>
+                  <h3 className="font-semibold group-hover:text-[#e2c870] transition-colors text-[#e2d0b0]">{lang === "zh" ? game.titleZh : game.title}</h3>
+                  <p className="text-sm text-[#9a8a70] mt-1 line-clamp-2">{lang === "zh" ? game.descriptionZh : game.description}</p>
                   <div className="flex items-center gap-2 mt-3">
-                    <span className="text-xs text-[#6C3FB7] bg-[#6C3FB7]/10 px-2 py-0.5 rounded">{game.category}</span>
-                    <span className="text-xs text-gray-500 dark:text-[#a0a0a0]">{game.rating}/10</span>
+                    <span className="text-xs text-[#c9a050] bg-[rgba(201,160,80,0.1)] px-2 py-0.5 rounded">{game.category}</span>
+                    <span className="text-xs text-[#9a8a70]">{game.rating}/10</span>
                   </div>
                   {/* Platform icons */}
                   {game.platforms && game.platforms.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-2">
                       {game.platforms.map((p: string) => (
-                        <span key={p} className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${platformBadgeColors[p] || "text-gray-500 dark:text-[#a0a0a0] bg-gray-100 dark:bg-[#0f0f0f]"}`}>
+                        <span key={p} className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${platformBadgeColors[p] || "text-[#9a8a70] bg-[#141020]"}`}>
                           {p}
                         </span>
                       ))}
@@ -206,5 +219,47 @@ import { getDictionary, getLangFromParams } from "@/i18n";
 export default async function GamesPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   const dict = getDictionary(getLangFromParams({ lang }));
-  return <GamesPageClient lang={lang} dict={dict} />;
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: sampleGames.map((game, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      item: {
+        "@type": "VideoGame",
+        name: lang === "zh" ? game.titleZh : game.title,
+        url: `https://gameguide.guide/${lang}/games/${game.slug}`,
+        description: lang === "zh" ? game.descriptionZh : game.description,
+        genre: game.category,
+      },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `https://gameguide.guide/${lang}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: dict.nav.games,
+        item: `https://gameguide.guide/${lang}/games`,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <GamesPageClient lang={lang} dict={dict} />
+    </>
+  );
 }

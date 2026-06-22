@@ -66,10 +66,12 @@ export default function GuideContent({
     return () => observer.disconnect();
   }, [tocItems]);
 
-  const scrollToHeading = useCallback((id: string) => {
+  const scrollToHeading = useCallback((e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.history.pushState(null, "", `#${id}`);
       setActiveId(id);
       setTocOpen(false);
     }
@@ -77,7 +79,7 @@ export default function GuideContent({
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-[60] h-[2px] bg-[#a855f7] transition-all duration-150 shadow-[0_0_8px_rgba(168,85,247,0.5)]" style={{ width: `${progress}%` }} />
+      <div className="fixed top-0 left-0 z-[60] h-[2px] bg-[#c9a050] transition-all duration-150 shadow-[0_0_8px_rgba(201,160,80,0.5)]" style={{ width: `${progress}%` }} />
 
       <div className="max-w-7xl mx-auto px-6 flex gap-8 relative">
         <div className="flex-1 min-w-0 max-w-[820px]">
@@ -95,10 +97,11 @@ export default function GuideContent({
               {tocOpen && (
                 <nav className="mt-2 bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-[#2a2a2a] rounded-lg p-4">
                   {tocItems.map((item) => (
-                    <button
+                    <a
                       key={item.id}
-                      onClick={() => scrollToHeading(item.id)}
-                      className={`block w-full text-left text-sm py-1.5 transition-colors ${
+                      href={`#${item.id}`}
+                      onClick={(e) => scrollToHeading(e, item.id)}
+                      className={`block w-full text-left text-sm py-1.5 transition-colors no-underline ${
                         item.level === 3 ? "pl-4" : ""
                       } ${
                         activeId === item.id
@@ -107,7 +110,7 @@ export default function GuideContent({
                       }`}
                     >
                       {item.text}
-                    </button>
+                    </a>
                   ))}
                 </nav>
               )}
@@ -158,10 +161,11 @@ export default function GuideContent({
               <h4 className="text-xs font-semibold text-gray-600 dark:text-[#a0a0a0] uppercase tracking-wider mb-4">On This Page</h4>
               <nav className="space-y-1 border-l border-gray-200 dark:border-[#2a2a2a] pl-4">
                 {tocItems.map((item) => (
-                  <button
+                  <a
                     key={item.id}
-                    onClick={() => scrollToHeading(item.id)}
-                    className={`block w-full text-left text-sm py-1.5 transition-colors ${
+                    href={`#${item.id}`}
+                    onClick={(e) => scrollToHeading(e, item.id)}
+                    className={`block w-full text-left text-sm py-1.5 transition-colors no-underline ${
                       item.level === 3 ? "pl-3" : ""
                     } ${
                       activeId === item.id
@@ -170,7 +174,7 @@ export default function GuideContent({
                     }`}
                   >
                     {item.text}
-                  </button>
+                  </a>
                 ))}
               </nav>
             </div>

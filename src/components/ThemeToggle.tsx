@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ dict }: { dict?: Record<string, any> }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -24,8 +24,8 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="p-2 rounded-lg text-gray-600 dark:text-[#a0a0a0] hover:text-[#6C3FB7] dark:hover:text-white transition-all duration-300"
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className="p-2 rounded-lg text-[#e2d0b0] hover:text-[#e2c870] transition-all duration-300"
+      aria-label={isDark ? (dict?.theme?.switchToLight || "Switch to light mode") : (dict?.theme?.switchToDark || "Switch to dark mode")}
     >
       {isDark ? (
         /* Sun icon */

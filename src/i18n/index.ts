@@ -126,7 +126,68 @@ const dictionaries: Record<string, Record<string, any>> = {
       learnMore: "Learn more",
       acceptAll: "Accept All",
       essentialOnly: "Essential Only",
+      privacy: "Privacy Policy",
       lang: "en",
+    },
+    cookiePolicy: {
+      title: "Cookie Policy",
+      lastUpdated: "Last Updated: June 22, 2026",
+      intro: "This Cookie Policy explains what cookies are, how GameGuide uses them, and how you can manage your cookie preferences.",
+      whatAre: {
+        heading: "What Are Cookies?",
+        content: "Cookies are small text files that websites place on your device when you visit them. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies allow websites to remember your preferences, login status, and other settings, helping to improve your browsing experience.",
+      },
+      types: {
+        heading: "Types of Cookies We Use",
+        essential: {
+          heading: "Essential Cookies",
+          content: "These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility. You may disable these by changing your browser settings, but this may affect how the website functions.",
+        },
+        analytics: {
+          heading: "Analytics Cookies",
+          content: "We use analytics cookies to understand how visitors interact with our website. These cookies help us measure the number of visitors, see which pages are most popular, and understand how users navigate the site. We use Google Analytics for this purpose. The information collected is aggregated and anonymous.",
+        },
+        advertising: {
+          heading: "Advertising Cookies",
+          content: "We use advertising cookies to deliver relevant advertisements to you. These cookies track your browsing habits and help us show you ads that are more likely to be of interest. We use Google AdSense to serve advertisements on our website. Google AdSense may use cookies to serve personalized ads based on your prior visits to our website and other websites.",
+        },
+      },
+      thirdParty: {
+        heading: "Third-Party Cookies",
+        content: "In addition to our own cookies, we work with third-party service providers who may also set cookies on your device when you visit our website:",
+        googleAds: "Google AdSense — Serves advertisements and may use cookies for frequency capping, aggregated ad reporting, and to combat fraud and abuse.",
+        googleAnalytics: "Google Analytics — Helps us analyze site traffic and user behavior. Google Analytics uses cookies to collect anonymous data about how visitors use our site.",
+        optOut: "You can opt out of personalized advertising by visiting Google's Ads Settings or by using the Network Advertising Initiative opt-out page.",
+      },
+      manage: {
+        heading: "How to Manage or Disable Cookies",
+        content: "Most web browsers allow you to control cookies through their settings preferences. You can set your browser to block or alert you about these cookies, but some parts of the site may not work as intended if you do so.",
+        steps: [
+          "Google Chrome: Settings > Privacy and Security > Cookies and other site data",
+          "Mozilla Firefox: Options > Privacy & Security > Cookies and Site Data",
+          "Safari: Preferences > Privacy > Cookies and website data",
+          "Microsoft Edge: Settings > Cookies and site permissions > Manage and delete cookies and site data",
+        ],
+        resources: "For more information about cookies and how to manage them, visit www.allaboutcookies.org.",
+      },
+      changes: {
+        heading: "Changes to This Cookie Policy",
+        content: "We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically to stay informed about how we use cookies.",
+      },
+      contact: {
+        heading: "Contact Us",
+        content: "If you have any questions about our use of cookies, please contact us at:",
+        email: "privacy@gameguide.guide",
+      },
+    },
+    theme: {
+      switchToLight: "Switch to light mode",
+      switchToDark: "Switch to dark mode",
+    },
+    categoryNames: {
+      RPG: "RPG", Action: "Action", Adventure: "Adventure", Horror: "Horror",
+      Platformer: "Platformer", Strategy: "Strategy", Simulation: "Simulation",
+      Puzzle: "Puzzle", Fighting: "Fighting", Racing: "Racing", Sports: "Sports",
     },
     contact: {
       title: "Contact Us",
@@ -300,7 +361,68 @@ const dictionaries: Record<string, Record<string, any>> = {
       learnMore: "了解更多",
       acceptAll: "接受全部",
       essentialOnly: "仅必要",
+      privacy: "隐私政策",
       lang: "zh",
+    },
+    cookiePolicy: {
+      title: "Cookie 政策",
+      lastUpdated: "最后更新: 2026年6月22日",
+      intro: "本 Cookie 政策解释什么是 Cookie、GameGuide 如何使用它们，以及您如何管理 Cookie 偏好设置。",
+      whatAre: {
+        heading: "什么是 Cookie？",
+        content: "Cookie 是网站在您访问时放置在您设备上的小型文本文件。它们被广泛用于使网站更高效地运行，以及向网站所有者提供信息。Cookie 允许网站记住您的偏好、登录状态和其他设置，帮助改善您的浏览体验。",
+      },
+      types: {
+        heading: "我们使用的 Cookie 类型",
+        essential: {
+          heading: "必要 Cookie",
+          content: "这些 Cookie 对于网站正常运行是必需的。它们启用核心功能，如安全性、网络管理和可访问性。您可以通过更改浏览器设置来禁用它们，但这可能会影响网站的功能。",
+        },
+        analytics: {
+          heading: "分析 Cookie",
+          content: "我们使用分析 Cookie 来了解访问者如何与我们的网站互动。这些 Cookie 帮助我们衡量访问者数量、查看哪些页面最受欢迎，以及了解用户如何浏览网站。我们为此使用 Google Analytics。收集的信息是聚合和匿名的。",
+        },
+        advertising: {
+          heading: "广告 Cookie",
+          content: "我们使用广告 Cookie 向您提供相关广告。这些 Cookie 跟踪您的浏览习惯，帮助我们向您展示更可能感兴趣的广告。我们使用 Google AdSense 在网站上展示广告。Google AdSense 可能使用 Cookie 根据您之前访问我们网站和其他网站的情况提供个性化广告。",
+        },
+      },
+      thirdParty: {
+        heading: "第三方 Cookie",
+        content: "除了我们自己的 Cookie，我们还与第三方服务提供商合作，他们在您访问我们网站时也可能在您的设备上设置 Cookie：",
+        googleAds: "Google AdSense — 提供广告服务，可能使用 Cookie 进行频次限制、聚合广告报告以及防止欺诈和滥用。",
+        googleAnalytics: "Google Analytics — 帮助我们分析网站流量和用户行为。Google Analytics 使用 Cookie 收集有关访问者如何使用我们网站的匿名数据。",
+        optOut: "您可以通过访问 Google 的广告设置或使用 Network Advertising Initiative 的选择退出页面，选择退出个性化广告。",
+      },
+      manage: {
+        heading: "如何管理或禁用 Cookie",
+        content: "大多数网络浏览器允许您通过设置偏好来控制 Cookie。您可以将浏览器设置为阻止或提醒您这些 Cookie，但如果这样做，网站的某些部分可能无法按预期工作。",
+        steps: [
+          "Google Chrome: 设置 > 隐私和安全 > Cookie 和其他网站数据",
+          "Mozilla Firefox: 选项 > 隐私与安全 > Cookie 和网站数据",
+          "Safari: 偏好设置 > 隐私 > Cookie 和网站数据",
+          "Microsoft Edge: 设置 > Cookie 和网站权限 > 管理和删除 Cookie 和网站数据",
+        ],
+        resources: "有关 Cookie 及其管理方法的更多信息，请访问 www.allaboutcookies.org。",
+      },
+      changes: {
+        heading: "本 Cookie 政策的变更",
+        content: "我们可能会不时更新本 Cookie 政策。任何更改都将发布在此页面上，并注明更新日期。我们鼓励您定期查看本政策，以了解我们如何使用 Cookie。",
+      },
+      contact: {
+        heading: "联系我们",
+        content: "如果您对我们使用 Cookie 有任何疑问，请通过以下方式联系我们：",
+        email: "privacy@gameguide.guide",
+      },
+    },
+    theme: {
+      switchToLight: "切换到亮色模式",
+      switchToDark: "切换到暗色模式",
+    },
+    categoryNames: {
+      RPG: "角色扮演", Action: "动作", Adventure: "冒险", Horror: "恐怖",
+      Platformer: "平台跳跃", Strategy: "策略", Simulation: "模拟",
+      Puzzle: "解谜", Fighting: "格斗", Racing: "竞速", Sports: "体育",
     },
     contact: {
       title: "联系我们",

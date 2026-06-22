@@ -7,17 +7,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const entries: MetadataRoute.Sitemap = [];
 
+  // Base URL
+  entries.push({
+    url: baseUrl,
+    lastModified: new Date("2026-06-17"),
+    changeFrequency: "daily",
+    priority: 1.0,
+  });
+
   for (const lang of languages) {
+    const dayOffset = lang === "en" ? 0 : 1;
+
     // Home
     entries.push({
       url: `${baseUrl}/${lang}`,
-      lastModified: new Date("2026-06-14"),
-      changeFrequency: "daily",
-      priority: 1.0,
-    });
-    entries.push({
-      url: baseUrl,
-      lastModified: new Date("2026-06-14"),
+      lastModified: new Date(`2026-06-${17 - dayOffset}`),
       changeFrequency: "daily",
       priority: 1.0,
     });
@@ -25,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Games list
     entries.push({
       url: `${baseUrl}/${lang}/games`,
-      lastModified: new Date("2026-06-14"),
+      lastModified: new Date("2026-06-16"),
       changeFrequency: "weekly",
       priority: 0.8,
     });
@@ -43,18 +47,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Guides list
     entries.push({
       url: `${baseUrl}/${lang}/guides`,
-      lastModified: new Date("2026-06-14"),
+      lastModified: new Date("2026-06-17"),
       changeFrequency: "daily",
       priority: 0.8,
     });
 
     // Individual guide pages
     for (const guide of sampleGuides) {
+      const lastMod = guide.updatedDate
+        ? new Date(guide.updatedDate + "T00:00:00Z")
+        : new Date("2026-06-15");
       entries.push({
         url: `${baseUrl}/${lang}/guides/${guide.slug}`,
-        lastModified: new Date("2026-06-15"),
+        lastModified: lastMod,
         changeFrequency: "weekly",
         priority: 0.7,
+        images: guide.image
+          ? [`${baseUrl}${guide.image}`]
+          : undefined,
       });
     }
 
@@ -77,6 +87,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Terms
     entries.push({
       url: `${baseUrl}/${lang}/terms`,
+      lastModified: new Date("2026-06-14"),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    });
+
+    // Contact
+    entries.push({
+      url: `${baseUrl}/${lang}/contact`,
       lastModified: new Date("2026-06-14"),
       changeFrequency: "monthly",
       priority: 0.3,
